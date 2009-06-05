@@ -282,9 +282,6 @@
     [datePrompt setTitleWithMnemonic:[NSString stringWithFormat:@"%@ at %@", date, time]];
     [datePrompt setFont:[NSFont boldSystemFontOfSize:17.0]];
     [datePrompt setAlphaValue:0.0];
-//    [timePrompt setTitleWithMnemonic:time];
-//    [timePrompt setFont:[NSFont boldSystemFontOfSize:17.0]];
-//    [timePrompt setAlphaValue:0.0];
     
 }
 
