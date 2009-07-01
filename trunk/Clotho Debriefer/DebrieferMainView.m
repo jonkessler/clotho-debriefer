@@ -35,7 +35,7 @@
 }
 
 - (void)awakeFromNib {
-    [resetUsedTasks setHidden:YES];
+    [resetUsedTasks setHidden:NO];
     [self initView];
 }
 

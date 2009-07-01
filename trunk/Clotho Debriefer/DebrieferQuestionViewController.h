@@ -27,11 +27,13 @@
     NSInteger remainQNumber;
     NSInteger theFactor;
     NSInteger TIMEINTERVAL;
+    BOOL weDone;
     
     DebrieferQuestionData *questionData;
     DebrieferLogger *dataToLog;
 }
 
+@property (nonatomic, assign) BOOL weDone;
 @property (nonatomic, retain) NSMutableArray *debrieferDataList;
 @property (nonatomic, retain) NSArray *taskFileList;
 @property (nonatomic, retain) NSMutableDictionary *theIcons;

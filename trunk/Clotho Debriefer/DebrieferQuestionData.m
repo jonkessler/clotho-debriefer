@@ -441,6 +441,7 @@
 
 //  *************************************************************************************************
 - (void)removeDataForTask:(NSString *)taskToRemove {
+
     if ( ([taskList count] != 0) && ([appsList count] != 0) ) {
         [[self taskList] removeObjectAtIndex:0];
         [[self appsList] removeObjectAtIndex:0];   
@@ -455,18 +456,19 @@
 - (NSMutableArray *)retrieveItemsFor:(NSMutableArray *)theArr {
 
     NSInteger numberOfStuff = [theArr count];
-    NSRange arrayRange;
+    NSInteger numberOfQuest = 0;
     
     if (numberOfStuff == 0)
         return theArr;
     
-    if ([self daysAgo] == 0) {
-        arrayRange.location = 20;
-    }
-    else {
-        arrayRange.location = 8;        
-    }
-     
+    if ([self daysAgo] == 0)
+        numberOfQuest = 20;
+    else 
+        numberOfQuest = 8;
+        
+    NSRange arrayRange;
+    arrayRange.location = numberOfQuest;
+    
     if (arrayRange.location < numberOfStuff) {
         arrayRange.length = numberOfStuff - arrayRange.location;
         NSIndexSet *indicies = [NSIndexSet indexSetWithIndexesInRange:arrayRange];
