@@ -33,8 +33,10 @@
 
 //  Task List Functions
 - (NSMutableArray *)combineTasksAndApps;
+- (BOOL)compareTaskTime:(NSString *)taskTime toAppsTime:(NSString *)appsTime;
 - (NSString *)createTaskPathWithFileName:(NSString *)fileName;
 - (void)divideTasksAndApps:(NSMutableArray *)combinedAndShuffled;
+- (NSInteger)retrieveIndexOfAppsForTask:(NSString *)taskDate;
 - (NSArray *)retrieveTasksForFile:(NSString *)fileName;
 - (void)shuffleTasks;
 - (BOOL)taskShouldBeUsed:(NSString *)theTask forDate:(NSDate *)theDate fromData:(NSArray *)theUsedTasks;
