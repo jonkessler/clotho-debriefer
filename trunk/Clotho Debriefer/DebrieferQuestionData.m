@@ -87,11 +87,11 @@
 
 //  *************************************************************************************************
 //  - parse each system snapshot that contain dateToBeDebriefed
-//  - fill an NSArray with NSDictionaries that have three keys:
-//      1. timeOfSnapshot
-//      2. arrayOfApps
-//      3. dictionary of appname-appID
-//      4. dictionary of appName-appPath
+//  - fill an NSArray with NSDictionaries that have four keys:
+//      1. time
+//      2. apps
+//      3. appsIDs
+//      4. appPaths
 //  *************************************************************************************************
 - (NSArray *)retrieveApps {
     NSMutableArray *sysSnap = [[[NSMutableArray alloc] init] autorelease];
@@ -175,15 +175,64 @@
 
     NSMutableArray *tasksAndApps = [[[NSMutableArray alloc] init] autorelease];
     int i;
+    BOOL areEqual;
+    NSInteger theIndex;
     
     for (i=0; i<[[self taskList] count]; i++) {
-        NSDictionary *combinedDict = [NSDictionary dictionaryWithObjectsAndKeys:
-                                      [[self taskList] objectAtIndex:i], @"task",
-                                      [[self appsList] objectAtIndex:i], @"apps", nil];
-        [tasksAndApps addObject:combinedDict];
+        
+        if (i == [[self appsList] count])  //  there's a possibility that the counts are different...
+            break;
+        
+        NSString *taskDate = [[[self taskList] objectAtIndex:i] objectForKey:@"date"];
+        
+        areEqual = [self compareTaskTime:taskDate
+                              toAppsTime:[[[self appsList] objectAtIndex:i] objectForKey:@"time"]];
+        
+        if (areEqual) {
+            NSDictionary *combinedDict = [NSDictionary dictionaryWithObjectsAndKeys:
+                                          [[self taskList] objectAtIndex:i], @"task",
+                                          [[self appsList] objectAtIndex:i], @"apps", nil];
+            [tasksAndApps addObject:combinedDict];            
+        }
+        else {
+            theIndex = [self retrieveIndexOfAppsForTask:taskDate];
+            
+            if (theIndex == -1) {
+                NSLog(@"No matching apps list for task date: %@", taskDate);
+            }
+            else {
+                NSDictionary *combinedDict = [NSDictionary dictionaryWithObjectsAndKeys:
+                                              [[self taskList] objectAtIndex:i], @"task",
+                                              [[self appsList] objectAtIndex:theIndex], @"apps", nil];
+                [tasksAndApps addObject:combinedDict];            
+            }
+                
+        }
     }
     
     return tasksAndApps;
+    
+}
+
+//  *************************************************************************************************
+- (BOOL)compareTaskTime:(NSString *)taskTime toAppsTime:(NSString *)appsTime {
+    
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateStyle:NSDateFormatterNoStyle];
+    [formatter setTimeStyle:NSDateFormatterLongStyle];
+    
+    NSDate *taskDate = [NSDate dateWithString:taskTime];
+    NSDate *appsDate = [NSDate dateWithNaturalLanguageString:appsTime];
+    
+    taskTime = [formatter stringFromDate:taskDate];
+    appsTime = [formatter stringFromDate:appsDate];
+    
+    [formatter release];
+    
+    if ([taskTime isEqualToString:appsTime])
+        return YES;
+    else
+        return NO;
     
 }
 
@@ -225,6 +274,34 @@
     [randomTasks release];
     [randomApps release];
     
+}
+
+//  *************************************************************************************************
+- (NSInteger)retrieveIndexOfAppsForTask:(NSString *)taskDate {
+    
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateStyle:NSDateFormatterNoStyle];
+    [formatter setTimeStyle:NSDateFormatterLongStyle];
+    
+    NSDate *dateOfTaskDate = [NSDate dateWithString:taskDate];
+    NSString *taskTime = [formatter stringFromDate:dateOfTaskDate];    
+    NSInteger indexOfApp = -1;
+    
+    for (id appObject in [self appsList]) {
+        
+        NSString *appsTime = [appObject objectForKey:@"time"];
+        NSDate *dateOfAppsTime = [NSDate dateWithNaturalLanguageString:appsTime];
+        appsTime = [formatter stringFromDate:dateOfAppsTime];
+        
+        if ([taskTime isEqualToString:appsTime]) {
+            indexOfApp = [[self appsList] indexOfObject:appObject];
+            break;
+        }
+        
+    }
+    
+    [formatter release];
+    return indexOfApp;
 }
 
 //  *************************************************************************************************
