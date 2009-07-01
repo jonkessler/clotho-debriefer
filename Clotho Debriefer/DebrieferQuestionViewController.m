@@ -32,7 +32,7 @@
 @implementation DebrieferQuestionViewController
 
 @synthesize debrieferDataList, taskFileList, theIcons, 
-            questionData, dataToLog, totalQNumber, remainQNumber, theFactor, TIMEINTERVAL;
+            questionData, dataToLog, totalQNumber, remainQNumber, theFactor, TIMEINTERVAL, weDone;
 
 //  *************************************************************************************************
 - (id)initWithDate:(NSString *)dateToInitWith {
@@ -55,6 +55,7 @@
     [self setRepresentedObject:questionData];
     [appsDisplayed setTabKeyTraversesCells:YES];
     [NSApp setDelegate:self];
+    weDone = NO;
     return self;
 }
 
@@ -72,7 +73,7 @@
 //  *************************************************************************************************
 - (void)awakeFromNib {
     
-    if ([[questionData taskList] count] == 0) {
+    if ( ([[questionData taskList] count] == 0) ) {
         [self checkQuestionData];
         return;
     }
@@ -95,7 +96,7 @@
         [self reloadViewBasedOn:(matrixHeight - theFactor)];
         theFactor = matrixHeight;
     }
-        
+
     [NSTimer scheduledTimerWithTimeInterval:0.25f
                                      target:self
                                    selector:@selector(transition1:)
@@ -191,10 +192,22 @@
 //  *************************************************************************************************
 - (void)checkQuestionData {
     
+    //  Else we have nothing else to ask!
+    if (weDone) {       
+        NSLog(@"We done");
+        NSRunInformationalAlertPanel(@"Done!", @"Thank you for debriefing today.", @"OK", nil, nil);
+        [[NSApplication sharedApplication] terminate:[NSApplication sharedApplication]];
+    }
+    
     //  If there are more tasks in questionData, remove current task from it so that
     //  task at index 1 will be the current task
     if ([[questionData taskList] count] > 1) {
         [questionData removeDataForTask:[[taskPrompt cell] title]];
+        [self loadNextQuestion];
+    }
+    
+    else if ( ([debrieferDataList count] == 2) && ([[questionData taskList] count] == 1) ) {
+        weDone = YES;
         [self loadNextQuestion];
     }
     
@@ -204,19 +217,16 @@
         [self loadNextTask];
         [self checkQuestionData];
     }
-    
-    //  Else we have nothing else to ask!
-    else {       
+    else {
         NSLog(@"We done");
         NSRunInformationalAlertPanel(@"Done!", @"Thank you for debriefing today.", @"OK", nil, nil);
         [[NSApplication sharedApplication] terminate:[NSApplication sharedApplication]];
     }
-    
 }
 
 //  *************************************************************************************************
 - (void)loadNextQuestion {
-    if ([[questionData taskList] count] == 0)
+    if ([[questionData taskList] count] < 0)
         NSLog(@"You little trickster, you");
     else {
         [self setRepresentedObject:questionData];
