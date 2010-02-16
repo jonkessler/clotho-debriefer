@@ -1,0 +1,786 @@
+TLachesisDebriefer
+v7
+r0
+t285274863.429715
+cCheck dependencies
+cProcessInfoPlistFile "/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/Debug/LachesisDebriefer.app/Contents/Info.plist" LachesisDebriefer-Info.plist
+cCopyStringsFile "/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/Debug/LachesisDebriefer.app/Contents/Resources/English.lproj/InfoPlist.strings" English.lproj/InfoPlist.strings
+cCompileXIB "/Users/JC/Documents/xCode Projects/LachesisDebriefer/English.lproj/MainMenu.xib"
+cCompileXIB "/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Models/LDQuestion.xib"
+cProcessPCH /var/folders/Qh/QhSWHZ1fH9iEamS2EgFk2++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/LachesisDebriefer_Prefix-bvjnnkoodyhbbtbovlxbcsdckswt/LachesisDebriefer_Prefix.pch.gch LachesisDebriefer_Prefix.pch normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/Objects-normal/x86_64/main.o "/Users/JC/Documents/xCode Projects/LachesisDebriefer/main.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/Objects-normal/x86_64/LachesisDebrieferAppDelegate.o "/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Controllers/LachesisDebrieferAppDelegate.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/Objects-normal/x86_64/LDLoadingViewController.o "/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Controllers/LDLoadingViewController.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/Objects-normal/x86_64/LDLoadingMaster.o "/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Models/LDLoadingMaster.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/Objects-normal/x86_64/LDFileIO.o "/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Utilities/LDFileIO.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/Objects-normal/x86_64/LDGraph.o "/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Models/LDGraph.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/Objects-normal/x86_64/LDPlot.o "/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Models/LDPlot.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/Objects-normal/x86_64/LDSubplot.o "/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Models/LDSubplot.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/Objects-normal/x86_64/LDButtonCell.o "/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Models/LDButtonCell.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/Objects-normal/x86_64/LDColorKey.o "/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Models/LDColorKey.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/Objects-normal/x86_64/LDMetadata.o "/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Models/LDMetadata.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/Objects-normal/x86_64/LDGraphView.o "/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Views/LDGraphView.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/Objects-normal/x86_64/LDQuestionView.o "/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Views/LDQuestionView.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/Objects-normal/x86_64/LDQuestionViewController.o "/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Controllers/LDQuestionViewController.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/Objects-normal/x86_64/LDWindow.o "/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Views/LDWindow.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
+
+N/Developer/SDKs/MacOSX10.6.sdk
+c000000004AC4F70300000000000000EE
+t1254422275
+s238
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h
+c0000000040C4AA6800000000000001E5
+t1086630504
+s485
+
+N/System/Library/Frameworks/Cocoa.framework/Cocoa
+c000000004A1F2D63000000000000A5E0
+t1243557219
+s42464
+
+N/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Controllers/LDLoadingViewController.h
+c000000004B4F6F1700000000000001FE
+t1263496983
+s510
+i<Cocoa/Cocoa.h>
+
+N/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Controllers/LDLoadingViewController.m
+c000000004B4F75DA000000000000032D
+t1263498714
+s813
+i"LDLoadingViewController.h"
+i"LDLoadingMaster.h"
+
+N/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Controllers/LDQuestionViewController.h
+c000000004B50BAB200000000000002CC
+t1263581874
+s716
+i<Cocoa/Cocoa.h>
+i"LDColorKey.h"
+i"LDGraphView.h"
+i"LDQuestionView.h"
+
+N/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Controllers/LDQuestionViewController.m
+c000000004B50BB1F0000000000000207
+t1263581983
+s519
+i"LDQuestionViewController.h"
+
+N/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Controllers/LachesisDebrieferAppDelegate.h
+c000000004B4F77CA00000000000002BB
+t1263499210
+s699
+i<Cocoa/Cocoa.h>
+i"LDLoadingViewController.h"
+i"LDQuestionViewController.h"
+
+N/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Controllers/LachesisDebrieferAppDelegate.m
+c000000004B4F7AE90000000000000429
+t1263500009
+s1065
+i"LachesisDebrieferAppDelegate.h"
+
+N/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Models/../Utilities/LDFileIO.m
+c000000004B4F5BA10000000000000218
+t1263492001
+s536
+i"LDFileIO.h"
+
+N/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Models/LDButtonCell.h
+c000000004B4AA65000000000000000F1
+t1263183440
+s241
+i<Cocoa/Cocoa.h>
+
+N/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Models/LDButtonCell.m
+c000000004B4B9F67000000000000016C
+t1263247207
+s364
+i"LDButtonCell.h"
+
+N/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Models/LDColorKey.h
+c000000004B4AA1C0000000000000015F
+t1263182272
+s351
+i<Cocoa/Cocoa.h>
+
+N/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Models/LDColorKey.m
+c000000004B4F7EFC0000000000000B25
+t1263501052
+s2853
+i"LDColorKey.h"
+i"LDButtonCell.h"
+
+N/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Models/LDGraph.h
+c000000004B4E2F440000000000000248
+t1263415108
+s584
+i<Cocoa/Cocoa.h>
+i"LDMetadata.h"
+i"LDPlot.h"
+
+N/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Models/LDGraph.m
+c000000004B4E3DB9000000000000069D
+t1263418809
+s1693
+i"LDGraph.h"
+i"LDPlot.h"
+
+N/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Models/LDLoadingMaster.h
+c000000004B4F62DC00000000000001D4
+t1263493852
+s468
+i<Cocoa/Cocoa.h>
+i"LDLoadingViewController.h"
+
+N/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Models/LDLoadingMaster.m
+c000000004B4F76CD0000000000000369
+t1263498957
+s873
+i"LDLoadingMaster.h"
+
+N/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Models/LDMetadata.h
+c000000004B4A5661000000000000018C
+t1263162977
+s396
+i<Cocoa/Cocoa.h>
+
+N/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Models/LDMetadata.m
+c000000004B4A567100000000000001A1
+t1263162993
+s417
+i"LDMetadata.h"
+
+N/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Models/LDPlot.h
+c000000004B4E2E44000000000000023A
+t1263414852
+s570
+i<Cocoa/Cocoa.h>
+i"LDSubplot.h"
+
+N/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Models/LDPlot.m
+c000000004B4E2E560000000000000886
+t1263414870
+s2182
+i"LDPlot.h"
+i"LDSubplot.h"
+
+N/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Models/LDQuestion.xib
+c000000004B4F7F0D000000000000B013
+t1263501069
+s45075
+
+N/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Models/LDSubplot.h
+c000000004B4E2D3A00000000000001C2
+t1263414586
+s450
+i<Cocoa/Cocoa.h>
+
+N/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Models/LDSubplot.m
+c000000004B4E2D38000000000000069F
+t1263414584
+s1695
+i"LDSubplot.h"
+
+N/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Utilities/LDFileIO.h
+c000000004B4F5B9D0000000000000122
+t1263491997
+s290
+i<Cocoa/Cocoa.h>
+
+N/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Utilities/LDFileIO.m
+c000000004B4F5BA10000000000000218
+t1263492001
+s536
+i"LDFileIO.h"
+
+N/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Views/LDGraphView.h
+c000000004B4F7BFE0000000000000201
+t1263500286
+s513
+i<Cocoa/Cocoa.h>
+i"LDColorKey.h"
+i"LDGraph.h"
+
+N/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Views/LDGraphView.m
+c000000004B4F7D9B00000000000008C4
+t1263500699
+s2244
+i"LDGraphView.h"
+i"LDPlot.h"
+i"LDSubplot.h"
+i"LDFileIO.h"
+
+N/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Views/LDQuestionView.h
+c000000004B50BB330000000000000180
+t1263582003
+s384
+i<Cocoa/Cocoa.h>
+i"LDQuestionViewController.h"
+
+N/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Views/LDQuestionView.m
+c000000004B50BB15000000000000010A
+t1263581973
+s266
+i"LDQuestionView.h"
+
+N/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Views/LDQuestionView.xib
+c000000004B4F6FE60000000000001524
+t1263497190
+s5412
+
+N/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Views/LDWindow.h
+c000000004B50B74800000000000000D6
+t1263581000
+s214
+i<Cocoa/Cocoa.h>
+
+N/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Views/LDWindow.m
+c000000004B50BA8D00000000000001D1
+t1263581837
+s465
+i"LDWindow.h"
+i"LDQuestionView.h"
+
+N/Users/JC/Documents/xCode Projects/LachesisDebriefer/English.lproj/InfoPlist.strings
+c000000004B4E4A6C000000000000002D
+t1263422060
+s45
+
+N/Users/JC/Documents/xCode Projects/LachesisDebriefer/English.lproj/MainMenu.xib
+c000000004B50B77C000000000002EA54
+t1263581052
+s191060
+
+N/Users/JC/Documents/xCode Projects/LachesisDebriefer/LDFileIO.h
+c000000004B4F4F9300000000000000ED
+t1263488915
+s237
+i<Cocoa/Cocoa.h>
+
+N/Users/JC/Documents/xCode Projects/LachesisDebriefer/LDFileIO.m
+c000000004B4F4F9300000000000000DF
+t1263488915
+s223
+i"LDFileIO.h"
+
+N/Users/JC/Documents/xCode Projects/LachesisDebriefer/LDLoadingMaster.h
+c000000004B4F4F8C000000000000014A
+t1263488908
+s330
+i<Cocoa/Cocoa.h>
+i"LDLoadingViewController.h"
+
+N/Users/JC/Documents/xCode Projects/LachesisDebriefer/LDLoadingMaster.m
+c000000004B4F4F87000000000000017A
+t1263488903
+s378
+i"LDLoadingMaster.h"
+
+N/Users/JC/Documents/xCode Projects/LachesisDebriefer/LDLoadingModel.h
+c000000004B4F4EE50000000000000148
+t1263488741
+s328
+i<Cocoa/Cocoa.h>
+i"LDLoadingViewController.h"
+
+N/Users/JC/Documents/xCode Projects/LachesisDebriefer/LDLoadingModel.m
+c000000004B4F4F3E0000000000000177
+t1263488830
+s375
+i"LDLoadingModel.h"
+
+N/Users/JC/Documents/xCode Projects/LachesisDebriefer/LDLoadingViewController.h
+c000000004B4F4E9C0000000000000213
+t1263488668
+s531
+i<Cocoa/Cocoa.h>
+
+N/Users/JC/Documents/xCode Projects/LachesisDebriefer/LDLoadingViewController.m
+c000000004B4F4EA900000000000002BB
+t1263488681
+s699
+i"LDLoadingViewController.h"
+
+N/Users/JC/Documents/xCode Projects/LachesisDebriefer/LachesisDebrieferAppDelegate.h
+c000000004B4F527B000000000000020A
+t1263489659
+s522
+i<Cocoa/Cocoa.h>
+i"LDLoadingViewController.h"
+
+N/Users/JC/Documents/xCode Projects/LachesisDebriefer/LachesisDebrieferAppDelegate.m
+c000000004B4F52A400000000000001C4
+t1263489700
+s452
+i"LachesisDebrieferAppDelegate.h"
+
+N/Users/JC/Documents/xCode Projects/LachesisDebriefer/LachesisDebriefer_Prefix.pch
+c000000004B4E4A6C00000000000000A5
+t1263422060
+s165
+i<Cocoa/Cocoa.h>
+
+N/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/Debug/LachesisDebriefer.app
+t2
+s0
+
+N/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/Debug/LachesisDebriefer.app/Contents/Info.plist
+t1263582041
+s916
+
+N/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/Debug/LachesisDebriefer.app/Contents/MacOS/LachesisDebriefer
+t2
+s0
+
+N/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/Debug/LachesisDebriefer.app/Contents/PkgInfo
+t1263582041
+s8
+
+N/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/Debug/LachesisDebriefer.app/Contents/Resources/English.lproj/InfoPlist.strings
+t1263582042
+s92
+
+N/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/Debug/LachesisDebriefer.app/Contents/Resources/English.lproj/MainMenu.nib
+t1263582043
+s37302
+
+N/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/Debug/LachesisDebriefer.app/Contents/Resources/LDQuestion.nib
+t1263582043
+s7807
+
+N/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/Debug/LachesisDebriefer.app/Contents/Resources/LDQuestionView.nib
+t2
+s0
+
+N/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/Objects-normal/x86_64/LDButtonCell.o
+t1263582062
+s12492
+
+N/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/Objects-normal/x86_64/LDColorKey.o
+t1263582062
+s29500
+
+N/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/Objects-normal/x86_64/LDFileIO.o
+t1263582062
+s9152
+
+N/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/Objects-normal/x86_64/LDGraph.o
+t1263582062
+s17548
+
+N/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/Objects-normal/x86_64/LDGraphView.o
+t1263582063
+s29000
+
+N/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/Objects-normal/x86_64/LDLoadingMaster.o
+t1263582062
+s19200
+
+N/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/Objects-normal/x86_64/LDLoadingModel.o
+t2
+s0
+
+N/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/Objects-normal/x86_64/LDLoadingViewController.o
+t1263582062
+s22216
+
+N/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/Objects-normal/x86_64/LDMetadata.o
+t1263582063
+s11536
+
+N/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/Objects-normal/x86_64/LDPlot.o
+t1263582062
+s18220
+
+N/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/Objects-normal/x86_64/LDQuestionView.o
+t2
+s0
+
+N/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/Objects-normal/x86_64/LDQuestionViewController.o
+t2
+s0
+
+N/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/Objects-normal/x86_64/LDSubplot.o
+t1263582062
+s14088
+
+N/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/Objects-normal/x86_64/LDWindow.o
+t2
+s0
+
+N/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/Objects-normal/x86_64/LachesisDebriefer.LinkFileList
+c000000004B50BB5900000000000008D3
+t1263582041
+s2259
+
+N/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/Objects-normal/x86_64/LachesisDebrieferAppDelegate.o
+t2
+s0
+
+N/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/Objects-normal/x86_64/main.o
+t1263582062
+s5024
+
+N/Users/JC/Documents/xCode Projects/LachesisDebriefer/main.m
+c000000004B4E4A6C000000000000011E
+t1263422060
+s286
+i<Cocoa/Cocoa.h>
+
+N/var/folders/Qh/QhSWHZ1fH9iEamS2EgFk2++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/LachesisDebriefer_Prefix-btswdnjvciscrugyvqonehcbrzfj/LachesisDebriefer_Prefix.pch.gch
+t1263492747
+s54212368
+
+N/var/folders/Qh/QhSWHZ1fH9iEamS2EgFk2++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/LachesisDebriefer_Prefix-bvjnnkoodyhbbtbovlxbcsdckswt/LachesisDebriefer_Prefix.pch.gch
+t1263582061
+s54224656
+
+NLachesisDebriefer-Info.plist
+c000000004B4E4A6C00000000000003EA
+t1263422060
+s1002
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies285274841#285274841#0(0"0(0#1#0"4300882208#0"0#
+
+CCompileC build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/Objects-normal/x86_64/LDButtonCell.o "/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Models/LDButtonCell.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s285274862.666513
+e285274862.915570
+r1
+xCompileC
+xbuild/LachesisDebriefer.build/Debug/LachesisDebriefer.build/Objects-normal/x86_64/LDButtonCell.o
+x/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Models/LDButtonCell.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@90"Compile /Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Models/LDButtonCell.m285274862#285274862#0(0"0(0#0#82"/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Models/LDButtonCell.m4300882208#1880"    cd "/Users/JC/Documents/xCode Projects/LachesisDebriefer"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Werror -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -fobjc-gc-only -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/LachesisDebriefer-generated-files.hmap" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/LachesisDebriefer-own-target-headers.hmap" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/LachesisDebriefer-all-target-headers.hmap" -iquote "/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/LachesisDebriefer-project-headers.hmap" "-F/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/Debug" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/Debug/include" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/DerivedSources/x86_64" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/DerivedSources" -include /var/folders/Qh/QhSWHZ1fH9iEamS2EgFk2++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/LachesisDebriefer_Prefix-bvjnnkoodyhbbtbovlxbcsdckswt/LachesisDebriefer_Prefix.pch -c "/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Models/LDButtonCell.m" -o "/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/Objects-normal/x86_64/LDButtonCell.o"0#
+
+CCompileC build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/Objects-normal/x86_64/LDColorKey.o "/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Models/LDColorKey.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s285274862.740156
+e285274862.989075
+r1
+xCompileC
+xbuild/LachesisDebriefer.build/Debug/LachesisDebriefer.build/Objects-normal/x86_64/LDColorKey.o
+x/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Models/LDColorKey.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@88"Compile /Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Models/LDColorKey.m285274862#285274862#0(0"0(0#0#80"/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Models/LDColorKey.m4300882208#1876"    cd "/Users/JC/Documents/xCode Projects/LachesisDebriefer"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Werror -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -fobjc-gc-only -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/LachesisDebriefer-generated-files.hmap" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/LachesisDebriefer-own-target-headers.hmap" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/LachesisDebriefer-all-target-headers.hmap" -iquote "/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/LachesisDebriefer-project-headers.hmap" "-F/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/Debug" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/Debug/include" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/DerivedSources/x86_64" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/DerivedSources" -include /var/folders/Qh/QhSWHZ1fH9iEamS2EgFk2++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/LachesisDebriefer_Prefix-bvjnnkoodyhbbtbovlxbcsdckswt/LachesisDebriefer_Prefix.pch -c "/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Models/LDColorKey.m" -o "/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/Objects-normal/x86_64/LDColorKey.o"0#
+
+CCompileC build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/Objects-normal/x86_64/LDFileIO.o "/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Models/../Utilities/LDFileIO.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/Objects-normal/x86_64/LDFileIO.o "/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Utilities/LDFileIO.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s285274862.191254
+e285274862.462845
+r1
+xCompileC
+xbuild/LachesisDebriefer.build/Debug/LachesisDebriefer.build/Objects-normal/x86_64/LDFileIO.o
+x/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Utilities/LDFileIO.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@89"Compile /Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Utilities/LDFileIO.m285274862#285274862#0(0"0(0#0#81"/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Utilities/LDFileIO.m4300882208#1875"    cd "/Users/JC/Documents/xCode Projects/LachesisDebriefer"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Werror -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -fobjc-gc-only -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/LachesisDebriefer-generated-files.hmap" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/LachesisDebriefer-own-target-headers.hmap" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/LachesisDebriefer-all-target-headers.hmap" -iquote "/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/LachesisDebriefer-project-headers.hmap" "-F/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/Debug" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/Debug/include" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/DerivedSources/x86_64" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/DerivedSources" -include /var/folders/Qh/QhSWHZ1fH9iEamS2EgFk2++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/LachesisDebriefer_Prefix-bvjnnkoodyhbbtbovlxbcsdckswt/LachesisDebriefer_Prefix.pch -c "/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Utilities/LDFileIO.m" -o "/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/Objects-normal/x86_64/LDFileIO.o"0#
+
+CCompileC build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/Objects-normal/x86_64/LDFileIO.o "/Users/JC/Documents/xCode Projects/LachesisDebriefer/LDFileIO.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/Objects-normal/x86_64/LDGraph.o "/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Models/LDGraph.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s285274862.330870
+e285274862.550034
+r1
+xCompileC
+xbuild/LachesisDebriefer.build/Debug/LachesisDebriefer.build/Objects-normal/x86_64/LDGraph.o
+x/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Models/LDGraph.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@85"Compile /Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Models/LDGraph.m285274862#285274862#0(0"0(0#0#77"/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Models/LDGraph.m4300882208#1870"    cd "/Users/JC/Documents/xCode Projects/LachesisDebriefer"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Werror -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -fobjc-gc-only -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/LachesisDebriefer-generated-files.hmap" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/LachesisDebriefer-own-target-headers.hmap" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/LachesisDebriefer-all-target-headers.hmap" -iquote "/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/LachesisDebriefer-project-headers.hmap" "-F/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/Debug" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/Debug/include" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/DerivedSources/x86_64" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/DerivedSources" -include /var/folders/Qh/QhSWHZ1fH9iEamS2EgFk2++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/LachesisDebriefer_Prefix-bvjnnkoodyhbbtbovlxbcsdckswt/LachesisDebriefer_Prefix.pch -c "/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Models/LDGraph.m" -o "/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/Objects-normal/x86_64/LDGraph.o"0#
+
+CCompileC build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/Objects-normal/x86_64/LDGraphView.o "/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Views/LDGraphView.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s285274862.989289
+e285274863.239020
+r1
+xCompileC
+xbuild/LachesisDebriefer.build/Debug/LachesisDebriefer.build/Objects-normal/x86_64/LDGraphView.o
+x/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Views/LDGraphView.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@88"Compile /Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Views/LDGraphView.m285274862#285274863#0(0"0(0#0#80"/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Views/LDGraphView.m4300882208#1877"    cd "/Users/JC/Documents/xCode Projects/LachesisDebriefer"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Werror -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -fobjc-gc-only -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/LachesisDebriefer-generated-files.hmap" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/LachesisDebriefer-own-target-headers.hmap" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/LachesisDebriefer-all-target-headers.hmap" -iquote "/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/LachesisDebriefer-project-headers.hmap" "-F/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/Debug" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/Debug/include" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/DerivedSources/x86_64" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/DerivedSources" -include /var/folders/Qh/QhSWHZ1fH9iEamS2EgFk2++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/LachesisDebriefer_Prefix-bvjnnkoodyhbbtbovlxbcsdckswt/LachesisDebriefer_Prefix.pch -c "/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Views/LDGraphView.m" -o "/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/Objects-normal/x86_64/LDGraphView.o"0#
+
+CCompileC build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/Objects-normal/x86_64/LDLoadingMaster.o "/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Models/LDLoadingMaster.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s285274862.131631
+e285274862.330742
+r1
+xCompileC
+xbuild/LachesisDebriefer.build/Debug/LachesisDebriefer.build/Objects-normal/x86_64/LDLoadingMaster.o
+x/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Models/LDLoadingMaster.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@93"Compile /Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Models/LDLoadingMaster.m285274862#285274862#0(0"0(0#0#85"/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Models/LDLoadingMaster.m4300882208#1886"    cd "/Users/JC/Documents/xCode Projects/LachesisDebriefer"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Werror -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -fobjc-gc-only -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/LachesisDebriefer-generated-files.hmap" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/LachesisDebriefer-own-target-headers.hmap" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/LachesisDebriefer-all-target-headers.hmap" -iquote "/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/LachesisDebriefer-project-headers.hmap" "-F/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/Debug" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/Debug/include" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/DerivedSources/x86_64" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/DerivedSources" -include /var/folders/Qh/QhSWHZ1fH9iEamS2EgFk2++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/LachesisDebriefer_Prefix-bvjnnkoodyhbbtbovlxbcsdckswt/LachesisDebriefer_Prefix.pch -c "/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Models/LDLoadingMaster.m" -o "/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/Objects-normal/x86_64/LDLoadingMaster.o"0#
+
+CCompileC build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/Objects-normal/x86_64/LDLoadingMaster.o "/Users/JC/Documents/xCode Projects/LachesisDebriefer/LDLoadingMaster.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/Objects-normal/x86_64/LDLoadingModel.o "/Users/JC/Documents/xCode Projects/LachesisDebriefer/LDLoadingModel.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/Objects-normal/x86_64/LDLoadingViewController.o "/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Controllers/LDLoadingViewController.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s285274861.980002
+e285274862.191141
+r1
+xCompileC
+xbuild/LachesisDebriefer.build/Debug/LachesisDebriefer.build/Objects-normal/x86_64/LDLoadingViewController.o
+x/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Controllers/LDLoadingViewController.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@106"Compile /Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Controllers/LDLoadingViewController.m285274861#285274862#0(0"0(0#0#98"/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Controllers/LDLoadingViewController.m4300882208#1907"    cd "/Users/JC/Documents/xCode Projects/LachesisDebriefer"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Werror -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -fobjc-gc-only -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/LachesisDebriefer-generated-files.hmap" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/LachesisDebriefer-own-target-headers.hmap" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/LachesisDebriefer-all-target-headers.hmap" -iquote "/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/LachesisDebriefer-project-headers.hmap" "-F/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/Debug" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/Debug/include" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/DerivedSources/x86_64" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/DerivedSources" -include /var/folders/Qh/QhSWHZ1fH9iEamS2EgFk2++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/LachesisDebriefer_Prefix-bvjnnkoodyhbbtbovlxbcsdckswt/LachesisDebriefer_Prefix.pch -c "/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Controllers/LDLoadingViewController.m" -o "/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/Objects-normal/x86_64/LDLoadingViewController.o"0#
+
+CCompileC build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/Objects-normal/x86_64/LDLoadingViewController.o "/Users/JC/Documents/xCode Projects/LachesisDebriefer/LDLoadingViewController.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s285180912.183672
+e285180912.840996
+r1
+xCompileC
+xbuild/LachesisDebriefer.build/Debug/LachesisDebriefer.build/Objects-normal/x86_64/LDLoadingViewController.o
+x/Users/JC/Documents/xCode Projects/LachesisDebriefer/LDLoadingViewController.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@86"Compile /Users/JC/Documents/xCode Projects/LachesisDebriefer/LDLoadingViewController.m285180912#285180912#0(0"0(0#0#78"/Users/JC/Documents/xCode Projects/LachesisDebriefer/LDLoadingViewController.m3346848963552178688#1864"    cd "/Users/JC/Documents/xCode Projects/LachesisDebriefer"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/LachesisDebriefer-generated-files.hmap" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/LachesisDebriefer-own-target-headers.hmap" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/LachesisDebriefer-all-target-headers.hmap" -iquote "/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/LachesisDebriefer-project-headers.hmap" "-F/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/Debug" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/Debug/include" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/DerivedSources/x86_64" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/DerivedSources" -include /var/folders/Qh/QhSWHZ1fH9iEamS2EgFk2++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/LachesisDebriefer_Prefix-btswdnjvciscrugyvqonehcbrzfj/LachesisDebriefer_Prefix.pch -c "/Users/JC/Documents/xCode Projects/LachesisDebriefer/LDLoadingViewController.m" -o "/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/Objects-normal/x86_64/LDLoadingViewController.o"0#
+
+CCompileC build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/Objects-normal/x86_64/LDMetadata.o "/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Models/LDMetadata.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s285274862.915695
+e285274863.084470
+r1
+xCompileC
+xbuild/LachesisDebriefer.build/Debug/LachesisDebriefer.build/Objects-normal/x86_64/LDMetadata.o
+x/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Models/LDMetadata.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@88"Compile /Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Models/LDMetadata.m285274862#285274863#0(0"0(0#0#80"/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Models/LDMetadata.m4300882208#1876"    cd "/Users/JC/Documents/xCode Projects/LachesisDebriefer"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Werror -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -fobjc-gc-only -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/LachesisDebriefer-generated-files.hmap" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/LachesisDebriefer-own-target-headers.hmap" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/LachesisDebriefer-all-target-headers.hmap" -iquote "/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/LachesisDebriefer-project-headers.hmap" "-F/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/Debug" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/Debug/include" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/DerivedSources/x86_64" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/DerivedSources" -include /var/folders/Qh/QhSWHZ1fH9iEamS2EgFk2++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/LachesisDebriefer_Prefix-bvjnnkoodyhbbtbovlxbcsdckswt/LachesisDebriefer_Prefix.pch -c "/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Models/LDMetadata.m" -o "/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/Objects-normal/x86_64/LDMetadata.o"0#
+
+CCompileC build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/Objects-normal/x86_64/LDPlot.o "/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Models/LDPlot.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s285274862.462962
+e285274862.666395
+r1
+xCompileC
+xbuild/LachesisDebriefer.build/Debug/LachesisDebriefer.build/Objects-normal/x86_64/LDPlot.o
+x/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Models/LDPlot.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@84"Compile /Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Models/LDPlot.m285274862#285274862#0(0"0(0#0#76"/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Models/LDPlot.m4300882208#1868"    cd "/Users/JC/Documents/xCode Projects/LachesisDebriefer"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Werror -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -fobjc-gc-only -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/LachesisDebriefer-generated-files.hmap" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/LachesisDebriefer-own-target-headers.hmap" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/LachesisDebriefer-all-target-headers.hmap" -iquote "/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/LachesisDebriefer-project-headers.hmap" "-F/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/Debug" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/Debug/include" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/DerivedSources/x86_64" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/DerivedSources" -include /var/folders/Qh/QhSWHZ1fH9iEamS2EgFk2++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/LachesisDebriefer_Prefix-bvjnnkoodyhbbtbovlxbcsdckswt/LachesisDebriefer_Prefix.pch -c "/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Models/LDPlot.m" -o "/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/Objects-normal/x86_64/LDPlot.o"0#
+
+CCompileC build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/Objects-normal/x86_64/LDQuestionView.o "/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Views/LDQuestionView.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s285274863.084593
+e285274863.255585
+r0
+xCompileC
+xbuild/LachesisDebriefer.build/Debug/LachesisDebriefer.build/Objects-normal/x86_64/LDQuestionView.o
+x/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Views/LDQuestionView.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+oIn file included from /Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Views/LDQuestionView.h:11,
+o                 from /Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Views/LDQuestionView.m:9:
+o/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Controllers/LDQuestionViewController.h:23: error: expected specifier-qualifier-list before 'LDQuestionView'
+lSLF07#2@91"Compile /Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Views/LDQuestionView.m285274863#285274863#0(388"In file included from /Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Views/LDQuestionView.h:11,                 from /Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Views/LDQuestionView.m:9:/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Controllers/LDQuestionViewController.h:23: error: expected specifier-qualifier-list before 'LDQuestionView'1(4@57"Expected specifier-qualifier-list before 'LDQuestionView'285274863#219#169#3(7@105"In file included from /Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Views/LDQuestionView.m285274863#18446744073709551615#0#0(6@83"/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Views/LDQuestionView.m285274773#9#0#9#0#0"0(7@105"In file included from /Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Views/LDQuestionView.h285274863#18446744073709551615#0#0(6@83"/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Views/LDQuestionView.h285274803#11#0#11#0#0"0(13@160"Expected specifier-qualifier-list before 'LDQuestionView' in /Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Controllers/LDQuestionViewController.h285274863#18446744073709551615#0#0(6@99"/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Controllers/LDQuestionViewController.h285274674#23#0#23#0#0"0(6@99"/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Controllers/LDQuestionViewController.h285274674#23#0#23#0#19"expected * before *0(0#0#83"/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Views/LDQuestionView.m4300882208#1883"    cd "/Users/JC/Documents/xCode Projects/LachesisDebriefer"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Werror -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -fobjc-gc-only -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/LachesisDebriefer-generated-files.hmap" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/LachesisDebriefer-own-target-headers.hmap" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/LachesisDebriefer-all-target-headers.hmap" -iquote "/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/LachesisDebriefer-project-headers.hmap" "-F/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/Debug" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/Debug/include" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/DerivedSources/x86_64" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/DerivedSources" -include /var/folders/Qh/QhSWHZ1fH9iEamS2EgFk2++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/LachesisDebriefer_Prefix-bvjnnkoodyhbbtbovlxbcsdckswt/LachesisDebriefer_Prefix.pch -c "/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Views/LDQuestionView.m" -o "/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/Objects-normal/x86_64/LDQuestionView.o"1#
+
+CCompileC build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/Objects-normal/x86_64/LDQuestionViewController.o "/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Controllers/LDQuestionViewController.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s285274863.239403
+e285274863.429634
+r0
+xCompileC
+xbuild/LachesisDebriefer.build/Debug/LachesisDebriefer.build/Objects-normal/x86_64/LDQuestionViewController.o
+x/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Controllers/LDQuestionViewController.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+oIn file included from /Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Controllers/LDQuestionViewController.h:13,
+o                 from /Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Controllers/LDQuestionViewController.m:9:
+o/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Views/LDQuestionView.h:15: error: expected specifier-qualifier-list before 'LDQuestionViewController'
+o/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Views/LDQuestionView.h:19: error: expected specifier-qualifier-list before 'LDQuestionViewController'
+occ1obj: warnings being treated as errors
+o/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Controllers/LDQuestionViewController.m: In function '-[LDQuestionViewController awakeFromNib]':
+o/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Controllers/LDQuestionViewController.m:18: warning: 'LDQuestionView' may not respond to '-setController:'
+o/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Controllers/LDQuestionViewController.m:18: warning: (Messages without a matching method signature
+o/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Controllers/LDQuestionViewController.m:18: warning: will be assumed to return 'id' and accept
+o/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Controllers/LDQuestionViewController.m:18: warning: '...' as arguments.)
+lSLF07#2@107"Compile /Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Controllers/LDQuestionViewController.m285274863#285274863#0(1390"In file included from /Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Controllers/LDQuestionViewController.h:13,                 from /Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Controllers/LDQuestionViewController.m:9:/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Views/LDQuestionView.h:15: error: expected specifier-qualifier-list before 'LDQuestionViewController'/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Views/LDQuestionView.h:19: error: expected specifier-qualifier-list before 'LDQuestionViewController'cc1obj: warnings being treated as errors/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Controllers/LDQuestionViewController.m: In function '-[LDQuestionViewController awakeFromNib]':/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Controllers/LDQuestionViewController.m:18: warning: 'LDQuestionView' may not respond to '-setController:'/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Controllers/LDQuestionViewController.m:18: warning: (Messages without a matching method signature/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Controllers/LDQuestionViewController.m:18: warning: will be assumed to return 'id' and accept/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Controllers/LDQuestionViewController.m:18: warning: '...' as arguments.)4(4@67"Expected specifier-qualifier-list before 'LDQuestionViewController'285274863#251#163#3(7@121"In file included from /Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Controllers/LDQuestionViewController.m285274863#18446744073709551615#0#0(6@99"/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Controllers/LDQuestionViewController.m285274783#9#0#9#0#0"0(7@121"In file included from /Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Controllers/LDQuestionViewController.h285274863#18446744073709551615#0#0(6@99"/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Controllers/LDQuestionViewController.h285274674#13#0#13#0#0"0(13@154"Expected specifier-qualifier-list before 'LDQuestionViewController' in /Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Views/LDQuestionView.h285274863#18446744073709551615#0#0(6@83"/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Views/LDQuestionView.h285274803#15#0#15#0#0"0(6@83"/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Views/LDQuestionView.h285274803#15#0#15#0#19"expected * before *0(4@67"Expected specifier-qualifier-list before 'LDQuestionViewController'285274863#414#163#3(7@121"In file included from /Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Controllers/LDQuestionViewController.m285274863#18446744073709551615#0#0(6@99"/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Controllers/LDQuestionViewController.m285274783#9#0#9#0#0"0(7@121"In file included from /Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Controllers/LDQuestionViewController.h285274863#18446744073709551615#0#0(6@99"/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Controllers/LDQuestionViewController.h285274674#13#0#13#0#0"0(13@154"Expected specifier-qualifier-list before 'LDQuestionViewController' in /Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Views/LDQuestionView.h285274863#18446744073709551615#0#0(6@83"/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Views/LDQuestionView.h285274803#19#0#19#0#0"0(6@83"/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Views/LDQuestionView.h285274803#19#0#19#0#19"expected * before *0(4@53"'LDQuestionView' may not respond to '-setController:'285274863#775#167#0(6@99"/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Controllers/LDQuestionViewController.m285274783#18#0#18#0#26"'*' may not respond to '*'0(13@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)285274863#942#159#0(6@99"/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Controllers/LDQuestionViewController.m285274783#18#0#18#0#0"0(0#0#99"/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Controllers/LDQuestionViewController.m4300882208#1909"    cd "/Users/JC/Documents/xCode Projects/LachesisDebriefer"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Werror -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -fobjc-gc-only -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/LachesisDebriefer-generated-files.hmap" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/LachesisDebriefer-own-target-headers.hmap" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/LachesisDebriefer-all-target-headers.hmap" -iquote "/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/LachesisDebriefer-project-headers.hmap" "-F/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/Debug" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/Debug/include" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/DerivedSources/x86_64" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/DerivedSources" -include /var/folders/Qh/QhSWHZ1fH9iEamS2EgFk2++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/LachesisDebriefer_Prefix-bvjnnkoodyhbbtbovlxbcsdckswt/LachesisDebriefer_Prefix.pch -c "/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Controllers/LDQuestionViewController.m" -o "/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/Objects-normal/x86_64/LDQuestionViewController.o"1#
+
+CCompileC build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/Objects-normal/x86_64/LDSubplot.o "/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Models/LDSubplot.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s285274862.550149
+e285274862.740047
+r1
+xCompileC
+xbuild/LachesisDebriefer.build/Debug/LachesisDebriefer.build/Objects-normal/x86_64/LDSubplot.o
+x/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Models/LDSubplot.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@87"Compile /Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Models/LDSubplot.m285274862#285274862#0(0"0(0#0#79"/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Models/LDSubplot.m4300882208#1874"    cd "/Users/JC/Documents/xCode Projects/LachesisDebriefer"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Werror -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -fobjc-gc-only -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/LachesisDebriefer-generated-files.hmap" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/LachesisDebriefer-own-target-headers.hmap" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/LachesisDebriefer-all-target-headers.hmap" -iquote "/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/LachesisDebriefer-project-headers.hmap" "-F/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/Debug" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/Debug/include" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/DerivedSources/x86_64" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/DerivedSources" -include /var/folders/Qh/QhSWHZ1fH9iEamS2EgFk2++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/LachesisDebriefer_Prefix-bvjnnkoodyhbbtbovlxbcsdckswt/LachesisDebriefer_Prefix.pch -c "/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Models/LDSubplot.m" -o "/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/Objects-normal/x86_64/LDSubplot.o"0#
+
+CCompileC build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/Objects-normal/x86_64/LDWindow.o "/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Views/LDWindow.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s285274863.255688
+e285274863.397973
+r0
+xCompileC
+xbuild/LachesisDebriefer.build/Debug/LachesisDebriefer.build/Objects-normal/x86_64/LDWindow.o
+x/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Views/LDWindow.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+oIn file included from /Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Views/LDQuestionView.h:11,
+o                 from /Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Views/LDWindow.m:10:
+o/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Controllers/LDQuestionViewController.h:23: error: expected specifier-qualifier-list before 'LDQuestionView'
+lSLF07#2@85"Compile /Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Views/LDWindow.m285274863#285274863#0(383"In file included from /Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Views/LDQuestionView.h:11,                 from /Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Views/LDWindow.m:10:/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Controllers/LDQuestionViewController.h:23: error: expected specifier-qualifier-list before 'LDQuestionView'1(4@57"Expected specifier-qualifier-list before 'LDQuestionView'285274863#214#169#3(7@99"In file included from /Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Views/LDWindow.m285274863#18446744073709551615#0#0(6@77"/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Views/LDWindow.m285274637#10#0#10#0#0"0(7@105"In file included from /Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Views/LDQuestionView.h285274863#18446744073709551615#0#0(6@83"/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Views/LDQuestionView.h285274803#11#0#11#0#0"0(13@160"Expected specifier-qualifier-list before 'LDQuestionView' in /Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Controllers/LDQuestionViewController.h285274863#18446744073709551615#0#0(6@99"/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Controllers/LDQuestionViewController.h285274674#23#0#23#0#0"0(6@99"/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Controllers/LDQuestionViewController.h285274674#23#0#23#0#19"expected * before *0(0#0#77"/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Views/LDWindow.m4300882208#1871"    cd "/Users/JC/Documents/xCode Projects/LachesisDebriefer"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Werror -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -fobjc-gc-only -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/LachesisDebriefer-generated-files.hmap" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/LachesisDebriefer-own-target-headers.hmap" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/LachesisDebriefer-all-target-headers.hmap" -iquote "/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/LachesisDebriefer-project-headers.hmap" "-F/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/Debug" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/Debug/include" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/DerivedSources/x86_64" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/DerivedSources" -include /var/folders/Qh/QhSWHZ1fH9iEamS2EgFk2++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/LachesisDebriefer_Prefix-bvjnnkoodyhbbtbovlxbcsdckswt/LachesisDebriefer_Prefix.pch -c "/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Views/LDWindow.m" -o "/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/Objects-normal/x86_64/LDWindow.o"1#
+
+CCompileC build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/Objects-normal/x86_64/LachesisDebrieferAppDelegate.o "/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Controllers/LachesisDebrieferAppDelegate.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s285274861.645176
+e285274861.979894
+r0
+xCompileC
+xbuild/LachesisDebriefer.build/Debug/LachesisDebriefer.build/Objects-normal/x86_64/LachesisDebrieferAppDelegate.o
+x/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Controllers/LachesisDebrieferAppDelegate.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+oIn file included from /Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Controllers/LDQuestionViewController.h:13,
+o                 from /Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Controllers/LachesisDebrieferAppDelegate.h:12,
+o                 from /Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Controllers/LachesisDebrieferAppDelegate.m:9:
+o/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Views/LDQuestionView.h:15: error: expected specifier-qualifier-list before 'LDQuestionViewController'
+o/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Views/LDQuestionView.h:19: error: expected specifier-qualifier-list before 'LDQuestionViewController'
+lSLF07#2@111"Compile /Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Controllers/LachesisDebrieferAppDelegate.m285274861#285274861#0(711"In file included from /Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Controllers/LDQuestionViewController.h:13,                 from /Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Controllers/LachesisDebrieferAppDelegate.h:12,                 from /Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Controllers/LachesisDebrieferAppDelegate.m:9:/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Views/LDQuestionView.h:15: error: expected specifier-qualifier-list before 'LDQuestionViewController'/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Views/LDQuestionView.h:19: error: expected specifier-qualifier-list before 'LDQuestionViewController'2(4@67"Expected specifier-qualifier-list before 'LDQuestionViewController'285274861#385#163#4(7@125"In file included from /Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Controllers/LachesisDebrieferAppDelegate.m285274861#18446744073709551615#0#0(6@103"/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Controllers/LachesisDebrieferAppDelegate.m285192809#9#0#9#0#0"0(7@125"In file included from /Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Controllers/LachesisDebrieferAppDelegate.h285274861#18446744073709551615#0#0(6@103"/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Controllers/LachesisDebrieferAppDelegate.h285192010#12#0#12#0#0"0(7@121"In file included from /Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Controllers/LDQuestionViewController.h285274861#18446744073709551615#0#0(6@99"/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Controllers/LDQuestionViewController.h285274674#13#0#13#0#0"0(13@154"Expected specifier-qualifier-list before 'LDQuestionViewController' in /Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Views/LDQuestionView.h285274861#18446744073709551615#0#0(6@83"/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Views/LDQuestionView.h285274803#15#0#15#0#0"0(6@83"/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Views/LDQuestionView.h285274803#15#0#15#0#19"expected * before *0(4@67"Expected specifier-qualifier-list before 'LDQuestionViewController'285274861#548#163#4(7@125"In file included from /Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Controllers/LachesisDebrieferAppDelegate.m285274861#18446744073709551615#0#0(6@103"/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Controllers/LachesisDebrieferAppDelegate.m285192809#9#0#9#0#0"0(7@125"In file included from /Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Controllers/LachesisDebrieferAppDelegate.h285274861#18446744073709551615#0#0(6@103"/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Controllers/LachesisDebrieferAppDelegate.h285192010#12#0#12#0#0"0(7@121"In file included from /Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Controllers/LDQuestionViewController.h285274861#18446744073709551615#0#0(6@99"/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Controllers/LDQuestionViewController.h285274674#13#0#13#0#0"0(13@154"Expected specifier-qualifier-list before 'LDQuestionViewController' in /Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Views/LDQuestionView.h285274861#18446744073709551615#0#0(6@83"/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Views/LDQuestionView.h285274803#19#0#19#0#0"0(6@83"/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Views/LDQuestionView.h285274803#19#0#19#0#19"expected * before *0(0#0#103"/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Controllers/LachesisDebrieferAppDelegate.m4300882208#1917"    cd "/Users/JC/Documents/xCode Projects/LachesisDebriefer"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Werror -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -fobjc-gc-only -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/LachesisDebriefer-generated-files.hmap" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/LachesisDebriefer-own-target-headers.hmap" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/LachesisDebriefer-all-target-headers.hmap" -iquote "/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/LachesisDebriefer-project-headers.hmap" "-F/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/Debug" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/Debug/include" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/DerivedSources/x86_64" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/DerivedSources" -include /var/folders/Qh/QhSWHZ1fH9iEamS2EgFk2++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/LachesisDebriefer_Prefix-bvjnnkoodyhbbtbovlxbcsdckswt/LachesisDebriefer_Prefix.pch -c "/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Controllers/LachesisDebrieferAppDelegate.m" -o "/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/Objects-normal/x86_64/LachesisDebrieferAppDelegate.o"1#
+
+CCompileC build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/Objects-normal/x86_64/LachesisDebrieferAppDelegate.o "/Users/JC/Documents/xCode Projects/LachesisDebriefer/LachesisDebrieferAppDelegate.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s285115253.533952
+e285115253.780594
+r1
+xCompileC
+xbuild/LachesisDebriefer.build/Debug/LachesisDebriefer.build/Objects-normal/x86_64/LachesisDebrieferAppDelegate.o
+x/Users/JC/Documents/xCode Projects/LachesisDebriefer/LachesisDebrieferAppDelegate.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@91"Compile /Users/JC/Documents/xCode Projects/LachesisDebriefer/LachesisDebrieferAppDelegate.m285115253#285115253#0(0"0(0#0#83"/Users/JC/Documents/xCode Projects/LachesisDebriefer/LachesisDebrieferAppDelegate.m4300882208#1874"    cd "/Users/JC/Documents/xCode Projects/LachesisDebriefer"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/LachesisDebriefer-generated-files.hmap" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/LachesisDebriefer-own-target-headers.hmap" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/LachesisDebriefer-all-target-headers.hmap" -iquote "/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/LachesisDebriefer-project-headers.hmap" "-F/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/Debug" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/Debug/include" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/DerivedSources/x86_64" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/DerivedSources" -include /var/folders/Qh/QhSWHZ1fH9iEamS2EgFk2++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/LachesisDebriefer_Prefix-btswdnjvciscrugyvqonehcbrzfj/LachesisDebriefer_Prefix.pch -c "/Users/JC/Documents/xCode Projects/LachesisDebriefer/LachesisDebrieferAppDelegate.m" -o "/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/Objects-normal/x86_64/LachesisDebrieferAppDelegate.o"0#
+
+CCompileC build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/Objects-normal/x86_64/main.o "/Users/JC/Documents/xCode Projects/LachesisDebriefer/main.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s285274861.621986
+e285274862.131510
+r1
+xCompileC
+xbuild/LachesisDebriefer.build/Debug/LachesisDebriefer.build/Objects-normal/x86_64/main.o
+x/Users/JC/Documents/xCode Projects/LachesisDebriefer/main.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@67"Compile /Users/JC/Documents/xCode Projects/LachesisDebriefer/main.m285274861#285274862#0(0"0(0#0#59"/Users/JC/Documents/xCode Projects/LachesisDebriefer/main.m4300882208#1849"    cd "/Users/JC/Documents/xCode Projects/LachesisDebriefer"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Werror -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -fobjc-gc-only -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/LachesisDebriefer-generated-files.hmap" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/LachesisDebriefer-own-target-headers.hmap" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/LachesisDebriefer-all-target-headers.hmap" -iquote "/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/LachesisDebriefer-project-headers.hmap" "-F/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/Debug" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/Debug/include" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/DerivedSources/x86_64" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/DerivedSources" -include /var/folders/Qh/QhSWHZ1fH9iEamS2EgFk2++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/LachesisDebriefer_Prefix-bvjnnkoodyhbbtbovlxbcsdckswt/LachesisDebriefer_Prefix.pch -c "/Users/JC/Documents/xCode Projects/LachesisDebriefer/main.m" -o "/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/Objects-normal/x86_64/main.o"0#
+
+CCompileXIB "/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Models/LDQuestion.xib"
+s285274842.994005
+e285274843.554349
+r1
+xCompileXIB
+x/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Models/LDQuestion.xib
+lSLF07#2@40"CompileXIB Classes/Models/LDQuestion.xib285274842#285274843#0(0"0(0#0#82"/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Models/LDQuestion.xib4300882208#376"    cd "/Users/JC/Documents/xCode Projects/LachesisDebriefer"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/Debug/LachesisDebriefer.app/Contents/Resources/LDQuestion.nib" "/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Models/LDQuestion.xib"0#
+
+CCompileXIB "/Users/JC/Documents/xCode Projects/LachesisDebriefer/Classes/Views/LDQuestionView.xib"
+r0
+
+CCompileXIB "/Users/JC/Documents/xCode Projects/LachesisDebriefer/English.lproj/MainMenu.xib"
+s285274841.472810
+e285274843.635673
+r1
+xCompileXIB
+x/Users/JC/Documents/xCode Projects/LachesisDebriefer/English.lproj/MainMenu.xib
+o/* com.apple.ibtool.document.notices */
+o/Users/JC/Documents/xCode Projects/LachesisDebriefer/English.lproj/MainMenu.xib:537: note: This view is clipping its content.
+o/Users/JC/Documents/xCode Projects/LachesisDebriefer/English.lproj/MainMenu.xib:535: note: This view is clipping its content.
+lSLF07#2@37"CompileXIB English.lproj/MainMenu.xib285274841#285274843#0(292"/* com.apple.ibtool.document.notices *//Users/JC/Documents/xCode Projects/LachesisDebriefer/English.lproj/MainMenu.xib:537: note: This view is clipping its content./Users/JC/Documents/xCode Projects/LachesisDebriefer/English.lproj/MainMenu.xib:535: note: This view is clipping its content.2(13@34"This view is clipping its content.285274843#18446744073709551615#0#0(6@79"/Users/JC/Documents/xCode Projects/LachesisDebriefer/English.lproj/MainMenu.xib285273852#537#0#537#0#0"0(13@34"This view is clipping its content.285274843#18446744073709551615#0#0(6@79"/Users/JC/Documents/xCode Projects/LachesisDebriefer/English.lproj/MainMenu.xib285273852#535#0#535#0#0"0(0#0#79"/Users/JC/Documents/xCode Projects/LachesisDebriefer/English.lproj/MainMenu.xib4300882208#385"    cd "/Users/JC/Documents/xCode Projects/LachesisDebriefer"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/Debug/LachesisDebriefer.app/Contents/Resources/English.lproj/MainMenu.nib" "/Users/JC/Documents/xCode Projects/LachesisDebriefer/English.lproj/MainMenu.xib"0#
+
+CCopyStringsFile "/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/Debug/LachesisDebriefer.app/Contents/Resources/English.lproj/InfoPlist.strings" English.lproj/InfoPlist.strings
+s285274841.471850
+e285274842.993832
+r1
+xCopyStringsFile
+x/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/Debug/LachesisDebriefer.app/Contents/Resources/English.lproj/InfoPlist.strings
+xEnglish.lproj/InfoPlist.strings
+lSLF07#2@36"Copy English.lproj/InfoPlist.strings285274841#285274842#0(0"0(0#0#84"/Users/JC/Documents/xCode Projects/LachesisDebriefer/English.lproj/InfoPlist.strings4300882208#407"    cd "/Users/JC/Documents/xCode Projects/LachesisDebriefer"    setenv ICONV /usr/bin/iconv    /Developer/Library/Xcode/Plug-ins/CoreBuildTasks.xcplugin/Contents/Resources/copystrings --validate --inputencoding utf-8 --outputencoding UTF-16 English.lproj/InfoPlist.strings --outdir "/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/Debug/LachesisDebriefer.app/Contents/Resources/English.lproj"0#
+
+CLd "/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/Debug/LachesisDebriefer.app/Contents/MacOS/LachesisDebriefer" normal x86_64
+s285274550.599437
+e285274551.367463
+r1
+xLd
+x/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/Debug/LachesisDebriefer.app/Contents/MacOS/LachesisDebriefer
+xnormal
+xx86_64
+lSLF07#2@124"Link /Users/JC/Documents/xCode Projects/LachesisDebriefer/build/Debug/LachesisDebriefer.app/Contents/MacOS/LachesisDebriefer285274550#285274551#0(0"0(0#0#0"4300882208#672"    cd "/Users/JC/Documents/xCode Projects/LachesisDebriefer"    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/gcc-4.2 -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.6.sdk "-L/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/Debug" "-F/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/Debug" -filelist "/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/Objects-normal/x86_64/LachesisDebriefer.LinkFileList" -mmacosx-version-min=10.6 -framework Cocoa -o "/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/Debug/LachesisDebriefer.app/Contents/MacOS/LachesisDebriefer"0#
+
+CProcessInfoPlistFile "/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/Debug/LachesisDebriefer.app/Contents/Info.plist" LachesisDebriefer-Info.plist
+s285274841.398554
+e285274841.471746
+r1
+xProcessInfoPlistFile
+x/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/Debug/LachesisDebriefer.app/Contents/Info.plist
+xLachesisDebriefer-Info.plist
+lSLF07#2@36"Process LachesisDebriefer-Info.plist285274841#285274841#0(0"0(0#0#81"/Users/JC/Documents/xCode Projects/LachesisDebriefer/LachesisDebriefer-Info.plist4300882208#388"    cd "/Users/JC/Documents/xCode Projects/LachesisDebriefer"    builtin-infoPlistUtility LachesisDebriefer-Info.plist -genpkginfo "/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/Debug/LachesisDebriefer.app/Contents/PkgInfo" -expandbuildsettings -platform macosx -o "/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/Debug/LachesisDebriefer.app/Contents/Info.plist"0#
+
+CProcessPCH /var/folders/Qh/QhSWHZ1fH9iEamS2EgFk2++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/LachesisDebriefer_Prefix-btswdnjvciscrugyvqonehcbrzfj/LachesisDebriefer_Prefix.pch.gch LachesisDebriefer_Prefix.pch normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s285185542.696637
+e285185547.810264
+r1
+xProcessPCH
+x/var/folders/Qh/QhSWHZ1fH9iEamS2EgFk2++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/LachesisDebriefer_Prefix-btswdnjvciscrugyvqonehcbrzfj/LachesisDebriefer_Prefix.pch.gch
+xLachesisDebriefer_Prefix.pch
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@39"Precompile LachesisDebriefer_Prefix.pch285185542#285185547#0(0"0(0#0#81"/Users/JC/Documents/xCode Projects/LachesisDebriefer/LachesisDebriefer_Prefix.pch4300882208#1714"    cd "/Users/JC/Documents/xCode Projects/LachesisDebriefer"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Werror -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/LachesisDebriefer-generated-files.hmap" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/LachesisDebriefer-own-target-headers.hmap" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/LachesisDebriefer-all-target-headers.hmap" -iquote "/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/LachesisDebriefer-project-headers.hmap" "-F/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/Debug" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/Debug/include" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/DerivedSources/x86_64" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/DerivedSources" -c "/Users/JC/Documents/xCode Projects/LachesisDebriefer/LachesisDebriefer_Prefix.pch" -o /var/folders/Qh/QhSWHZ1fH9iEamS2EgFk2++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/LachesisDebriefer_Prefix-btswdnjvciscrugyvqonehcbrzfj/LachesisDebriefer_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/Qh/QhSWHZ1fH9iEamS2EgFk2++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/LachesisDebriefer_Prefix-bvjnnkoodyhbbtbovlxbcsdckswt/LachesisDebriefer_Prefix.pch.gch LachesisDebriefer_Prefix.pch normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s285274843.635982
+e285274861.621597
+r1
+xProcessPCH
+x/var/folders/Qh/QhSWHZ1fH9iEamS2EgFk2++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/LachesisDebriefer_Prefix-bvjnnkoodyhbbtbovlxbcsdckswt/LachesisDebriefer_Prefix.pch.gch
+xLachesisDebriefer_Prefix.pch
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@39"Precompile LachesisDebriefer_Prefix.pch285274843#285274861#0(0"0(0#0#81"/Users/JC/Documents/xCode Projects/LachesisDebriefer/LachesisDebriefer_Prefix.pch4300882208#1729"    cd "/Users/JC/Documents/xCode Projects/LachesisDebriefer"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Werror -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -fobjc-gc-only -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/LachesisDebriefer-generated-files.hmap" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/LachesisDebriefer-own-target-headers.hmap" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/LachesisDebriefer-all-target-headers.hmap" -iquote "/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/LachesisDebriefer-project-headers.hmap" "-F/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/Debug" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/Debug/include" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/DerivedSources/x86_64" "-I/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/LachesisDebriefer.build/Debug/LachesisDebriefer.build/DerivedSources" -c "/Users/JC/Documents/xCode Projects/LachesisDebriefer/LachesisDebriefer_Prefix.pch" -o /var/folders/Qh/QhSWHZ1fH9iEamS2EgFk2++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/LachesisDebriefer_Prefix-bvjnnkoodyhbbtbovlxbcsdckswt/LachesisDebriefer_Prefix.pch.gch0#
+
+CTouch "/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/Debug/LachesisDebriefer.app"
+s285274551.367564
+e285274551.393565
+r1
+xTouch
+x/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/Debug/LachesisDebriefer.app
+lSLF07#2@92"Touch /Users/JC/Documents/xCode Projects/LachesisDebriefer/build/Debug/LachesisDebriefer.app285274551#285274551#0(0"0(0#0#0"4300882208#173"    cd "/Users/JC/Documents/xCode Projects/LachesisDebriefer"    /usr/bin/touch -c "/Users/JC/Documents/xCode Projects/LachesisDebriefer/build/Debug/LachesisDebriefer.app"0#
+
