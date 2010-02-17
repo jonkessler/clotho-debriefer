@@ -8,50 +8,28 @@
 
 #import "LDPlot3.h"
 
+#import "LDPlot2.h"
+
 #define NUM_POINTS 10
 
 @implementation LDPlot3
 
 // ****************************************************************************
 // INPUT:    NSArray - array of arrays of points
-//			 NSArray - averages of corresponding points
 //			 NSRect - the overall space this graph can be drawn in
 // OUTPUT:   LDPlot3
 // FUNCTION: initializes graph 3
 
 - (id)initWithPoints:(NSArray *)points 
-			averages:(NSArray *)averages 
-			 inSpace:(NSRect)totalSpace {
+			 andRect:(NSRect)graphSpace {
 	
-	if (self = [super init]) {
+	if (self = [super initWithPoints:points andRect:graphSpace fillColor:nil]) {
 		
-		dataPoints = [NSMutableArray arrayWithArray:points];
-		arrOfAverages = [NSArray arrayWithArray:averages];;
+		LDPlot2 *pl2 = [[LDPlot2 alloc] initWithPoints:points 
+											   andRect:graphSpace
+											 fillColor:nil];
 		
-		topSpace = NSMakeRect(NSMinX(totalSpace), NSMidY(totalSpace), 
-							  NSWidth(totalSpace), NSHeight(totalSpace)/2.0);
-		botSpace = NSMakeRect(NSMinX(totalSpace), NSMinY(totalSpace), 
-							  NSWidth(totalSpace), NSHeight(totalSpace)/2.0);;
-		
-		topDataPoints = [NSMutableArray arrayWithCapacity:[dataPoints count]];
-		botDataPoints = [NSMutableArray arrayWithCapacity:[dataPoints count]];
-		
-		NSInteger midHeight = NSHeight(totalSpace)/2;
-		NSInteger i = 0;
-		for (NSValue *point in dataPoints) {
-			
-			NSPoint aPoint = [point pointValue];
-			CGFloat yPoint = aPoint.y;
-			CGFloat avgOfY = [[arrOfAverages objectAtIndex:i] floatValue];
-			
-			CGFloat normalizedY1 = yPoint - avgOfY;
-			
-			midHeight += normalizedY1;
-			
-			
-			i++;
-			
-		}
+		dataPoints = [NSArray arrayWithArray:[pl2 plot2DataPoints]];
 		
 	}
 	
@@ -67,18 +45,6 @@
 // OUTPUT:   LDPlot3
 // FUNCTION: initializes graph 3
  
-- (id)initWithPoints:(NSArray *)points 
-			averages:(NSArray *)averages 
-			 inSpace:(NSRect)totalSpace
-		currentPlots:(NSArray *)currPlots {
-	
-	if (self = [super init]) {
-		
-	}
-	
-	return self;
-	
-}
 
 // ****************************************************************************
 // INPUT:    NSRect - rectangle represnting the view
@@ -86,112 +52,86 @@
 // OUTPUT:   
 // FUNCTION: generates graph #3
 
-- (void)initializePathWithRect:(NSRect)graphSpace 
-					 fillColor:(NSColor *)fillColor {
-	
-	if (NSMinY(graphSpace) > 0) 
-		[self drawTopInSpace:graphSpace andColor:fillColor];
-	else
-		[self drawBottomInSpace:graphSpace andColor:fillColor];
-	
-}
 
 // ****************************************************************************
-// INPUT:    
+// INPUT:    NSBezierPath - current path 
+//			 NSArray - array of NSValue (NSPoint) objects 
 // OUTPUT:   
-// FUNCTION: Shifts the graph by +y pixels
+// FUNCTION: backwards graphing of each point in points on currPlot. Assume 
+//			 currPlot is already at the starting point
 
-- (void)drawTopInSpace:(NSRect)graphSpace andColor:(NSColor *)fillColor {
+- (void)graphOnPlot:(NSBezierPath *)currPlot backwardsFor:(NSArray *)points {
 	
-	CGFloat height = NSHeight(graphSpace);
+	CGFloat height = NSHeight(graphSpace) * 0.90;
 	CGFloat width = NSWidth(graphSpace);
 	
-	NSPoint start = NSMakePoint(NSMinX(graphSpace), NSMinY(graphSpace));
+	NSPoint start = [currPlot currentPoint];
 	NSPoint end;
 	
-	CGFloat normalization = start.y;
+	NSArray *reversePoints = [[points reverseObjectEnumerator] allObjects];
+	NSInteger total = [reversePoints count] + 1;
 	
-	path = [NSBezierPath bezierPath];	
-	[path moveToPoint:start];
-	
-	for (NSValue *point in dataPoints) {
+	for (NSValue *point in reversePoints) {
 		
 		end = [point pointValue];
-		end = NSMakePoint(end.x/NUM_POINTS * width, (end.y * height) + normalization);
+		end = NSMakePoint(end.x/total * width, end.y * height);
 		
 		LDSubplot *subPlot = [[LDSubplot alloc] initWithStart:start andEnd:end];
 		
-		[path curveToPoint:end
-			 controlPoint1:[subPlot bottomRight]
-			 controlPoint2:[subPlot topLeft]];
+		[currPlot curveToPoint:end
+				 controlPoint1:[subPlot bottomRight] 
+				 controlPoint2:[subPlot topLeft]];
 		
 		start = end;
 		
 	}
 	
-	LDSubplot *subplot = [[LDSubplot alloc] initWithStart:start andEnd:end];
-	[path curveToPoint:end
-		 controlPoint1:[subplot bottomRight]
-		 controlPoint2:[subplot topLeft]];
+	LDSubplot *subPlot = [[LDSubplot alloc] initWithStart:start andEnd:end];
 	
-	[path lineToPoint:NSMakePoint(end.x, NSMinY(graphSpace))];
-	[path lineToPoint:NSMakePoint(NSMinX(graphSpace), NSMinY(graphSpace))];
-	
-	[[NSColor blackColor] set];
-	[path setLineWidth:3.0];
-	[path stroke];
-	
-	[fillColor set];
-	[path fill];
+	[currPlot curveToPoint:end
+			 controlPoint1:[subPlot bottomRight] 
+			 controlPoint2:[subPlot topLeft]];
 	
 }
 
 // ****************************************************************************
-// INPUT:    
+// INPUT:    NSBezierPath - current path 
+//			 NSArray - array of NSValue (NSPoint) objects 
 // OUTPUT:   
-// FUNCTION: Sets the end point to be height - (end.y * height)
+// FUNCTION: forwards graphing of each point in points on currPlot
 
-- (void)drawBottomInSpace:(NSRect)graphSpace andColor:(NSColor *)fillColor {
+- (void)graphOnPlot:(NSBezierPath *)currPlot forwardsFor:(NSArray *)points {
 	
-	CGFloat height = NSHeight(graphSpace);
+	CGFloat height = NSHeight(graphSpace) * 0.90;
 	CGFloat width = NSWidth(graphSpace);
 	
-	NSPoint start = NSMakePoint(NSMinX(graphSpace), NSMaxY(graphSpace));
+	NSPoint start = [currPlot currentPoint];
 	NSPoint end;
 	
-	path = [NSBezierPath bezierPath];	
-	[path moveToPoint:start];
+	NSInteger total = [points count] + 1;
 	
-	for (NSValue *point in dataPoints) {
+	for (NSValue *point in points) {
 		
 		end = [point pointValue];
-		end = NSMakePoint(end.x/NUM_POINTS * width, height - (end.y * height));
+		end = NSMakePoint(end.x/total * width, end.y * height);
 		
 		LDSubplot *subPlot = [[LDSubplot alloc] initWithStart:start andEnd:end];
 		
-		[path curveToPoint:end
-			 controlPoint1:[subPlot bottomRight]
-			 controlPoint2:[subPlot topLeft]];
+		[currPlot curveToPoint:end
+				 controlPoint1:[subPlot bottomRight] 
+				 controlPoint2:[subPlot topLeft]];
 		
 		start = end;
 		
 	}
 	
-	LDSubplot *subplot = [[LDSubplot alloc] initWithStart:start andEnd:end];
-	[path curveToPoint:end
-		 controlPoint1:[subplot bottomRight]
-		 controlPoint2:[subplot topLeft]];
+	LDSubplot *subPlot = [[LDSubplot alloc] initWithStart:start andEnd:end];
 	
-	[path lineToPoint:NSMakePoint(end.x, NSMaxY(graphSpace))];
-	[path lineToPoint:NSMakePoint(NSMinX(graphSpace), NSMaxY(graphSpace))];
-	
-	[[NSColor blackColor] set];
-	[path setLineWidth:3.0];
-	[path stroke];
-	
-	[fillColor set];
-	[path fill];
+	[currPlot curveToPoint:end
+			 controlPoint1:[subPlot bottomRight] 
+			 controlPoint2:[subPlot topLeft]];
 	
 }
+
 
 @end

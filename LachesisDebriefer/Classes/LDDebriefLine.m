@@ -72,11 +72,12 @@
  
 - (NSString *)stringRepresentation {
 	
-	NSMutableString *str = [NSMutableString stringWithFormat:@"%@ %@ %d %@",
-							date, time, daysAgo, bPointType];
+	NSMutableString *str = [NSMutableString stringWithFormat:@"%@ %@\t%d %@",
+							[date stringByReplacingOccurrencesOfString:@"-" withString:@"/"],
+							 time, daysAgo, bPointType];
 	
 	for (NSString *app in importantApps)
-		[str appendFormat:@" %@", app];
+		[str appendFormat:@" %@,", app];
 		
 	[str appendString:@"\n"];
 	

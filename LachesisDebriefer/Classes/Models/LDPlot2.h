@@ -11,7 +11,19 @@
 #import "LDPlot.h"
 
 @interface LDPlot2 : LDPlot {
+	
+	NSRect graphSpace;
+	NSArray *ySums;
 
 }
+
+@property (assign) NSArray *ySums;
+
+- (NSMutableArray *)graphPoints;
+
+- (void)graphOnPlot:(NSBezierPath *)currPlot backwardsFor:(NSArray *)points;
+- (void)graphOnPlot:(NSBezierPath *)currPlot forwardsFor:(NSArray *)points;
+
+- (NSMutableArray *)plot2DataPoints;
 
 @end

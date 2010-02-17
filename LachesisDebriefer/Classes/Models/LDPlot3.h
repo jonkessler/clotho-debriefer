@@ -11,25 +11,13 @@
 #import "LDPlot.h"
 
 @interface LDPlot3 : LDPlot {
-
-	NSMutableArray *topDataPoints;
-	NSMutableArray *botDataPoints;
-	NSArray *arrOfAverages; // array of NSNumbers
-	NSRect topSpace;
-	NSRect botSpace;
 	
 }
 
 - (id)initWithPoints:(NSArray *)points 
-			averages:(NSArray *)averages 
-			 inSpace:(NSRect)totalSpace;
+			 andRect:(NSRect)graphSpace;
 
-- (id)initWithPoints:(NSArray *)points 
-			averages:(NSArray *)averages 
-			 inSpace:(NSRect)totalSpace
-		currentPlots:(NSArray *)currPlots;
-
-- (void)drawTopInSpace:(NSRect)graphSpace andColor:(NSColor *)fillColor;
-- (void)drawBottomInSpace:(NSRect)graphSpace andColor:(NSColor *)fillColor;
+- (void)graphOnPlot:(NSBezierPath *)currPlot backwardsFor:(NSArray *)points;
+- (void)graphOnPlot:(NSBezierPath *)currPlot forwardsFor:(NSArray *)points;
 
 @end

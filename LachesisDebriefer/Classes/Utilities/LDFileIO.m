@@ -110,15 +110,13 @@
 - (void)createReadInFileWithDebrief:(LDDebriefFile *)debriefFile {
 	
 	NSInteger rand, ltRand, gtRand;
+	NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+	[dateFormatter setDateFormat:@"MM/dd/yy"];
 	
 	for (LDDebriefLine *aLine in [debriefFile debriefLines]) {
 		
 		// 1. generate real debrief date
 		//
-		NSLog(@"%@", [aLine time]);
-		if ([[aLine time] rangeOfString:@"-500"].length > 0)
-			[aLine setTime:[[aLine time] substringToIndex:8]];
-		
 		NSString *dateString = [NSString stringWithFormat:@"%@ %@",
 								[aLine date], [aLine time]];
 		
@@ -137,13 +135,13 @@
 		// 3. add intervals for all rand < 0
 		//
 		NSDate *fakeMinus2 = [NSDate dateWithTimeInterval:-(rand+2)*seconds sinceDate:date];
-		NSString *date2 = [[fakeMinus2 description] substringToIndex:10];
+		NSString *date2 = [dateFormatter stringFromDate:fakeMinus2];
 		NSString *time2 = [[fakeMinus2 description] substringWithRange:NSMakeRange(11, 8)];
 		LDDebriefLine *fakeM2 = [[LDDebriefLine alloc] init];
 		[self assignFakeDataToLine:fakeM2 withDate:date2 andTime:time2];
 		
 		NSDate *fakeMinus1 = [NSDate dateWithTimeInterval:-(rand+1)*seconds sinceDate:date];
-		NSString *date1 = [[fakeMinus1 description] substringToIndex:10];
+		NSString *date1 = [dateFormatter stringFromDate:fakeMinus1];
 		NSString *time1 = [[fakeMinus1 description] substringWithRange:NSMakeRange(11, 8)];
 		LDDebriefLine *fakeM1 = [[LDDebriefLine alloc] init];
 		[self assignFakeDataToLine:fakeM1 withDate:date1 andTime:time1];
@@ -157,7 +155,7 @@
 		while (ltRand > 0) {
 			
 			NSDate *fake = [NSDate dateWithTimeInterval:-ltRand*seconds sinceDate:date];
-			NSString *fakeDate = [[fake description] substringToIndex:10];
+			NSString *fakeDate = [dateFormatter stringFromDate:fake];
 			NSString *fakeTime = [[fake description] substringWithRange:NSMakeRange(11, 8)];
 			LDDebriefLine *fakeLine = [[LDDebriefLine alloc] init];
 			[self assignFakeDataToLine:fakeLine withDate:fakeDate andTime:fakeTime];
@@ -170,8 +168,7 @@
 		
 		// 5. add the real deal (by deal i mean date)
 		//
-		[aLine setDate:[[date description] substringToIndex:10]];
-		[aLine setTime:[[aLine time] stringByAppendingFormat:@" -500"]];
+		[aLine setDate:[dateFormatter stringFromDate:date]];
 		[readInFile addObject:aLine];
 		
 		// 6. add intervals for all rand < gtRand < 12
@@ -181,7 +178,7 @@
 		while (gtRand < 12) {
 
 			NSDate *fake = [NSDate dateWithTimeInterval:multipler*seconds sinceDate:date];
-			NSString *fakeDate = [[fake description] substringToIndex:10];
+			NSString *fakeDate = [dateFormatter stringFromDate:fake];
 			NSString *fakeTime = [[fake description] substringWithRange:NSMakeRange(11, 8)];
 			LDDebriefLine *fakeLine = [[LDDebriefLine alloc] init];
 			[self assignFakeDataToLine:fakeLine withDate:fakeDate andTime:fakeTime];
@@ -196,7 +193,7 @@
 		// 7. add intervals for all rand > 12
 		//
 		NSDate *fakePlus1 = [NSDate dateWithTimeInterval:multipler*seconds sinceDate:date];
-		NSString *fakeDP1 = [[fakePlus1 description] substringToIndex:10];
+		NSString *fakeDP1 = [dateFormatter stringFromDate:fakePlus1];
 		NSString *fakeTP1 = [[fakePlus1 description] substringWithRange:NSMakeRange(11, 8)];
 		LDDebriefLine *fakeP1 = [[LDDebriefLine alloc] init];
 		[self assignFakeDataToLine:fakeP1 withDate:fakeDP1 andTime:fakeTP1];
@@ -204,7 +201,7 @@
 		multipler++;		
 
 		NSDate *fakePlus2 = [NSDate dateWithTimeInterval:multipler*seconds sinceDate:date];
-		NSString *fakeDP2 = [[fakePlus2 description] substringToIndex:10];
+		NSString *fakeDP2 = [dateFormatter stringFromDate:fakePlus2];
 		NSString *fakeTP2 = [[fakePlus2 description] substringWithRange:NSMakeRange(11, 8)];
 		LDDebriefLine *fakeP2 = [[LDDebriefLine alloc] init];
 		[self assignFakeDataToLine:fakeP2 withDate:fakeDP2 andTime:fakeTP2];
@@ -266,8 +263,10 @@
 - (NSData *)dataRepOfDLines:(NSArray *)dLines {
 	
 	NSMutableData *dataRep = [NSMutableData data];
-	for (LDDebriefLine *aLine in dLines)
+	for (LDDebriefLine *aLine in dLines) {
 		[dataRep appendData:[aLine dataRepresentation]];
+	}
+		
 	
 	return [NSData dataWithData:dataRep];
 	
