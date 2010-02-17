@@ -31,6 +31,43 @@
 		
 		dataPoints = [NSArray arrayWithArray:[pl2 plot2DataPoints]];
 		
+		graphArea = graphSpace;
+		
+		// 1. Determine 1/2 of each summed value
+		// 
+		NSArray *sums = [pl2 ySums];
+		NSMutableArray *halves = [NSMutableArray arrayWithCapacity:[sums count]];
+		
+		for (NSNumber *sum in sums)
+			[halves addObject:[NSNumber numberWithDouble:[sum doubleValue]/2.0]];
+		
+		// 2. Subtract dataPoints[i] - halved[i]
+		// 
+		NSMutableArray *newDataPoints = [NSMutableArray arrayWithCapacity:[dataPoints count]];
+		for (NSArray *arrOfPoints in dataPoints) {
+			
+			NSMutableArray *newArrOfPoints = 
+			[NSMutableArray arrayWithCapacity:[arrOfPoints count]];
+			
+			NSInteger i = 0;
+			for (NSValue *point in arrOfPoints) {
+				
+				double half = [[halves objectAtIndex:i] doubleValue];
+				NSPoint oldPoint = [point pointValue];
+				NSPoint newPoint = NSMakePoint(oldPoint.x, oldPoint.y - half);
+				
+				[newArrOfPoints addObject:[NSValue valueWithPoint:newPoint]];
+				
+				i++;
+				
+			}
+			
+			[newDataPoints addObject:newArrOfPoints];
+			
+		}
+		
+		dataPoints = [NSMutableArray arrayWithArray:newDataPoints];
+		
 	}
 	
 	return self;

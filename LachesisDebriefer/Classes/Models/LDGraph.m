@@ -137,6 +137,8 @@
 												   andRect:graphSpace
 												 fillColor:nil];
 			
+			[pl2 normalizeDataPoints];
+			
 			plots = [pl2 graphPoints];
 			
 			NSInteger j = 0;
