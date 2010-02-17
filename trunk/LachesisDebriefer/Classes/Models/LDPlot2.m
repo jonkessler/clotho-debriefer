@@ -12,7 +12,7 @@
 
 @implementation LDPlot2
 
-@synthesize ySums;
+@synthesize ySums, largestSum;
 
 - (id)init {
 	
@@ -20,6 +20,7 @@
 		
 		graphSpace = NSZeroRect;
 		ySums = [NSArray array];
+		largestSum = 0.0;
 		
 	}
 	
@@ -58,7 +59,6 @@
 	
 	// 2. Modify the data points accordingly
 	// 
-	double largest = 0.0;
 	BOOL isFirstArr = YES;	
 	NSMutableArray *newDataPoints = [NSMutableArray arrayWithCapacity:[dataPoints count]];
 	NSMutableArray *newYVals = [NSMutableArray arrayWithCapacity:[sums count]];
@@ -77,8 +77,8 @@
 				[newPointsArr addObject:[NSValue valueWithPoint:newPoint]];
 				[newYVals addObject:ySum];
 				
-				if (yDub > largest)
-					largest = yDub;
+				if (yDub > largestSum)
+					largestSum = yDub;
 				
 				i++;
 				
@@ -89,7 +89,7 @@
 		}
 		
 		else {
-
+			
 			NSMutableArray *newNewYs = [NSMutableArray arrayWithCapacity:[newYVals count]];
 			i=0;
 			for (NSNumber *prevY in newYVals) {
@@ -113,25 +113,7 @@
 		
 	}
 	
-	// 3. Normalize all values by dividing by largest
-	//
-	NSMutableArray *normDataPoints = [NSMutableArray arrayWithCapacity:[newDataPoints count]];
-	for (NSArray *pointsArr in newDataPoints) {
-		
-		NSMutableArray *normPointsArr = [NSMutableArray arrayWithCapacity:[sums count]];
-		for (NSValue *point in pointsArr) {
-			
-			NSPoint oldPoint = [point pointValue];
-			NSPoint normPoint = NSMakePoint(oldPoint.x, oldPoint.y/largest);
-			[normPointsArr addObject:[NSValue valueWithPoint:normPoint]];
-			
-		}
-		
-		[normDataPoints addObject:normPointsArr];
-		
-	}
-	
-	dataPoints = normDataPoints;
+	dataPoints = [NSArray arrayWithArray:newDataPoints];
 	
 }
 
@@ -188,7 +170,7 @@
 // INPUT:    
 // OUTPUT:   NSArray - array of NSBezierPaths
 // FUNCTION: plots the points in each array of dataPoints in graphSpace
- 
+
 - (NSMutableArray *)graphPoints {
 	
 	NSMutableArray *plots = [NSMutableArray arrayWithCapacity:[dataPoints count]];
@@ -196,7 +178,7 @@
 	NSInteger i = 0;
 	NSInteger totalArrs = [dataPoints count];
 	for (NSArray *mainArr in dataPoints) {
-	
+		
 		NSPoint start = NSMakePoint(NSMinX(graphSpace), NSMinY(graphSpace));
 		if (i != totalArrs-1) {
 			
@@ -236,7 +218,7 @@
 			[thePath moveToPoint:start];
 			
 			[self graphOnPlot:thePath forwardsFor:mainArr];
-
+			
 			NSPoint curPoint = [thePath currentPoint];
 			NSPoint endPoint = NSMakePoint(NSMaxX(graphSpace), 0.0);
 			LDSubplot *subPlot = [[LDSubplot alloc] initWithStart:curPoint 
@@ -252,7 +234,7 @@
 			[plots addObject:thePath];			
 			
 		}
-
+		
 		
 		i++;
 		
@@ -268,7 +250,7 @@
 // OUTPUT:   
 // FUNCTION: backwards graphing of each point in points on currPlot. Assume 
 //			 currPlot is already at the starting point
- 
+
 - (void)graphOnPlot:(NSBezierPath *)currPlot backwardsFor:(NSArray *)points {
 	
 	CGFloat height = NSHeight(graphSpace) * 0.90;
@@ -310,7 +292,7 @@
 // FUNCTION: forwards graphing of each point in points on currPlot
 
 - (void)graphOnPlot:(NSBezierPath *)currPlot forwardsFor:(NSArray *)points {
-
+	
 	CGFloat height = NSHeight(graphSpace) * 0.90;
 	CGFloat width = NSWidth(graphSpace);
 	
@@ -342,6 +324,38 @@
 	
 }
 
+// ****************************************************************************
+// INPUT:    
+// OUTPUT:   
+// FUNCTION: normalizes dataPoints by dividing each y-value by largestSum
+ 
+- (void)normalizeDataPoints {
+	
+	NSMutableArray *normDataPoints = [NSMutableArray arrayWithCapacity:[dataPoints count]];
+	for (NSArray *pointsArr in newDataPoints) {
+		
+		NSMutableArray *normPointsArr = [NSMutableArray arrayWithCapacity:[ySums count]];
+		for (NSValue *point in pointsArr) {
+			
+			NSPoint oldPoint = [point pointValue];
+			NSPoint normPoint = NSMakePoint(oldPoint.x, oldPoint.y/largestSum);
+			[normPointsArr addObject:[NSValue valueWithPoint:normPoint]];
+			
+		}
+		
+		[normDataPoints addObject:normPointsArr];
+		
+	}
+	
+	dataPoints = [NSMutableArray arrayWithArray:normDataPoints];
+	
+}
+
+// ****************************************************************************
+// INPUT:    
+// OUTPUT:   NSMutableArray - dataPoints for this LDPlot2
+// FUNCTION: returns dataPoints for LDPlot2
+ 
 - (NSMutableArray *)plot2DataPoints {
 	
 	return dataPoints;

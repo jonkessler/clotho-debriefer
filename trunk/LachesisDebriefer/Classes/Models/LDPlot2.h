@@ -14,15 +14,19 @@
 	
 	NSRect graphSpace;
 	NSArray *ySums;
+	double largestSum;
 
 }
 
 @property (assign) NSArray *ySums;
+@property (assign) double largestSum;
 
 - (NSMutableArray *)graphPoints;
 
 - (void)graphOnPlot:(NSBezierPath *)currPlot backwardsFor:(NSArray *)points;
 - (void)graphOnPlot:(NSBezierPath *)currPlot forwardsFor:(NSArray *)points;
+
+- (void)normalizeDataPoints;
 
 - (NSMutableArray *)plot2DataPoints;
 

@@ -724,7 +724,7 @@
 		fRef = 49E36B0C11024395009924B0 /* LDPlot2.h */;
 		name = "LDPlot2.h: 16";
 		rLen = 0;
-		rLoc = 281;
+		rLoc = 301;
 		rType = 0;
 		vrLen = 295;
 		vrLoc = 0;
@@ -734,7 +734,7 @@
 		fRef = 49E36B0D11024395009924B0 /* LDPlot2.m */;
 		name = "LDPlot2.m: 106";
 		rLen = 0;
-		rLoc = 3161;
+		rLoc = 2645;
 		rType = 0;
 		vrLen = 1268;
 		vrLoc = 1236;
@@ -744,7 +744,7 @@
 		fRef = 49E36B0D11024395009924B0 /* LDPlot2.m */;
 		name = "LDPlot2.m: 101";
 		rLen = 0;
-		rLoc = 2512;
+		rLoc = 2530;
 		rType = 0;
 		vrLen = 1275;
 		vrLoc = 1236;
@@ -754,7 +754,7 @@
 		fRef = 49E3686210FF9251009924B0 /* LDGraph.m */;
 		name = "LDGraph.m: 149";
 		rLen = 0;
-		rLoc = 3688;
+		rLoc = 3722;
 		rType = 0;
 		vrLen = 1592;
 		vrLoc = 2089;
@@ -794,7 +794,7 @@
 		fRef = 49E36B0D11024395009924B0 /* LDPlot2.m */;
 		name = "LDPlot2.m: 101";
 		rLen = 0;
-		rLoc = 2512;
+		rLoc = 2530;
 		rType = 0;
 		vrLen = 1387;
 		vrLoc = 564;
@@ -804,7 +804,7 @@
 		fRef = 49E36B0D11024395009924B0 /* LDPlot2.m */;
 		name = "LDPlot2.m: 101";
 		rLen = 0;
-		rLoc = 2512;
+		rLoc = 2530;
 		rType = 0;
 		vrLen = 1338;
 		vrLoc = 616;
@@ -814,7 +814,7 @@
 		fRef = 49E3686210FF9251009924B0 /* LDGraph.m */;
 		name = "LDGraph.m: 149";
 		rLen = 0;
-		rLoc = 3688;
+		rLoc = 3722;
 		rType = 0;
 		vrLen = 1592;
 		vrLoc = 2089;
@@ -834,7 +834,7 @@
 		fRef = 49E36B0D11024395009924B0 /* LDPlot2.m */;
 		name = "LDPlot2.m: 69";
 		rLen = 0;
-		rLoc = 1753;
+		rLoc = 1762;
 		rType = 0;
 		vrLen = 1081;
 		vrLoc = 1443;
@@ -844,7 +844,7 @@
 		fRef = 49E36B0D11024395009924B0 /* LDPlot2.m */;
 		name = "LDPlot2.m: 69";
 		rLen = 0;
-		rLoc = 1753;
+		rLoc = 1762;
 		rType = 0;
 		vrLen = 1355;
 		vrLoc = 992;
@@ -854,7 +854,7 @@
 		fRef = 49E3686210FF9251009924B0 /* LDGraph.m */;
 		name = "LDGraph.m: 149";
 		rLen = 0;
-		rLoc = 3688;
+		rLoc = 3722;
 		rType = 0;
 		vrLen = 1592;
 		vrLoc = 2089;
@@ -874,7 +874,7 @@
 		fRef = 49E36B0D11024395009924B0 /* LDPlot2.m */;
 		name = "LDPlot2.m: 58";
 		rLen = 0;
-		rLoc = 1291;
+		rLoc = 1300;
 		rType = 0;
 		vrLen = 1308;
 		vrLoc = 719;
@@ -884,7 +884,7 @@
 		fRef = 49E36B0D11024395009924B0 /* LDPlot2.m */;
 		name = "LDPlot2.m: 122";
 		rLen = 0;
-		rLoc = 2991;
+		rLoc = 2589;
 		rType = 0;
 		vrLen = 1270;
 		vrLoc = 1984;
@@ -894,7 +894,7 @@
 		fRef = 49E3686210FF9251009924B0 /* LDGraph.m */;
 		name = "LDGraph.m: 149";
 		rLen = 0;
-		rLoc = 3688;
+		rLoc = 3722;
 		rType = 0;
 		vrLen = 1592;
 		vrLoc = 2089;
@@ -915,7 +915,7 @@
 		fRef = 49E3686210FF9251009924B0 /* LDGraph.m */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 0;
-		rLoc = 165;
+		rLoc = 167;
 		rType = 1;
 	};
 	4975EF9A112B91BA0052E9B4 /* PBXTextBookmark */ = {
@@ -923,7 +923,7 @@
 		fRef = 49E36B0C11024395009924B0 /* LDPlot2.h */;
 		name = "LDPlot2.h: 19";
 		rLen = 0;
-		rLoc = 339;
+		rLoc = 397;
 		rType = 0;
 		vrLen = 462;
 		vrLoc = 0;
@@ -933,7 +933,7 @@
 		fRef = 49E36B0D11024395009924B0 /* LDPlot2.m */;
 		name = "LDPlot2.m: 187";
 		rLen = 14;
-		rLoc = 4529;
+		rLoc = 4012;
 		rType = 0;
 		vrLen = 1300;
 		vrLoc = 4030;
@@ -943,7 +943,7 @@
 		fRef = 49E36B0D11024395009924B0 /* LDPlot2.m */;
 		name = "LDPlot2.m: 187";
 		rLen = 14;
-		rLoc = 4529;
+		rLoc = 4012;
 		rType = 0;
 		vrLen = 1234;
 		vrLoc = 4030;
@@ -953,7 +953,7 @@
 		fRef = 49E3686210FF9251009924B0 /* LDGraph.m */;
 		name = "LDGraph.m: 148";
 		rLen = 0;
-		rLoc = 3688;
+		rLoc = 3722;
 		rType = 0;
 		vrLen = 902;
 		vrLoc = 2929;
@@ -963,7 +963,7 @@
 		fRef = 49E36B0D11024395009924B0 /* LDPlot2.m */;
 		name = "LDPlot2.m: 207";
 		rLen = 0;
-		rLoc = 5735;
+		rLoc = 5219;
 		rType = 0;
 		vrLen = 1381;
 		vrLoc = 4187;
@@ -973,7 +973,7 @@
 		fRef = 49E3686210FF9251009924B0 /* LDGraph.m */;
 		name = "LDGraph.m: 148";
 		rLen = 0;
-		rLoc = 3688;
+		rLoc = 3722;
 		rType = 0;
 		vrLen = 1106;
 		vrLoc = 2590;
@@ -983,7 +983,7 @@
 		fRef = 49E36B0D11024395009924B0 /* LDPlot2.m */;
 		name = "LDPlot2.m: 270";
 		rLen = 0;
-		rLoc = 8042;
+		rLoc = 7531;
 		rType = 0;
 		vrLen = 1300;
 		vrLoc = 6110;
@@ -993,7 +993,7 @@
 		fRef = 49E3686210FF9251009924B0 /* LDGraph.m */;
 		name = "LDGraph.m: 148";
 		rLen = 0;
-		rLoc = 3688;
+		rLoc = 3722;
 		rType = 0;
 		vrLen = 1106;
 		vrLoc = 2590;
@@ -1017,7 +1017,7 @@
 		fRef = 49E36B0D11024395009924B0 /* LDPlot2.m */;
 		name = "LDPlot2.m: 270";
 		rLen = 0;
-		rLoc = 8042;
+		rLoc = 7531;
 		rType = 0;
 		vrLen = 1300;
 		vrLoc = 6110;
@@ -1027,7 +1027,7 @@
 		fRef = 49E3686210FF9251009924B0 /* LDGraph.m */;
 		name = "LDGraph.m: 148";
 		rLen = 0;
-		rLoc = 3688;
+		rLoc = 3722;
 		rType = 0;
 		vrLen = 1106;
 		vrLoc = 2590;
@@ -1038,7 +1038,7 @@
 		fRef = 49E3686210FF9251009924B0 /* LDGraph.m */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 0;
-		rLoc = 165;
+		rLoc = 167;
 		rType = 1;
 	};
 	4975EFB5112B92650052E9B4 /* PBXTextBookmark */ = {
@@ -1046,7 +1046,7 @@
 		fRef = 49E3686210FF9251009924B0 /* LDGraph.m */;
 		name = "LDGraph.m: 148";
 		rLen = 0;
-		rLoc = 3688;
+		rLoc = 3722;
 		rType = 0;
 		vrLen = 133;
 		vrLoc = 3358;
@@ -1083,7 +1083,7 @@
 		fRef = 49E36B0D11024395009924B0 /* LDPlot2.m */;
 		name = "LDPlot2.m: 231";
 		rLen = 0;
-		rLoc = 6416;
+		rLoc = 5903;
 		rType = 0;
 		vrLen = 1221;
 		vrLoc = 4553;
@@ -1103,7 +1103,7 @@
 		fRef = 49E3686210FF9251009924B0 /* LDGraph.m */;
 		name = "LDGraph.m: 148";
 		rLen = 0;
-		rLoc = 3688;
+		rLoc = 3722;
 		rType = 0;
 		vrLen = 1106;
 		vrLoc = 2590;
@@ -1113,7 +1113,7 @@
 		fRef = 49E36B0D11024395009924B0 /* LDPlot2.m */;
 		name = "LDPlot2.m: 231";
 		rLen = 0;
-		rLoc = 6416;
+		rLoc = 5903;
 		rType = 0;
 		vrLen = 1221;
 		vrLoc = 4553;
@@ -1123,7 +1123,7 @@
 		fRef = 49E36B0D11024395009924B0 /* LDPlot2.m */;
 		name = "LDPlot2.m: 231";
 		rLen = 0;
-		rLoc = 6416;
+		rLoc = 5903;
 		rType = 0;
 		vrLen = 1221;
 		vrLoc = 4553;
@@ -1143,7 +1143,7 @@
 		fRef = 49E3686210FF9251009924B0 /* LDGraph.m */;
 		name = "LDGraph.m: 148";
 		rLen = 0;
-		rLoc = 3688;
+		rLoc = 3722;
 		rType = 0;
 		vrLen = 1106;
 		vrLoc = 2590;
@@ -1153,7 +1153,7 @@
 		fRef = 49E36B0D11024395009924B0 /* LDPlot2.m */;
 		name = "LDPlot2.m: 231";
 		rLen = 0;
-		rLoc = 6416;
+		rLoc = 5903;
 		rType = 0;
 		vrLen = 1221;
 		vrLoc = 4553;
@@ -1173,7 +1173,7 @@
 		fRef = 49E3686210FF9251009924B0 /* LDGraph.m */;
 		name = "LDGraph.m: 148";
 		rLen = 0;
-		rLoc = 3688;
+		rLoc = 3722;
 		rType = 0;
 		vrLen = 1106;
 		vrLoc = 2590;
@@ -1183,7 +1183,7 @@
 		fRef = 49E3686210FF9251009924B0 /* LDGraph.m */;
 		name = "LDGraph.m: 148";
 		rLen = 0;
-		rLoc = 3688;
+		rLoc = 3722;
 		rType = 0;
 		vrLen = 133;
 		vrLoc = 3358;
@@ -1193,7 +1193,7 @@
 		fRef = 49E36B0D11024395009924B0 /* LDPlot2.m */;
 		name = "LDPlot2.m: 216";
 		rLen = 0;
-		rLoc = 5896;
+		rLoc = 5380;
 		rType = 0;
 		vrLen = 1267;
 		vrLoc = 4553;
@@ -1213,7 +1213,7 @@
 		fRef = 49E3686210FF9251009924B0 /* LDGraph.m */;
 		name = "LDGraph.m: 148";
 		rLen = 0;
-		rLoc = 3688;
+		rLoc = 3722;
 		rType = 0;
 		vrLen = 1106;
 		vrLoc = 2590;
@@ -1223,7 +1223,7 @@
 		fRef = 49E36B0D11024395009924B0 /* LDPlot2.m */;
 		name = "LDPlot2.m: 216";
 		rLen = 0;
-		rLoc = 5894;
+		rLoc = 5378;
 		rType = 0;
 		vrLen = 1251;
 		vrLoc = 4553;
@@ -1243,7 +1243,7 @@
 		fRef = 49E3686210FF9251009924B0 /* LDGraph.m */;
 		name = "LDGraph.m: 148";
 		rLen = 0;
-		rLoc = 3688;
+		rLoc = 3722;
 		rType = 0;
 		vrLen = 1106;
 		vrLoc = 2590;
@@ -1253,7 +1253,7 @@
 		fRef = 49E36B0D11024395009924B0 /* LDPlot2.m */;
 		name = "LDPlot2.m: 261";
 		rLen = 0;
-		rLoc = 7124;
+		rLoc = 6612;
 		rType = 0;
 		vrLen = 1524;
 		vrLoc = 5995;
@@ -1273,7 +1273,7 @@
 		fRef = 49E3686210FF9251009924B0 /* LDGraph.m */;
 		name = "LDGraph.m: 148";
 		rLen = 0;
-		rLoc = 3688;
+		rLoc = 3722;
 		rType = 0;
 		vrLen = 1106;
 		vrLoc = 2590;
@@ -1283,7 +1283,7 @@
 		fRef = 49E36B0D11024395009924B0 /* LDPlot2.m */;
 		name = "LDPlot2.m: 272";
 		rLen = 0;
-		rLoc = 7445;
+		rLoc = 6933;
 		rType = 0;
 		vrLen = 1274;
 		vrLoc = 5727;
@@ -1303,7 +1303,7 @@
 		fRef = 49E3686210FF9251009924B0 /* LDGraph.m */;
 		name = "LDGraph.m: 148";
 		rLen = 0;
-		rLoc = 3688;
+		rLoc = 3722;
 		rType = 0;
 		vrLen = 1106;
 		vrLoc = 2590;
@@ -1330,7 +1330,7 @@
 		fRef = 49E36B0D11024395009924B0 /* LDPlot2.m */;
 		name = "LDPlot2.m: 268";
 		rLen = 9;
-		rLoc = 7263;
+		rLoc = 6751;
 		rType = 0;
 		vrLen = 1274;
 		vrLoc = 5727;
@@ -1350,7 +1350,7 @@
 		fRef = 49E3686210FF9251009924B0 /* LDGraph.m */;
 		name = "LDGraph.m: 148";
 		rLen = 0;
-		rLoc = 3688;
+		rLoc = 3722;
 		rType = 0;
 		vrLen = 1106;
 		vrLoc = 2590;
@@ -1360,7 +1360,7 @@
 		fRef = 49E36B0D11024395009924B0 /* LDPlot2.m */;
 		name = "LDPlot2.m: 294";
 		rLen = 0;
-		rLoc = 8042;
+		rLoc = 7531;
 		rType = 0;
 		vrLen = 1372;
 		vrLoc = 6676;
@@ -1390,7 +1390,7 @@
 		fRef = 49E3686210FF9251009924B0 /* LDGraph.m */;
 		name = "LDGraph.m: 148";
 		rLen = 0;
-		rLoc = 3688;
+		rLoc = 3722;
 		rType = 0;
 		vrLen = 1106;
 		vrLoc = 2590;
@@ -1400,7 +1400,7 @@
 		fRef = 49E36B0D11024395009924B0 /* LDPlot2.m */;
 		name = "LDPlot2.m: 206";
 		rLen = 0;
-		rLoc = 5190;
+		rLoc = 4674;
 		rType = 0;
 		vrLen = 1594;
 		vrLoc = 4471;
@@ -1430,7 +1430,7 @@
 		fRef = 49E3686210FF9251009924B0 /* LDGraph.m */;
 		name = "LDGraph.m: 148";
 		rLen = 0;
-		rLoc = 3688;
+		rLoc = 3722;
 		rType = 0;
 		vrLen = 1106;
 		vrLoc = 2590;
@@ -1460,7 +1460,7 @@
 		fRef = 49E36B0D11024395009924B0 /* LDPlot2.m */;
 		name = "LDPlot2.m: 206";
 		rLen = 0;
-		rLoc = 5190;
+		rLoc = 4674;
 		rType = 0;
 		vrLen = 1594;
 		vrLoc = 4471;
@@ -1480,7 +1480,7 @@
 		fRef = 49E3686210FF9251009924B0 /* LDGraph.m */;
 		name = "LDGraph.m: 148";
 		rLen = 0;
-		rLoc = 3688;
+		rLoc = 3722;
 		rType = 0;
 		vrLen = 1106;
 		vrLoc = 2590;
@@ -1490,7 +1490,7 @@
 		fRef = 49E3686210FF9251009924B0 /* LDGraph.m */;
 		name = "LDGraph.m: 148";
 		rLen = 0;
-		rLoc = 3529;
+		rLoc = 3563;
 		rType = 0;
 		vrLen = 853;
 		vrLoc = 3098;
@@ -1500,7 +1500,7 @@
 		fRef = 49E36B0D11024395009924B0 /* LDPlot2.m */;
 		name = "LDPlot2.m: 206";
 		rLen = 0;
-		rLoc = 5190;
+		rLoc = 4674;
 		rType = 0;
 		vrLen = 1594;
 		vrLoc = 4471;
@@ -1510,7 +1510,7 @@
 		fRef = 49E3686210FF9251009924B0 /* LDGraph.m */;
 		name = "LDGraph.m: 147";
 		rLen = 0;
-		rLoc = 3449;
+		rLoc = 3483;
 		rType = 0;
 		vrLen = 841;
 		vrLoc = 3098;
@@ -1520,7 +1520,7 @@
 		fRef = 49E36B0D11024395009924B0 /* LDPlot2.m */;
 		name = "LDPlot2.m: 214";
 		rLen = 82;
-		rLoc = 5674;
+		rLoc = 5158;
 		rType = 0;
 		vrLen = 1594;
 		vrLoc = 4471;
@@ -1547,7 +1547,7 @@
 		fRef = 49E36B0D11024395009924B0 /* LDPlot2.m */;
 		name = "LDPlot2.m: 214";
 		rLen = 82;
-		rLoc = 5674;
+		rLoc = 5158;
 		rType = 0;
 		vrLen = 1108;
 		vrLoc = 0;
@@ -1557,7 +1557,7 @@
 		fRef = 49E3686210FF9251009924B0 /* LDGraph.m */;
 		name = "LDGraph.m: 147";
 		rLen = 0;
-		rLoc = 3449;
+		rLoc = 3483;
 		rType = 0;
 		vrLen = 1339;
 		vrLoc = 0;
@@ -1577,7 +1577,7 @@
 		fRef = 49E36B0D11024395009924B0 /* LDPlot2.m */;
 		name = "LDPlot2.m: 214";
 		rLen = 82;
-		rLoc = 5674;
+		rLoc = 5158;
 		rType = 0;
 		vrLen = 1108;
 		vrLoc = 0;
@@ -1587,7 +1587,7 @@
 		fRef = 49E3686210FF9251009924B0 /* LDGraph.m */;
 		name = "LDGraph.m: 147";
 		rLen = 0;
-		rLoc = 3449;
+		rLoc = 3483;
 		rType = 0;
 		vrLen = 1339;
 		vrLoc = 0;
@@ -1597,7 +1597,7 @@
 		fRef = 49E3686210FF9251009924B0 /* LDGraph.m */;
 		name = "LDGraph.m: 181";
 		rLen = 0;
-		rLoc = 3688;
+		rLoc = 3722;
 		rType = 0;
 		vrLen = 187;
 		vrLoc = 3335;
@@ -1617,7 +1617,7 @@
 		fRef = 49E3686210FF9251009924B0 /* LDGraph.m */;
 		name = "LDGraph.m: 181";
 		rLen = 0;
-		rLoc = 3688;
+		rLoc = 3722;
 		rType = 0;
 		vrLen = 187;
 		vrLoc = 3335;
@@ -1627,7 +1627,7 @@
 		fRef = 49E36B0D11024395009924B0 /* LDPlot2.m */;
 		name = "LDPlot2.m: 216";
 		rLen = 0;
-		rLoc = 5537;
+		rLoc = 5021;
 		rType = 0;
 		vrLen = 1643;
 		vrLoc = 4220;
@@ -1637,7 +1637,7 @@
 		fRef = 49E3686210FF9251009924B0 /* LDGraph.m */;
 		name = "LDGraph.m: 147";
 		rLen = 0;
-		rLoc = 3449;
+		rLoc = 3483;
 		rType = 0;
 		vrLen = 1339;
 		vrLoc = 0;
@@ -1664,7 +1664,7 @@
 		fRef = 49E36B0D11024395009924B0 /* LDPlot2.m */;
 		name = "LDPlot2.m: 293";
 		rLen = 9;
-		rLoc = 7476;
+		rLoc = 6964;
 		rType = 0;
 		vrLen = 1620;
 		vrLoc = 6375;
@@ -1674,7 +1674,7 @@
 		fRef = 49E3686210FF9251009924B0 /* LDGraph.m */;
 		name = "LDGraph.m: 147";
 		rLen = 0;
-		rLoc = 3449;
+		rLoc = 3483;
 		rType = 0;
 		vrLen = 1339;
 		vrLoc = 0;
@@ -1694,7 +1694,7 @@
 		fRef = 49E36B0D11024395009924B0 /* LDPlot2.m */;
 		name = "LDPlot2.m: 293";
 		rLen = 9;
-		rLoc = 7476;
+		rLoc = 6964;
 		rType = 0;
 		vrLen = 1620;
 		vrLoc = 6375;
@@ -1704,7 +1704,7 @@
 		fRef = 49E3686210FF9251009924B0 /* LDGraph.m */;
 		name = "LDGraph.m: 147";
 		rLen = 0;
-		rLoc = 3449;
+		rLoc = 3483;
 		rType = 0;
 		vrLen = 1339;
 		vrLoc = 0;
@@ -1724,7 +1724,7 @@
 		fRef = 49E36B0D11024395009924B0 /* LDPlot2.m */;
 		name = "LDPlot2.m: 293";
 		rLen = 9;
-		rLoc = 7476;
+		rLoc = 6964;
 		rType = 0;
 		vrLen = 1620;
 		vrLoc = 6375;
@@ -1734,7 +1734,7 @@
 		fRef = 49E3686210FF9251009924B0 /* LDGraph.m */;
 		name = "LDGraph.m: 147";
 		rLen = 0;
-		rLoc = 3449;
+		rLoc = 3483;
 		rType = 0;
 		vrLen = 1339;
 		vrLoc = 0;
@@ -1744,7 +1744,7 @@
 		fRef = 49E3686210FF9251009924B0 /* LDGraph.m */;
 		name = "LDGraph.m: 181";
 		rLen = 0;
-		rLoc = 3688;
+		rLoc = 3722;
 		rType = 0;
 		vrLen = 187;
 		vrLoc = 3335;
@@ -2012,32 +2012,33 @@
 	49E36B0C11024395009924B0 /* LDPlot2.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {578, 761}}";
-			sepNavSelRange = "{527, 0}";
-			sepNavVisRange = "{0, 553}";
+			sepNavSelRange = "{568, 28}";
+			sepNavVisRange = "{0, 641}";
 			sepNavWindowFrame = "{{633, 4}, {637, 874}}";
 		};
 	};
 	49E36B0D11024395009924B0 /* LDPlot2.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {578, 4914}}";
-			sepNavSelRange = "{8714, 14}";
-			sepNavVisRange = "{7470, 1306}";
+			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{2767, 1023}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 8832}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {578, 4326}}";
+			sepNavSelRange = "{7738, 0}";
+			sepNavVisRange = "{6585, 1225}";
 			sepNavWindowFrame = "{{633, 4}, {637, 874}}";
 		};
 	};
 	49E36B3F11029B40009924B0 /* LDPlot3.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {578, 761}}";
-			sepNavSelRange = "{248, 71}";
-			sepNavVisRange = "{0, 480}";
+			sepNavSelRange = "{262, 0}";
+			sepNavVisRange = "{0, 500}";
 		};
 	};
 	49E36B4011029B40009924B0 /* LDPlot3.m */ = {
 		uiCtxt = {
-			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{1778, 801}\";\n            s = 0;\n        },\n                {\n            r = \"{2914, 714}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 3637}\";\n    s = 0;\n}";
-			sepNavIntBoundsRect = "{{0, 0}, {578, 1078}}";
-			sepNavSelRange = "{660, 7}";
-			sepNavVisRange = "{0, 1509}";
+			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{2724, 801}\";\n            s = 0;\n        },\n                {\n            r = \"{3860, 714}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 4583}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {578, 1582}}";
+			sepNavSelRange = "{1701, 0}";
+			sepNavVisRange = "{258, 1583}";
 			sepNavWindowFrame = "{{631, 4}, {637, 874}}";
 		};
 	};

@@ -11,6 +11,8 @@
 #import "LDPlot.h"
 
 @interface LDPlot3 : LDPlot {
+
+	NSRect graphArea;
 	
 }
 
