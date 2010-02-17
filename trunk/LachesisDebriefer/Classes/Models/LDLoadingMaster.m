@@ -62,7 +62,7 @@
 	
 	[self createFakeDebriefs];
 	
-	[self applyJoshCodeToFakeDebriefs];
+//	[self applyJoshCodeToFakeDebriefs];
 	
 	[self applyTreeToFakeDebriefs];
 	

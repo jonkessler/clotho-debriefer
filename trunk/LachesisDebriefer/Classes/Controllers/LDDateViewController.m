@@ -62,6 +62,8 @@
     //  Put the view in the window
     [theWindow setContentView:theView];
 	
+	[theWindow display];
+	
 	[loadingVC beginLoading];
 	
 }

@@ -10,9 +10,11 @@
 
 #define XMultiplier 1.0
 #define YMultiplier 1.0
-#define BR_X 0.95
+//#define BR_X 0.95
+#define BR_X 1.0
 #define BR_Y 1.0
-#define TL_X 1.05
+//#define TL_X 1.05
+#define TL_X 1.0
 #define TL_Y 1.0
 
 @implementation LDSubplot

@@ -72,7 +72,7 @@
 // INPUT:    
 // OUTPUT:   
 // FUNCTION: 
- 
+
 - (id)initWithData:(NSArray *)points 
 		   andRect:(NSRect)graphSpace 
 		plotNumber:(NSInteger)plotNum {
@@ -97,64 +97,22 @@
 		NSInteger i = 0;
 		LDPlot *plotToUse;
 		
-		if (plotNum == 2) {
+		// Line Graph
+		if (plotNum == 0) {
 			
-			NSArray *averages = [self averageOfPoints:points];
-			
-			[[LDPlot3 alloc] initWithPoints:[points objectAtIndex:0]
-								   averages:averages
-									inSpace:graphSpace];
-			
-			NSInteger i = 0;
-			for (NSArray *setOfPoints in points) {
-			
-				if (i==0) {
-					i++;
-					continue;	
-				} 
-				
-				
-				
-				i++;
-				
-			}
-			
-		//	if (i % 2 == 0)
-//				plotToUse = [[LDPlot3 alloc] initWithPoints:setOfPoints
-//													andRect:topSpace
-//												  fillColor:[colors objectAtIndex:i]
-//											   currentPlots:plots];
-//			else
-//				plotToUse = [[LDPlot3 alloc] initWithPoints:setOfPoints
-//													andRect:botSpace
-//												  fillColor:[colors objectAtIndex:i]
-//											   currentPlots:plots];			
-//			
-		}
-		
-		else {
-			
-			// Draw plots 0 or 1
 			for (NSArray *setOfPoints in points) {
 				
-				if (plotNum == 0)
-					plotToUse = [[LDPlot1 alloc] initWithPoints:setOfPoints 
-														andRect:graphSpace
-													  fillColor:[colors objectAtIndex:i]];
+				plotToUse = [[LDPlot1 alloc] initWithPoints:setOfPoints 
+													andRect:graphSpace
+												  fillColor:[colors objectAtIndex:i]];
 				
-				else if (plotNum == 1)
-					plotToUse = [[LDPlot2 alloc] initWithPoints:setOfPoints 
-														andRect:graphSpace
-													  fillColor:[colors objectAtIndex:i]
-												   currentPlots:plots];
-
 				[plots addObject:plotToUse];
 				[[metadata appColors] setObject:[colors objectAtIndex:i] 
 										 forKey:[NSString stringWithFormat:@"app %d", i]];
 				i++;
 				
 			}
-
+			
 			// Color the plots
 			NSInteger j = 0;
 			NSArray *reversePlots = [[plots reverseObjectEnumerator] allObjects];
@@ -162,25 +120,51 @@
 				
 				[[NSColor blackColor] set];
 				[[plot path] setLineWidth:3.0];
+				
+				[[colors objectAtIndex:j] set];
 				[[plot path] stroke];
-				
-				if (plotNum != 0) {
-					[[colors objectAtIndex:j] set];
-					[[plot path] fill];	
-				}
-				else {
-					[[colors objectAtIndex:j] set];
-					[[plot path] stroke];
-				}
-				
 				
 				j++;
 				
-			}			
+			}
+			
+		}			
+		
+		// Stacked Bar Graph		
+		else if (plotNum == 1) {
+			
+			LDPlot2 *pl2 = [[LDPlot2 alloc] initWithPoints:points
+												   andRect:graphSpace
+												 fillColor:nil];
+			
+			plots = [pl2 graphPoints];
+			
+			NSInteger j = 0;
+			for (NSBezierPath *plot in plots) {
+				
+				[[NSColor blackColor] set];
+				[plot setLineWidth:3.0];
+				[plot stroke];
+				
+				[[colors objectAtIndex:j] set];
+				[plot fill];
+				
+				j++;
+				
+			}
 			
 		}
+		
+		// Flow Graph
+		else {
 			
+			LDPlot3 *pl3 = [[LDPlot3 alloc] initWithPoints:points 
+												   andRect:graphSpace];
+			
+		}
+		
 	}
+	
 	
 	return self;
 	
@@ -190,7 +174,7 @@
 // INPUT:    
 // OUTPUT:   
 // FUNCTION: 
- 
+
 - (LDPlot *)plotContainingPoint:(NSPoint)p {
 	
 	NSArray *reversePlots = [[plots reverseObjectEnumerator] allObjects];
@@ -209,7 +193,7 @@
 // INPUT:    
 // OUTPUT:   
 // FUNCTION: 
- 
+
 - (NSInteger)plotNumberContainingPoint:(NSPoint)p {
 	
 	LDPlot *plotContainingPoint = [self plotContainingPoint:p];
