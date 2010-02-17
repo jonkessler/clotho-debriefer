@@ -22,4 +22,6 @@
 - (void)graphOnPlot:(NSBezierPath *)currPlot backwardsFor:(NSArray *)points;
 - (void)graphOnPlot:(NSBezierPath *)currPlot forwardsFor:(NSArray *)points;
 
+- (NSMutableArray *)graphPoints;
+
 @end

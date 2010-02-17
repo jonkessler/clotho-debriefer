@@ -79,7 +79,7 @@
 	
 	if (self = [super init]) {
 		
-		plotNum = 1;
+		plotNum = 2;
 		
 		[NSBezierPath setDefaultLineJoinStyle:NSRoundLineJoinStyle];
 		[NSBezierPath setDefaultFlatness:0.3];
@@ -144,6 +144,9 @@
 			NSInteger j = 0;
 			for (NSBezierPath *plot in plots) {
 				
+				[[metadata appColors] setObject:[colors objectAtIndex:j] 
+										 forKey:[NSString stringWithFormat:@"app %d", j]];
+				
 				[[NSColor blackColor] set];
 				[plot setLineWidth:3.0];
 				[plot stroke];
@@ -163,10 +166,28 @@
 			LDPlot3 *pl3 = [[LDPlot3 alloc] initWithPoints:points 
 												   andRect:graphSpace];
 			
+			plots = [pl3 graphPoints];
+
+			NSInteger j = 0;
+			for (NSBezierPath *plot in plots) {
+				
+				[[metadata appColors] setObject:[colors objectAtIndex:j] 
+										 forKey:[NSString stringWithFormat:@"app %d", j]];
+				
+				[[NSColor blackColor] set];
+				[plot setLineWidth:3.0];
+				[plot stroke];
+				
+				[[colors objectAtIndex:j] set];
+				[plot fill];
+				
+				j++;
+				
+			}
+			
 		}
 		
 	}
-	
 	
 	return self;
 	
