@@ -332,7 +332,7 @@
 - (void)normalizeDataPoints {
 	
 	NSMutableArray *normDataPoints = [NSMutableArray arrayWithCapacity:[dataPoints count]];
-	for (NSArray *pointsArr in newDataPoints) {
+	for (NSArray *pointsArr in dataPoints) {
 		
 		NSMutableArray *normPointsArr = [NSMutableArray arrayWithCapacity:[ySums count]];
 		for (NSValue *point in pointsArr) {
@@ -348,6 +348,41 @@
 	}
 	
 	dataPoints = [NSMutableArray arrayWithArray:normDataPoints];
+	
+}
+
+// ****************************************************************************
+// INPUT:    
+// OUTPUT:   
+// FUNCTION: normalizes plot3Points by dividing each y-value by largestHalf
+ 
+- (NSMutableArray *)normalizeForPlot3:(NSMutableArray *)plot3Points 
+							andHalves:(NSMutableArray *)plot3Halves {
+
+	double largestHalf = 0.0;
+	for (NSNumber *half in plot3Halves) 
+		if ([half doubleValue] > largestHalf)
+			largestHalf = [half doubleValue];
+	
+	NSMutableArray *normDataPoints = [NSMutableArray arrayWithCapacity:[plot3Points count]];
+	for (NSArray *pointsArr in plot3Points) {
+		
+		NSMutableArray *normPointsArr = 
+		[NSMutableArray arrayWithCapacity:[plot3Halves count]];
+		
+		for (NSValue *point in pointsArr) {
+			
+			NSPoint oldPoint = [point pointValue];
+			NSPoint normPoint = NSMakePoint(oldPoint.x, oldPoint.y/largestHalf);
+			[normPointsArr addObject:[NSValue valueWithPoint:normPoint]];
+			
+		}
+		
+		[normDataPoints addObject:normPointsArr];
+		
+	}	
+	
+	return normDataPoints;
 	
 }
 

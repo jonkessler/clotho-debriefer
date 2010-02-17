@@ -11,7 +11,7 @@
 #import "LDSubplot.h"
 #import "LDFileIO.h"
 
-#define NUM_PLOTS 3
+#define NUM_PLOTS 2
 #define NUM_POINTS 10
 
 #define X_TOLERANCE 10

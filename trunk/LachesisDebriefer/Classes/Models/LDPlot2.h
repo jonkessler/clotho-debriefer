@@ -27,6 +27,8 @@
 - (void)graphOnPlot:(NSBezierPath *)currPlot forwardsFor:(NSArray *)points;
 
 - (void)normalizeDataPoints;
+- (NSMutableArray *)normalizeForPlot3:(NSMutableArray *)plot3Points 
+							andHalves:(NSMutableArray *)plot3Halves;
 
 - (NSMutableArray *)plot2DataPoints;
 

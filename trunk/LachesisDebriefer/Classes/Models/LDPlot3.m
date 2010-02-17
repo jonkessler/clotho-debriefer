@@ -23,7 +23,7 @@
 - (id)initWithPoints:(NSArray *)points 
 			 andRect:(NSRect)graphSpace {
 	
-	if (self = [super initWithPoints:points andRect:graphSpace fillColor:nil]) {
+	if (self = [super init]) {
 		
 		LDPlot2 *pl2 = [[LDPlot2 alloc] initWithPoints:points 
 											   andRect:graphSpace
@@ -66,7 +66,20 @@
 			
 		}
 		
-		dataPoints = [NSMutableArray arrayWithArray:newDataPoints];
+		NSMutableArray *newArrOfPoints = [NSMutableArray array];
+		double curX = 1.0;
+		for (NSNumber *half in halves) {
+			
+			NSPoint zeroPoint = NSMakePoint(curX, 0.0-[half doubleValue]);
+			[newArrOfPoints addObject:[NSValue valueWithPoint:zeroPoint]];
+			
+			curX++;
+			
+		}
+		
+		[newDataPoints addObject:newArrOfPoints];
+		
+		dataPoints = [pl2 normalizeForPlot3:newDataPoints andHalves:halves];
 		
 	}
 	
@@ -99,19 +112,27 @@
 
 - (void)graphOnPlot:(NSBezierPath *)currPlot backwardsFor:(NSArray *)points {
 	
-	CGFloat height = NSHeight(graphSpace) * 0.90;
-	CGFloat width = NSWidth(graphSpace);
+	NSRect topHalf = NSMakeRect(0.0, NSMidY(graphArea), 
+								NSWidth(graphArea)/2, NSHeight(graphArea)/2);
+	
+	CGFloat halfHeight = NSHeight(topHalf) * 0.90;
+	
+	CGFloat width = NSWidth(graphArea);
 	
 	NSPoint start = [currPlot currentPoint];
 	NSPoint end;
 	
-	NSArray *reversePoints = [[points reverseObjectEnumerator] allObjects];
-	NSInteger total = [reversePoints count] + 1;
+	NSInteger total = [points count] + 1;
 	
+	NSArray *reversePoints = [[points reverseObjectEnumerator] allObjects];
 	for (NSValue *point in reversePoints) {
 		
 		end = [point pointValue];
-		end = NSMakePoint(end.x/total * width, end.y * height);
+		
+		if (end.y < 0)
+			end = NSMakePoint(end.x/total * width, halfHeight - (1-end.y * halfHeight) + 25);
+		else
+			end = NSMakePoint(end.x/total * width, end.y * halfHeight + 25);
 		
 		LDSubplot *subPlot = [[LDSubplot alloc] initWithStart:start andEnd:end];
 		
@@ -139,8 +160,12 @@
 
 - (void)graphOnPlot:(NSBezierPath *)currPlot forwardsFor:(NSArray *)points {
 	
-	CGFloat height = NSHeight(graphSpace) * 0.90;
-	CGFloat width = NSWidth(graphSpace);
+	NSRect topHalf = NSMakeRect(0.0, NSMidY(graphArea), 
+								NSWidth(graphArea)/2, NSHeight(graphArea)/2);
+	
+	CGFloat halfHeight = NSHeight(topHalf) * 0.90;
+	
+	CGFloat width = NSWidth(graphArea);
 	
 	NSPoint start = [currPlot currentPoint];
 	NSPoint end;
@@ -150,7 +175,11 @@
 	for (NSValue *point in points) {
 		
 		end = [point pointValue];
-		end = NSMakePoint(end.x/total * width, end.y * height);
+		
+		if (end.y < 0)
+			end = NSMakePoint(end.x/total * width, halfHeight - (end.y * halfHeight));
+		else
+			end = NSMakePoint(end.x/total * width, halfHeight + (end.y * halfHeight));
 		
 		LDSubplot *subPlot = [[LDSubplot alloc] initWithStart:start andEnd:end];
 		
@@ -170,5 +199,56 @@
 	
 }
 
+// ****************************************************************************
+// INPUT:    
+// OUTPUT:   
+// FUNCTION: 
+ 
+- (NSMutableArray *)graphPoints {
+	
+	NSMutableArray *plots = [NSMutableArray arrayWithCapacity:[dataPoints count]];
+	
+	NSInteger i = 0;
+	NSInteger totalArrs = [dataPoints count];
+	for (NSArray *mainArr in dataPoints) {
+		
+		if (i != totalArrs-1) {
+			
+			NSBezierPath *thePath = [NSBezierPath bezierPath];
+			[thePath moveToPoint:NSMakePoint(0.0, NSMidY(graphArea))];
+			
+			[self graphOnPlot:thePath forwardsFor:mainArr];
+			
+			NSPoint endPoint = NSMakePoint(NSMaxX(graphArea), NSMidY(graphArea));
+			LDSubplot *subPlot = [[LDSubplot alloc] initWithStart:[thePath currentPoint]
+														   andEnd:endPoint];
+			[thePath curveToPoint:endPoint
+					controlPoint1:[subPlot bottomRight] 
+					controlPoint2:[subPlot topLeft]];
+			
+			NSArray *nextArr = [dataPoints objectAtIndex:i+1];
+			[self graphOnPlot:thePath backwardsFor:nextArr];
+			
+			endPoint = NSMakePoint(NSMinX(graphArea), NSMidY(graphArea));
+			subPlot = [[LDSubplot alloc] initWithStart:[thePath currentPoint]
+												andEnd:endPoint];
+			[thePath curveToPoint:endPoint
+					controlPoint1:[subPlot bottomRight] 
+					controlPoint2:[subPlot topLeft]];
+			
+			[[NSColor blackColor] set];
+			[thePath setLineWidth:3.0];
+			[thePath stroke];
+			[plots addObject:thePath];
+			
+		}
+		
+		i++;
+		
+	}
+	
+	return plots;
+	
+}
 
 @end
