@@ -13,6 +13,8 @@
 		4975F2F0112CDAAD0052E9B4 /* tree.xml in Resources */ = {isa = PBXBuildFile; fileRef = 4975F2EF112CDAAD0052E9B4 /* tree.xml */; };
 		4975F321112CE40D0052E9B4 /* LDQuestionData.m in Sources */ = {isa = PBXBuildFile; fileRef = 4975F320112CE40D0052E9B4 /* LDQuestionData.m */; };
 		4975F344112CE5860052E9B4 /* LDAppData.m in Sources */ = {isa = PBXBuildFile; fileRef = 4975F343112CE5860052E9B4 /* LDAppData.m */; };
+		4975F393112CFB3D0052E9B4 /* LDReadInFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 4975F392112CFB3D0052E9B4 /* LDReadInFile.m */; };
+		4975F3C5112D00F70052E9B4 /* LDTaskData.m in Sources */ = {isa = PBXBuildFile; fileRef = 4975F3C4112D00F70052E9B4 /* LDTaskData.m */; };
 		49E3684B10FF8CC4009924B0 /* LachesisDebrieferAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E3684110FF8CC4009924B0 /* LachesisDebrieferAppDelegate.m */; };
 		49E3684C10FF8CC4009924B0 /* LDLoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E3684310FF8CC4009924B0 /* LDLoadingViewController.m */; };
 		49E3684D10FF8CC4009924B0 /* LDLoadingMaster.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E3684610FF8CC4009924B0 /* LDLoadingMaster.m */; };
@@ -57,6 +59,10 @@
 		4975F320112CE40D0052E9B4 /* LDQuestionData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDQuestionData.m; sourceTree = "<group>"; };
 		4975F342112CE5860052E9B4 /* LDAppData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDAppData.h; sourceTree = "<group>"; };
 		4975F343112CE5860052E9B4 /* LDAppData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDAppData.m; sourceTree = "<group>"; };
+		4975F391112CFB3D0052E9B4 /* LDReadInFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDReadInFile.h; sourceTree = "<group>"; };
+		4975F392112CFB3D0052E9B4 /* LDReadInFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDReadInFile.m; sourceTree = "<group>"; };
+		4975F3C3112D00F70052E9B4 /* LDTaskData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDTaskData.h; sourceTree = "<group>"; };
+		4975F3C4112D00F70052E9B4 /* LDTaskData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDTaskData.m; sourceTree = "<group>"; };
 		49E3684010FF8CC4009924B0 /* LachesisDebrieferAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LachesisDebrieferAppDelegate.h; sourceTree = "<group>"; };
 		49E3684110FF8CC4009924B0 /* LachesisDebrieferAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LachesisDebrieferAppDelegate.m; sourceTree = "<group>"; };
 		49E3684210FF8CC4009924B0 /* LDLoadingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDLoadingViewController.h; sourceTree = "<group>"; };
@@ -274,8 +280,6 @@
 		49E3686E10FF9262009924B0 /* Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				4975F342112CE5860052E9B4 /* LDAppData.h */,
-				4975F343112CE5860052E9B4 /* LDAppData.m */,
 				49E3686F10FF9262009924B0 /* LDButtonCell.h */,
 				49E3687010FF9262009924B0 /* LDButtonCell.m */,
 				49E3687110FF9262009924B0 /* LDColorKey.h */,
@@ -293,8 +297,14 @@
 		49E369AE10FFB2B3009924B0 /* Loading */ = {
 			isa = PBXGroup;
 			children = (
+				4975F342112CE5860052E9B4 /* LDAppData.h */,
+				4975F343112CE5860052E9B4 /* LDAppData.m */,
 				49E3684510FF8CC4009924B0 /* LDLoadingMaster.h */,
 				49E3684610FF8CC4009924B0 /* LDLoadingMaster.m */,
+				4975F391112CFB3D0052E9B4 /* LDReadInFile.h */,
+				4975F392112CFB3D0052E9B4 /* LDReadInFile.m */,
+				4975F3C3112D00F70052E9B4 /* LDTaskData.h */,
+				4975F3C4112D00F70052E9B4 /* LDTaskData.m */,
 			);
 			name = Loading;
 			sourceTree = "<group>";
@@ -381,6 +391,8 @@
 				49EEA97D1122B1D4000BF8DF /* LDQuestionAnswers.m in Sources */,
 				4975F321112CE40D0052E9B4 /* LDQuestionData.m in Sources */,
 				4975F344112CE5860052E9B4 /* LDAppData.m in Sources */,
+				4975F393112CFB3D0052E9B4 /* LDReadInFile.m in Sources */,
+				4975F3C5112D00F70052E9B4 /* LDTaskData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

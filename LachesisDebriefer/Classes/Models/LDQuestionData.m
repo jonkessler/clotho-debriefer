@@ -19,7 +19,7 @@
 		
 		task = @"";
 		date = [NSDate date];
-		appData = [NSMutableArray array];
+		appData = [NSMutableDictionary array];
 		
 	}
 	
@@ -38,7 +38,7 @@
 		
 		task = iTask;
 		date = iDate;
-		appData = [NSMutableArray array];
+		appData = [NSMutableDictionary array];
 		
 	}
 	

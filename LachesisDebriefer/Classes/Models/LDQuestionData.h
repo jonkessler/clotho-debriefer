@@ -13,13 +13,13 @@
 
 	NSString *task;
 	NSDate *date;
-	NSMutableArray *appData;
+	NSMutableDictionary *appData;
 	
 }
 
 @property(assign) NSString *task;
 @property(assign) NSDate *date;
-@property(assign) NSMutableArray *appData;
+@property(assign) NSMutableDictionary *appData;
 
 - (id)initWithTask:(NSString *)iTask andDate:(NSDate *)iDate;
 

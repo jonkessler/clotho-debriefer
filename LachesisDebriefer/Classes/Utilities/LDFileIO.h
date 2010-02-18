@@ -10,6 +10,7 @@
 
 #import "LDDebriefFile.h"
 #import "LDDebriefLine.h"
+#import "LDTaskData.h"
 
 @interface LDFileIO : NSObject {
 
@@ -19,7 +20,25 @@
 
 @property (assign, readonly) NSString *baseFilePath;
 
+#pragma mark -
+#pragma mark Class Functions
+
++ (NSArray *)appNameDataForDate:(NSDate *)date;
+
 + (NSArray *)generateRandomPoints:(NSInteger)count;
+
++ (NSArray *)pidDataForDate:(NSDate *)date;
+
++ (NSArray *)rawDataForDate:(NSDate *)date;
+
++ (NSArray *)readInFiles;
+
++ (LDTaskData *)taskForDate:(NSDate *)date;
+
++ (NSArray *)titleDataForDate:(NSDate *)date;
+
+#pragma mark -
+#pragma mark LDFileIO Functions
 
 - (id)initWithBasePath:(NSString *)basePath;
 

@@ -12,15 +12,27 @@
 @interface LDAppData : NSObject {
 	
 	NSString *name;
+	NSInteger pid;
 	NSColor *color;
-	NSArray *dataPoints;
+	double dataPoint;
+	
+	NSArray *rawData;
+	NSDictionary *titleRawData;
 
 }
 
 @property (assign) NSString *name;
+@property (assign) NSInteger pid;
 @property (assign) NSColor *color;
-@property (assign) NSArray *dataPoints;
+@property (assign) double dataPoint;
 
-- (id)initWithName:(NSString *)iName andPoints:(NSArray *)iPoints;
+@property (assign) NSArray *rawData;
+@property (assign) NSDictionary *titleRawData;
+
+- (id)initWithName:(NSString *)iName
+		andRawData:(NSArray *)iRaw 
+		   withPID:(NSInteger)iPid;
+
+- (void)associateTitleWithRawData:(NSArray *)titles;
 
 @end

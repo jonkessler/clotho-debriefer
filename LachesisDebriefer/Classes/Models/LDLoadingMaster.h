@@ -16,6 +16,7 @@
 	LDDebriefFile *debriefFile;
 	NSTimer *progressTimer;
 	NSString *debriefDate;
+	NSMutableDictionary *questionsByDate;
 	
 }
 
