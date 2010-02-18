@@ -115,7 +115,7 @@
 	NSRect topHalf = NSMakeRect(0.0, NSMidY(graphArea), 
 								NSWidth(graphArea)/2, NSHeight(graphArea)/2);
 	
-	CGFloat halfHeight = NSHeight(topHalf) * 0.90;
+	CGFloat halfHeight = NSHeight(topHalf) * 0.9;
 	
 	CGFloat width = NSWidth(graphArea);
 	
@@ -130,9 +130,11 @@
 		end = [point pointValue];
 		
 		if (end.y < 0)
-			end = NSMakePoint(end.x/total * width, halfHeight - (1-end.y * halfHeight) + 25);
+			end = NSMakePoint(end.x/total * width, halfHeight + (end.y * halfHeight));
 		else
-			end = NSMakePoint(end.x/total * width, end.y * halfHeight + 25);
+			end = NSMakePoint(end.x/total * width, halfHeight + (end.y * halfHeight));
+		
+		end.y += 25;
 		
 		LDSubplot *subPlot = [[LDSubplot alloc] initWithStart:start andEnd:end];
 		
@@ -177,9 +179,11 @@
 		end = [point pointValue];
 		
 		if (end.y < 0)
-			end = NSMakePoint(end.x/total * width, halfHeight - (end.y * halfHeight));
+			end = NSMakePoint(end.x/total * width, halfHeight + (end.y * halfHeight));
 		else
 			end = NSMakePoint(end.x/total * width, halfHeight + (end.y * halfHeight));
+		
+		end.y += 25;
 		
 		LDSubplot *subPlot = [[LDSubplot alloc] initWithStart:start andEnd:end];
 		

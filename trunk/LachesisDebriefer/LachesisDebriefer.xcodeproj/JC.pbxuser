@@ -459,6 +459,23 @@
 			4975F21A112BCBF30052E9B4 /* PBXTextBookmark */ = 4975F21A112BCBF30052E9B4 /* PBXTextBookmark */;
 			4975F21E112BCC1F0052E9B4 /* PBXTextBookmark */ = 4975F21E112BCC1F0052E9B4 /* PBXTextBookmark */;
 			4975F21F112BCC1F0052E9B4 /* PBXTextBookmark */ = 4975F21F112BCC1F0052E9B4 /* PBXTextBookmark */;
+			4975F228112BCE4E0052E9B4 /* PBXTextBookmark */ = 4975F228112BCE4E0052E9B4 /* PBXTextBookmark */;
+			4975F232112C87820052E9B4 /* PBXTextBookmark */ = 4975F232112C87820052E9B4 /* PBXTextBookmark */;
+			4975F233112C87820052E9B4 /* PBXTextBookmark */ = 4975F233112C87820052E9B4 /* PBXTextBookmark */;
+			4975F236112C87820052E9B4 /* PBXBookmark */ = 4975F236112C87820052E9B4 /* PBXBookmark */;
+			4975F237112C87820052E9B4 /* PBXTextBookmark */ = 4975F237112C87820052E9B4 /* PBXTextBookmark */;
+			4975F239112C87A90052E9B4 /* PBXTextBookmark */ = 4975F239112C87A90052E9B4 /* PBXTextBookmark */;
+			4975F23C112C87C50052E9B4 /* PBXTextBookmark */ = 4975F23C112C87C50052E9B4 /* PBXTextBookmark */;
+			4975F23D112C87C50052E9B4 /* PBXTextBookmark */ = 4975F23D112C87C50052E9B4 /* PBXTextBookmark */;
+			4975F241112C880F0052E9B4 /* PBXTextBookmark */ = 4975F241112C880F0052E9B4 /* PBXTextBookmark */;
+			4975F242112C880F0052E9B4 /* PBXTextBookmark */ = 4975F242112C880F0052E9B4 /* PBXTextBookmark */;
+			4975F246112C88650052E9B4 /* PBXTextBookmark */ = 4975F246112C88650052E9B4 /* PBXTextBookmark */;
+			4975F247112C88650052E9B4 /* PBXTextBookmark */ = 4975F247112C88650052E9B4 /* PBXTextBookmark */;
+			4975F24B112C88A90052E9B4 /* PBXTextBookmark */ = 4975F24B112C88A90052E9B4 /* PBXTextBookmark */;
+			4975F24C112C88A90052E9B4 /* PBXTextBookmark */ = 4975F24C112C88A90052E9B4 /* PBXTextBookmark */;
+			4975F250112C88D10052E9B4 /* PBXTextBookmark */ = 4975F250112C88D10052E9B4 /* PBXTextBookmark */;
+			4975F251112C88D10052E9B4 /* PBXTextBookmark */ = 4975F251112C88D10052E9B4 /* PBXTextBookmark */;
+			4975F255112CC1F10052E9B4 /* PBXTextBookmark */ = 4975F255112CC1F10052E9B4 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 49E1A02D10FE81F200480FBB /* Source Control */;
 		userBuildSettings = {
@@ -506,7 +523,7 @@
 		hitCount = 0;
 		ignoreCount = 0;
 		location = libobjc.A.dylib;
-		modificationTime = 288082973.650625;
+		modificationTime = 288145902.284869;
 		originalNumberOfMultipleMatches = 1;
 		state = 1;
 		symbolName = objc_exception_throw;
@@ -1989,7 +2006,7 @@
 		fRef = 49E36B4011029B40009924B0 /* LDPlot3.m */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 1;
-		rLoc = 166;
+		rLoc = 168;
 		rType = 1;
 	};
 	4975F05E112BAF340052E9B4 /* XCBuildMessageTextBookmark */ = {
@@ -2036,7 +2053,7 @@
 		fRef = 49E36B4011029B40009924B0 /* LDPlot3.m */;
 		name = "LDPlot3.m: 143";
 		rLen = 0;
-		rLoc = 4710;
+		rLoc = 4730;
 		rType = 0;
 		vrLen = 1370;
 		vrLoc = 3345;
@@ -2076,7 +2093,7 @@
 		fRef = 49E36B4011029B40009924B0 /* LDPlot3.m */;
 		name = "LDPlot3.m: 143";
 		rLen = 0;
-		rLoc = 4710;
+		rLoc = 4730;
 		rType = 0;
 		vrLen = 1498;
 		vrLoc = 387;
@@ -2355,7 +2372,7 @@
 		fRef = 49E36B4011029B40009924B0 /* LDPlot3.m */;
 		name = "LDPlot3.m: 193";
 		rLen = 0;
-		rLoc = 6871;
+		rLoc = 6909;
 		rType = 0;
 		vrLen = 1313;
 		vrLoc = 3838;
@@ -2428,7 +2445,7 @@
 		fRef = 49E36B4011029B40009924B0 /* LDPlot3.m */;
 		name = "LDPlot3.m: 191";
 		rLen = 16;
-		rLoc = 5594;
+		rLoc = 5632;
 		rType = 0;
 		vrLen = 1620;
 		vrLoc = 4956;
@@ -2438,7 +2455,7 @@
 		fRef = 49E36B4011029B40009924B0 /* LDPlot3.m */;
 		name = "LDPlot3.m: 178";
 		rLen = 0;
-		rLoc = 5059;
+		rLoc = 5079;
 		rType = 0;
 		vrLen = 1445;
 		vrLoc = 4207;
@@ -2473,7 +2490,7 @@
 		fRef = 49E36B4011029B40009924B0 /* LDPlot3.m */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 1;
-		rLoc = 231;
+		rLoc = 235;
 		rType = 1;
 	};
 	4975F0C5112BC0C70052E9B4 /* XCBuildMessageTextBookmark */ = {
@@ -2482,7 +2499,7 @@
 		fRef = 49E36B4011029B40009924B0 /* LDPlot3.m */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 1;
-		rLoc = 231;
+		rLoc = 235;
 		rType = 1;
 	};
 	4975F0C6112BC0C70052E9B4 /* PBXTextBookmark */ = {
@@ -2490,7 +2507,7 @@
 		fRef = 49E36B4011029B40009924B0 /* LDPlot3.m */;
 		name = "LDPlot3.m: 232";
 		rLen = 0;
-		rLoc = 6435;
+		rLoc = 6473;
 		rType = 0;
 		vrLen = 335;
 		vrLoc = 6284;
@@ -2510,7 +2527,7 @@
 		fRef = 49E36B4011029B40009924B0 /* LDPlot3.m */;
 		name = "LDPlot3.m: 250";
 		rLen = 0;
-		rLoc = 6871;
+		rLoc = 6909;
 		rType = 0;
 		vrLen = 1474;
 		vrLoc = 5342;
@@ -2540,7 +2557,7 @@
 		fRef = 49E36B4011029B40009924B0 /* LDPlot3.m */;
 		name = "LDPlot3.m: 250";
 		rLen = 0;
-		rLoc = 6871;
+		rLoc = 6909;
 		rType = 0;
 		vrLen = 1474;
 		vrLoc = 5342;
@@ -2570,7 +2587,7 @@
 		fRef = 49E36B4011029B40009924B0 /* LDPlot3.m */;
 		name = "LDPlot3.m: 250";
 		rLen = 0;
-		rLoc = 6871;
+		rLoc = 6909;
 		rType = 0;
 		vrLen = 1474;
 		vrLoc = 5342;
@@ -2590,7 +2607,7 @@
 		fRef = 49E36B4011029B40009924B0 /* LDPlot3.m */;
 		name = "LDPlot3.m: 232";
 		rLen = 0;
-		rLoc = 6435;
+		rLoc = 6473;
 		rType = 0;
 		vrLen = 335;
 		vrLoc = 6284;
@@ -2624,7 +2641,7 @@
 		fRef = 49E36B4011029B40009924B0 /* LDPlot3.m */;
 		name = "LDPlot3.m: 250";
 		rLen = 0;
-		rLoc = 6871;
+		rLoc = 6909;
 		rType = 0;
 		vrLen = 1474;
 		vrLoc = 5342;
@@ -2664,7 +2681,7 @@
 		fRef = 49E36B4011029B40009924B0 /* LDPlot3.m */;
 		name = "LDPlot3.m: 250";
 		rLen = 0;
-		rLoc = 6871;
+		rLoc = 6909;
 		rType = 0;
 		vrLen = 1474;
 		vrLoc = 5342;
@@ -2704,7 +2721,7 @@
 		fRef = 49E36B4011029B40009924B0 /* LDPlot3.m */;
 		name = "LDPlot3.m: 250";
 		rLen = 0;
-		rLoc = 6871;
+		rLoc = 6909;
 		rType = 0;
 		vrLen = 1474;
 		vrLoc = 5342;
@@ -2724,7 +2741,7 @@
 		fRef = 49E36B4011029B40009924B0 /* LDPlot3.m */;
 		name = "LDPlot3.m: 230";
 		rLen = 0;
-		rLoc = 6417;
+		rLoc = 6455;
 		rType = 0;
 		vrLen = 1488;
 		vrLoc = 5314;
@@ -2774,7 +2791,7 @@
 		fRef = 49E36B4011029B40009924B0 /* LDPlot3.m */;
 		name = "LDPlot3.m: 230";
 		rLen = 0;
-		rLoc = 6417;
+		rLoc = 6455;
 		rType = 0;
 		vrLen = 1460;
 		vrLoc = 5342;
@@ -2814,7 +2831,7 @@
 		fRef = 49E36B4011029B40009924B0 /* LDPlot3.m */;
 		name = "LDPlot3.m: 230";
 		rLen = 0;
-		rLoc = 6417;
+		rLoc = 6455;
 		rType = 0;
 		vrLen = 1460;
 		vrLoc = 5342;
@@ -2844,7 +2861,7 @@
 		fRef = 49E36B4011029B40009924B0 /* LDPlot3.m */;
 		name = "LDPlot3.m: 232";
 		rLen = 0;
-		rLoc = 6496;
+		rLoc = 6534;
 		rType = 0;
 		vrLen = 1474;
 		vrLoc = 5342;
@@ -2884,7 +2901,7 @@
 		fRef = 49E36B4011029B40009924B0 /* LDPlot3.m */;
 		name = "LDPlot3.m: 232";
 		rLen = 0;
-		rLoc = 6496;
+		rLoc = 6534;
 		rType = 0;
 		vrLen = 1587;
 		vrLoc = 5173;
@@ -2923,7 +2940,7 @@
 		isa = PBXTextBookmark;
 		fRef = 49E36B4011029B40009924B0 /* LDPlot3.m */;
 		name = "LDPlot3.m: 118";
-		rLen = 47;
+		rLen = 46;
 		rLoc = 3263;
 		rType = 0;
 		vrLen = 1734;
@@ -2963,7 +2980,7 @@
 		isa = PBXTextBookmark;
 		fRef = 49E36B4011029B40009924B0 /* LDPlot3.m */;
 		name = "LDPlot3.m: 118";
-		rLen = 47;
+		rLen = 46;
 		rLoc = 3263;
 		rType = 0;
 		vrLen = 1740;
@@ -2974,7 +2991,7 @@
 		fRef = 49E36B4011029B40009924B0 /* LDPlot3.m */;
 		name = "LDPlot3.m: 133";
 		rLen = 0;
-		rLoc = 3700;
+		rLoc = 3692;
 		rType = 0;
 		vrLen = 1580;
 		vrLoc = 2498;
@@ -3014,7 +3031,7 @@
 		fRef = 49E36B4011029B40009924B0 /* LDPlot3.m */;
 		name = "LDPlot3.m: 232";
 		rLen = 0;
-		rLoc = 6435;
+		rLoc = 6473;
 		rType = 0;
 		vrLen = 190;
 		vrLoc = 6338;
@@ -3024,7 +3041,7 @@
 		fRef = 49E36B4011029B40009924B0 /* LDPlot3.m */;
 		name = "LDPlot3.m: 133";
 		rLen = 0;
-		rLoc = 3700;
+		rLoc = 3692;
 		rType = 0;
 		vrLen = 1588;
 		vrLoc = 2531;
@@ -3064,7 +3081,7 @@
 		fRef = 49E36B4011029B40009924B0 /* LDPlot3.m */;
 		name = "LDPlot3.m: 180";
 		rLen = 0;
-		rLoc = 4953;
+		rLoc = 4973;
 		rType = 0;
 		vrLen = 1398;
 		vrLoc = 3835;
@@ -3104,7 +3121,7 @@
 		fRef = 49E36B4011029B40009924B0 /* LDPlot3.m */;
 		name = "LDPlot3.m: 180";
 		rLen = 0;
-		rLoc = 4953;
+		rLoc = 4973;
 		rType = 0;
 		vrLen = 1398;
 		vrLoc = 3835;
@@ -3144,7 +3161,7 @@
 		fRef = 49E36B4011029B40009924B0 /* LDPlot3.m */;
 		name = "LDPlot3.m: 180";
 		rLen = 0;
-		rLoc = 4953;
+		rLoc = 4973;
 		rType = 0;
 		vrLen = 1398;
 		vrLoc = 3835;
@@ -3184,7 +3201,7 @@
 		fRef = 49E36B4011029B40009924B0 /* LDPlot3.m */;
 		name = "LDPlot3.m: 133";
 		rLen = 0;
-		rLoc = 3700;
+		rLoc = 3692;
 		rType = 0;
 		vrLen = 1488;
 		vrLoc = 3151;
@@ -3224,7 +3241,7 @@
 		fRef = 49E36B4011029B40009924B0 /* LDPlot3.m */;
 		name = "LDPlot3.m: 133";
 		rLen = 0;
-		rLoc = 3700;
+		rLoc = 3692;
 		rType = 0;
 		vrLen = 1535;
 		vrLoc = 3072;
@@ -3264,7 +3281,7 @@
 		fRef = 49E36B4011029B40009924B0 /* LDPlot3.m */;
 		name = "LDPlot3.m: 229";
 		rLen = 53;
-		rLoc = 6325;
+		rLoc = 6363;
 		rType = 0;
 		vrLen = 1420;
 		vrLoc = 5425;
@@ -3314,7 +3331,7 @@
 		fRef = 49E36B4011029B40009924B0 /* LDPlot3.m */;
 		name = "LDPlot3.m: 230";
 		rLen = 51;
-		rLoc = 6379;
+		rLoc = 6417;
 		rType = 0;
 		vrLen = 1382;
 		vrLoc = 4284;
@@ -3354,7 +3371,7 @@
 		fRef = 49E36B4011029B40009924B0 /* LDPlot3.m */;
 		name = "LDPlot3.m: 230";
 		rLen = 51;
-		rLoc = 6379;
+		rLoc = 6417;
 		rType = 0;
 		vrLen = 1382;
 		vrLoc = 4284;
@@ -3394,7 +3411,7 @@
 		fRef = 49E36B4011029B40009924B0 /* LDPlot3.m */;
 		name = "LDPlot3.m: 230";
 		rLen = 51;
-		rLoc = 6379;
+		rLoc = 6417;
 		rType = 0;
 		vrLen = 1382;
 		vrLoc = 4284;
@@ -3424,7 +3441,7 @@
 		fRef = 49E36B4011029B40009924B0 /* LDPlot3.m */;
 		name = "LDPlot3.m: 132";
 		rLen = 0;
-		rLoc = 3612;
+		rLoc = 3611;
 		rType = 0;
 		vrLen = 1451;
 		vrLoc = 3403;
@@ -3464,7 +3481,7 @@
 		fRef = 49E36B4011029B40009924B0 /* LDPlot3.m */;
 		name = "LDPlot3.m: 132";
 		rLen = 0;
-		rLoc = 3612;
+		rLoc = 3611;
 		rType = 0;
 		vrLen = 1483;
 		vrLoc = 3263;
@@ -3504,7 +3521,7 @@
 		fRef = 49E36B4011029B40009924B0 /* LDPlot3.m */;
 		name = "LDPlot3.m: 133";
 		rLen = 0;
-		rLoc = 3700;
+		rLoc = 3692;
 		rType = 0;
 		vrLen = 1528;
 		vrLoc = 3024;
@@ -3543,8 +3560,8 @@
 		isa = PBXTextBookmark;
 		fRef = 49E36B4011029B40009924B0 /* LDPlot3.m */;
 		name = "LDPlot3.m: 133";
-		rLen = 84;
-		rLoc = 3616;
+		rLen = 77;
+		rLoc = 3615;
 		rType = 0;
 		vrLen = 1527;
 		vrLoc = 3024;
@@ -3584,7 +3601,7 @@
 		fRef = 49E36B4011029B40009924B0 /* LDPlot3.m */;
 		name = "LDPlot3.m: 177";
 		rLen = 0;
-		rLoc = 4850;
+		rLoc = 4870;
 		rType = 0;
 		vrLen = 1473;
 		vrLoc = 3972;
@@ -3624,7 +3641,7 @@
 		fRef = 49E36B4011029B40009924B0 /* LDPlot3.m */;
 		name = "LDPlot3.m: 217";
 		rLen = 0;
-		rLoc = 5842;
+		rLoc = 5880;
 		rType = 0;
 		vrLen = 1529;
 		vrLoc = 5314;
@@ -3664,7 +3681,7 @@
 		fRef = 49E36B4011029B40009924B0 /* LDPlot3.m */;
 		name = "LDPlot3.m: 217";
 		rLen = 0;
-		rLoc = 5842;
+		rLoc = 5880;
 		rType = 0;
 		vrLen = 1523;
 		vrLoc = 5314;
@@ -3704,7 +3721,7 @@
 		fRef = 49E36B4011029B40009924B0 /* LDPlot3.m */;
 		name = "LDPlot3.m: 161";
 		rLen = 77;
-		rLoc = 4437;
+		rLoc = 4457;
 		rType = 0;
 		vrLen = 1426;
 		vrLoc = 4242;
@@ -3714,7 +3731,7 @@
 		fRef = 49E36B4011029B40009924B0 /* LDPlot3.m */;
 		name = "LDPlot3.m: 161";
 		rLen = 77;
-		rLoc = 4437;
+		rLoc = 4457;
 		rType = 0;
 		vrLen = 1344;
 		vrLoc = 4242;
@@ -3744,7 +3761,7 @@
 		fRef = 49E36B4011029B40009924B0 /* LDPlot3.m */;
 		name = "LDPlot3.m: 182";
 		rLen = 0;
-		rLoc = 5039;
+		rLoc = 5059;
 		rType = 0;
 		vrLen = 1406;
 		vrLoc = 4157;
@@ -3774,7 +3791,7 @@
 		fRef = 49E36B4011029B40009924B0 /* LDPlot3.m */;
 		name = "LDPlot3.m: 135";
 		rLen = 0;
-		rLoc = 3773;
+		rLoc = 3775;
 		rType = 0;
 		vrLen = 1460;
 		vrLoc = 3343;
@@ -3804,7 +3821,7 @@
 		fRef = 49E36B4011029B40009924B0 /* LDPlot3.m */;
 		name = "LDPlot3.m: 135";
 		rLen = 0;
-		rLoc = 3749;
+		rLoc = 3741;
 		rType = 0;
 		vrLen = 1460;
 		vrLoc = 3343;
@@ -3834,7 +3851,7 @@
 		fRef = 49E36B4011029B40009924B0 /* LDPlot3.m */;
 		name = "LDPlot3.m: 135";
 		rLen = 0;
-		rLoc = 3749;
+		rLoc = 3741;
 		rType = 0;
 		vrLen = 1460;
 		vrLoc = 3343;
@@ -3864,7 +3881,7 @@
 		fRef = 49E36B4011029B40009924B0 /* LDPlot3.m */;
 		name = "LDPlot3.m: 133";
 		rLen = 0;
-		rLoc = 3671;
+		rLoc = 3670;
 		rType = 0;
 		vrLen = 1601;
 		vrLoc = 2881;
@@ -3894,7 +3911,7 @@
 		fRef = 49E36B4011029B40009924B0 /* LDPlot3.m */;
 		name = "LDPlot3.m: 133";
 		rLen = 0;
-		rLoc = 3671;
+		rLoc = 3670;
 		rType = 0;
 		vrLen = 1602;
 		vrLoc = 2881;
@@ -3924,7 +3941,7 @@
 		fRef = 49E36B4011029B40009924B0 /* LDPlot3.m */;
 		name = "LDPlot3.m: 133";
 		rLen = 0;
-		rLoc = 3674;
+		rLoc = 3671;
 		rType = 0;
 		vrLen = 1616;
 		vrLoc = 2881;
@@ -3954,7 +3971,7 @@
 		fRef = 49E36B4011029B40009924B0 /* LDPlot3.m */;
 		name = "LDPlot3.m: 166";
 		rLen = 0;
-		rLoc = 4672;
+		rLoc = 4692;
 		rType = 0;
 		vrLen = 1420;
 		vrLoc = 3844;
@@ -3984,7 +4001,7 @@
 		fRef = 49E36B4011029B40009924B0 /* LDPlot3.m */;
 		name = "LDPlot3.m: 118";
 		rLen = 0;
-		rLoc = 3309;
+		rLoc = 3308;
 		rType = 0;
 		vrLen = 1554;
 		vrLoc = 2614;
@@ -4014,7 +4031,7 @@
 		fRef = 49E36B4011029B40009924B0 /* LDPlot3.m */;
 		name = "LDPlot3.m: 118";
 		rLen = 0;
-		rLoc = 3309;
+		rLoc = 3308;
 		rType = 0;
 		vrLen = 1554;
 		vrLoc = 2614;
@@ -4044,7 +4061,7 @@
 		fRef = 49E36B4011029B40009924B0 /* LDPlot3.m */;
 		name = "LDPlot3.m: 118";
 		rLen = 0;
-		rLoc = 3309;
+		rLoc = 3308;
 		rType = 0;
 		vrLen = 1547;
 		vrLoc = 2614;
@@ -4074,7 +4091,7 @@
 		fRef = 49E36B4011029B40009924B0 /* LDPlot3.m */;
 		name = "LDPlot3.m: 118";
 		rLen = 0;
-		rLoc = 3309;
+		rLoc = 3308;
 		rType = 0;
 		vrLen = 1552;
 		vrLoc = 2614;
@@ -4104,7 +4121,7 @@
 		fRef = 49E36B4011029B40009924B0 /* LDPlot3.m */;
 		name = "LDPlot3.m: 118";
 		rLen = 0;
-		rLoc = 3309;
+		rLoc = 3308;
 		rType = 0;
 		vrLen = 1554;
 		vrLoc = 2614;
@@ -4134,7 +4151,7 @@
 		fRef = 49E36B4011029B40009924B0 /* LDPlot3.m */;
 		name = "LDPlot3.m: 135";
 		rLen = 0;
-		rLoc = 3773;
+		rLoc = 3775;
 		rType = 0;
 		vrLen = 1576;
 		vrLoc = 2725;
@@ -4164,7 +4181,7 @@
 		fRef = 49E36B4011029B40009924B0 /* LDPlot3.m */;
 		name = "LDPlot3.m: 133";
 		rLen = 0;
-		rLoc = 3696;
+		rLoc = 3690;
 		rType = 0;
 		vrLen = 1550;
 		vrLoc = 2711;
@@ -4194,7 +4211,7 @@
 		fRef = 49E36B4011029B40009924B0 /* LDPlot3.m */;
 		name = "LDPlot3.m: 232";
 		rLen = 0;
-		rLoc = 6435;
+		rLoc = 6473;
 		rType = 0;
 		vrLen = 248;
 		vrLoc = 6321;
@@ -4298,6 +4315,167 @@
 		rType = 0;
 		vrLen = 1402;
 		vrLoc = 2435;
+	};
+	4975F228112BCE4E0052E9B4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 49E36B4011029B40009924B0 /* LDPlot3.m */;
+		name = "LDPlot3.m: 232";
+		rLen = 0;
+		rLoc = 6473;
+		rType = 0;
+		vrLen = 248;
+		vrLoc = 6321;
+	};
+	4975F232112C87820052E9B4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 49E36B4011029B40009924B0 /* LDPlot3.m */;
+		rLen = 1;
+		rLoc = 162;
+		rType = 1;
+	};
+	4975F233112C87820052E9B4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 49E36B4011029B40009924B0 /* LDPlot3.m */;
+		name = "LDPlot3.m: 180";
+		rLen = 0;
+		rLoc = 4973;
+		rType = 0;
+		vrLen = 1399;
+		vrLoc = 4176;
+	};
+	4975F236112C87820052E9B4 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
+	};
+	4975F237112C87820052E9B4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
+		name = "LDGraphView.m: 14";
+		rLen = 0;
+		rLoc = 255;
+		rType = 0;
+		vrLen = 1055;
+		vrLoc = 0;
+	};
+	4975F239112C87A90052E9B4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 49E36B4011029B40009924B0 /* LDPlot3.m */;
+		name = "LDPlot3.m: 232";
+		rLen = 0;
+		rLoc = 6473;
+		rType = 0;
+		vrLen = 248;
+		vrLoc = 6321;
+	};
+	4975F23C112C87C50052E9B4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 49E36B4011029B40009924B0 /* LDPlot3.m */;
+		name = "LDPlot3.m: 133";
+		rLen = 0;
+		rLoc = 3669;
+		rType = 0;
+		vrLen = 1595;
+		vrLoc = 2758;
+	};
+	4975F23D112C87C50052E9B4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
+		name = "LDGraphView.m: 14";
+		rLen = 0;
+		rLoc = 255;
+		rType = 0;
+		vrLen = 1055;
+		vrLoc = 0;
+	};
+	4975F241112C880F0052E9B4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 49E36B4011029B40009924B0 /* LDPlot3.m */;
+		name = "LDPlot3.m: 135";
+		rLen = 0;
+		rLoc = 3775;
+		rType = 0;
+		vrLen = 1680;
+		vrLoc = 2759;
+	};
+	4975F242112C880F0052E9B4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
+		name = "LDGraphView.m: 14";
+		rLen = 0;
+		rLoc = 255;
+		rType = 0;
+		vrLen = 1055;
+		vrLoc = 0;
+	};
+	4975F246112C88650052E9B4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 49E36B4011029B40009924B0 /* LDPlot3.m */;
+		name = "LDPlot3.m: 118";
+		rLen = 0;
+		rLoc = 3307;
+		rType = 0;
+		vrLen = 1614;
+		vrLoc = 2758;
+	};
+	4975F247112C88650052E9B4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
+		name = "LDGraphView.m: 14";
+		rLen = 0;
+		rLoc = 255;
+		rType = 0;
+		vrLen = 1055;
+		vrLoc = 0;
+	};
+	4975F24B112C88A90052E9B4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 49E36B4011029B40009924B0 /* LDPlot3.m */;
+		name = "LDPlot3.m: 137";
+		rLen = 0;
+		rLoc = 3795;
+		rType = 0;
+		vrLen = 1414;
+		vrLoc = 3778;
+	};
+	4975F24C112C88A90052E9B4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
+		name = "LDGraphView.m: 14";
+		rLen = 0;
+		rLoc = 255;
+		rType = 0;
+		vrLen = 1055;
+		vrLoc = 0;
+	};
+	4975F250112C88D10052E9B4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 49E36B4011029B40009924B0 /* LDPlot3.m */;
+		name = "LDPlot3.m: 186";
+		rLen = 0;
+		rLoc = 5099;
+		rType = 0;
+		vrLen = 1342;
+		vrLoc = 4323;
+	};
+	4975F251112C88D10052E9B4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
+		name = "LDGraphView.m: 14";
+		rLen = 0;
+		rLoc = 255;
+		rType = 0;
+		vrLen = 1055;
+		vrLoc = 0;
+	};
+	4975F255112CC1F10052E9B4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
+		name = "LDGraphView.m: 14";
+		rLen = 0;
+		rLoc = 255;
+		rType = 0;
+		vrLen = 1055;
+		vrLoc = 0;
 	};
 	49E1A02310FE81EC00480FBB /* LachesisDebriefer */ = {
 		isa = PBXExecutable;
@@ -4584,9 +4762,9 @@
 	};
 	49E36B4011029B40009924B0 /* LDPlot3.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1379, 3570}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1379, 3640}}";
 			sepNavSelRange = "{577, 0}";
-			sepNavVisRange = "{1026, 648}";
+			sepNavVisRange = "{1013, 741}";
 			sepNavWindowFrame = "{{631, 4}, {637, 874}}";
 		};
 	};
@@ -4634,7 +4812,7 @@
 		ignoreCount = 0;
 		lineNumber = 176;
 		location = LachesisDebriefer;
-		modificationTime = 288082973.622249;
+		modificationTime = 288145902.261654;
 		originalNumberOfMultipleMatches = 1;
 		state = 1;
 	};
