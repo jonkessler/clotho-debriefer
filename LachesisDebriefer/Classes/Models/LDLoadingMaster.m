@@ -61,9 +61,9 @@
 		
 	
 	[self createFakeDebriefs];
-	
-//	[self applyJoshCodeToFakeDebriefs];
-	
+	NSLog(@"Start: %@", [NSDate date]);
+	[self applyJoshCodeToFakeDebriefs];
+	NSLog(@"End: %@", [NSDate date]);
 	[self applyTreeToFakeDebriefs];
 	
 	[self fireProgress];
