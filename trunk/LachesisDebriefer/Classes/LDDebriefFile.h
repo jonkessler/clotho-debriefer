@@ -15,8 +15,10 @@
 	
 }
 
+@property(assign, readonly) NSArray *debriefLines;
+
 - (id)initWithData:(NSData *)fileData;
 
-@property(assign, readonly) NSArray *debriefLines;
+- (NSDate *)dateOfDebriefFile;
 
 @end

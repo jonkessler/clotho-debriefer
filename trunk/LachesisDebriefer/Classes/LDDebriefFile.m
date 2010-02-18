@@ -79,4 +79,23 @@
 	
 }
 
+// ****************************************************************************
+// INPUT:    
+// OUTPUT:   NSDate - date of this debriefFile
+// FUNCTION: determines and returns the date of this debrie file
+ 
+- (NSDate *)dateOfDebriefFile {
+	
+	if ([debriefLines count] == 0)
+		return nil;
+	
+	LDDebriefLine *dLine = [debriefLines objectAtIndex:0];
+	
+	NSString *dateString = [NSString stringWithFormat:@"%@ %@",
+							[dLine date], [dLine time]];
+	
+	return [NSDate dateWithNaturalLanguageString:dateString];
+	
+}
+
 @end
