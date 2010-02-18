@@ -61,9 +61,9 @@
 		
 	
 	[self createFakeDebriefs];
-	NSLog(@"Start: %@", [NSDate date]);
-	[self applyJoshCodeToFakeDebriefs];
-	NSLog(@"End: %@", [NSDate date]);
+
+//	[self applyJoshCodeToFakeDebriefs];
+
 	[self applyTreeToFakeDebriefs];
 	
 	[self fireProgress];
@@ -138,9 +138,10 @@
  
 - (void)applyTreeToFakeDebriefs {
 	
-	// TODO: determine where generated tree is located
+//	NSString *treePath = [[NSBundle mainBundle] pathForResource:@"tree" 
+//														 ofType:@"xml"];
 	
-	// TODO: determine where title file located and read it in
+	
 	
 	// TODO: parse xml tree 
 	
