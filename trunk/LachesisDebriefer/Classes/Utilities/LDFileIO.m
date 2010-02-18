@@ -8,6 +8,8 @@
 
 #import "LDFileIO.h"
 
+#import "LDReadInFile.h"
+
 #define DEBUG YES
 
 // if in DEBUG mode, prints log message of the format: 
@@ -38,6 +40,39 @@
 #pragma mark -
 #pragma mark Class Functions
 
+// ****************************************************************************
+// INPUT:    
+// OUTPUT:   
+// FUNCTION: 
+ 
++ (NSArray *)appNameDataForDate:(NSDate *)date {
+
+	NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+	[formatter setDateFormat:@"yyyy-MM-dd--HH-mm-ss"];
+	
+	NSString *filePath = [@"~/Library/Logs/Discipline/Results/0" 
+						  stringByExpandingTildeInPath];
+	filePath = [filePath stringByAppendingFormat:@"/appName_%@.txt", 
+				[formatter stringFromDate:date]];
+	
+	NSData *fileData = [NSData dataWithContentsOfFile:filePath];
+	NSString *fileString = [[NSString alloc] initWithData:fileData 
+												 encoding:NSUTF8StringEncoding];
+	
+	NSArray *fileArray = [fileString componentsSeparatedByString:@"\n"];
+	NSMutableArray *appNames = [NSMutableArray array];
+	for (NSString *appPair in fileArray)
+		[appNames addObject:[[appPair componentsSeparatedByString:@" - "] objectAtIndex:0]];
+	
+	return appNames;
+	
+}
+
+// ****************************************************************************
+// INPUT:    
+// OUTPUT:   
+// FUNCTION: 
+ 
 + (NSArray *)generateRandomPoints:(NSInteger)count {
 	
 	NSInteger i;
@@ -51,6 +86,172 @@
 	}
 	
 	return toRet;
+	
+}
+
+// ****************************************************************************
+// INPUT:    
+// OUTPUT:   
+// FUNCTION: 
+ 
+
++ (NSArray *)pidDataForDate:(NSDate *)date {
+
+	NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+	[formatter setDateFormat:@"yyyy-MM-dd--HH-mm-ss"];
+	
+	NSString *filePath = [@"~/Library/Logs/Discipline/Results/0" 
+						  stringByExpandingTildeInPath];
+	filePath = [filePath stringByAppendingFormat:@"/pid_%@.txt", 
+				[formatter stringFromDate:date]];
+	
+	NSData *fileData = [NSData dataWithContentsOfFile:filePath];
+	NSString *fileString = [[NSString alloc] initWithData:fileData 
+												 encoding:NSUTF8StringEncoding];
+	
+	NSArray *fileArray = [fileString componentsSeparatedByString:@"\n"];
+	
+	return fileArray;
+	
+}
+
+// ****************************************************************************
+// INPUT:    
+// OUTPUT:   
+// FUNCTION: 
+ 
++ (NSArray *)rawDataForDate:(NSDate *)date {
+	
+	NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+	[formatter setDateFormat:@"yyyy-MM-dd--HH-mm-ss"];
+	
+	NSString *filePath = [@"~/Library/Logs/Discipline/Results/0" 
+						  stringByExpandingTildeInPath];
+	filePath = [filePath stringByAppendingFormat:@"/%@.txt", 
+				[formatter stringFromDate:date]];
+	
+	NSData *fileData = [NSData dataWithContentsOfFile:filePath];
+	NSString *fileString = [[NSString alloc] initWithData:fileData 
+												 encoding:NSUTF8StringEncoding];
+	
+	NSArray *fileArray = [fileString componentsSeparatedByString:@"\n"];
+	
+	NSMutableArray *dataPerApp = [NSMutableArray array];
+	for (NSString *appData in fileArray) {
+		
+		NSArray *sepByComma = [appData componentsSeparatedByString:@","];
+		sepByComma = [sepByComma subarrayWithRange:NSMakeRange(1, [sepByComma count]-1)];
+		[dataPerApp addObject:sepByComma];
+		
+	}
+	
+	return [NSArray arrayWithArray:dataPerApp];
+	
+}
+
+// ****************************************************************************
+// INPUT:    
+// OUTPUT:   
+// FUNCTION: 
+
++ (NSArray *)readInFiles {
+	
+	NSString *path = [@"~/Library/Logs/Discipline/Log/lachisisDebriefs" stringByExpandingTildeInPath];
+	
+	NSArray *files = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:path 
+																		 error:nil];
+	NSMutableArray *readIns = [NSMutableArray array];
+	for (NSString *file in files) {
+		
+		NSString *fullPath = [path stringByAppendingPathComponent:file];
+		
+		if ([fullPath rangeOfString:@".DS"].length > 0)
+			continue;
+		
+		LDReadInFile *readIn = [[LDReadInFile alloc] initWithPath:fullPath];
+		
+		[readIns addObject:readIn];
+		
+	}
+	
+	return [NSArray arrayWithArray:readIns];
+	
+}
+
+// ****************************************************************************
+// INPUT:    
+// OUTPUT:   
+// FUNCTION: 
+ 
++ (LDTaskData *)taskForDate:(NSDate *)date {
+
+	NSString *path = [@"~/Library/Logs/Discipline/Tasks/" stringByExpandingTildeInPath];
+	
+	NSArray *files = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:path 
+																		 error:nil];
+	
+	LDTaskData *tasks = [[LDTaskData alloc] init];
+	
+	NSDateFormatter *taskDateFormat = [[NSDateFormatter alloc] init];
+	[taskDateFormat setDateFormat:@"yyyy-MM-dd"];
+	
+	NSString *taskFileName = [NSString stringWithFormat:@"Task_%@.plist", 
+							  [taskDateFormat stringFromDate:date]];
+	
+	if (![files containsObject:taskFileName])
+		DLog(@"***ERROR: Task file not found for path: %@", taskFileName);
+	
+	NSString *taskFilePath = [path stringByAppendingPathComponent:taskFileName];
+	NSString *errorDesc = nil; 
+	NSPropertyListFormat format; 
+	NSData *plistXML = [[NSFileManager defaultManager] contentsAtPath:taskFilePath]; 
+	NSMutableArray *taskData = 
+	(NSMutableArray *)[NSPropertyListSerialization 
+							propertyListFromData:plistXML 
+							mutabilityOption:NSPropertyListMutableContainersAndLeaves 
+							format:&format errorDescription:&errorDesc]; 
+	
+	for (NSDictionary *task in taskData) {
+		
+		NSDate *taskDate = [task objectForKey:@"Date"];
+		if ([taskDate isEqualToDate:date]) {
+			
+			[tasks setData:task];
+			break;
+			
+		}
+			
+	}
+	
+	[tasks setName:taskFileName];
+	
+	return tasks;
+	
+}
+
+// ****************************************************************************
+// INPUT:    
+// OUTPUT:   
+// FUNCTION: 
+ 
++ (NSArray *)titleDataForDate:(NSDate *)date {
+
+	NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+	[formatter setDateFormat:@"yyyy-MM-dd--HH-mm-ss"];
+	
+	NSString *filePath = [@"~/Library/Logs/Discipline/Results/0" 
+						  stringByExpandingTildeInPath];
+	filePath = [filePath stringByAppendingFormat:@"/title_%@.txt", 
+				[formatter stringFromDate:date]];
+	
+	NSData *fileData = [NSData dataWithContentsOfFile:filePath];
+	NSString *fileString = [[NSString alloc] initWithData:fileData 
+												 encoding:NSUTF8StringEncoding];
+	
+	NSArray *fileArray = [fileString componentsSeparatedByString:@","];
+	fileArray = [fileArray subarrayWithRange:NSMakeRange(1, [fileArray count]-1)];
+	
+	return fileArray;
 	
 }
 
