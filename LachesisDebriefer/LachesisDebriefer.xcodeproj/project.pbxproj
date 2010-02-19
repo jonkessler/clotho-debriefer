@@ -15,6 +15,7 @@
 		4975F344112CE5860052E9B4 /* LDAppData.m in Sources */ = {isa = PBXBuildFile; fileRef = 4975F343112CE5860052E9B4 /* LDAppData.m */; };
 		4975F393112CFB3D0052E9B4 /* LDReadInFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 4975F392112CFB3D0052E9B4 /* LDReadInFile.m */; };
 		4975F3C5112D00F70052E9B4 /* LDTaskData.m in Sources */ = {isa = PBXBuildFile; fileRef = 4975F3C4112D00F70052E9B4 /* LDTaskData.m */; };
+		498B725C112EFDC2005DF72D /* lachisis_512_debrief.icns in Resources */ = {isa = PBXBuildFile; fileRef = 498B725B112EFDC2005DF72D /* lachisis_512_debrief.icns */; };
 		49E3684B10FF8CC4009924B0 /* LachesisDebrieferAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E3684110FF8CC4009924B0 /* LachesisDebrieferAppDelegate.m */; };
 		49E3684C10FF8CC4009924B0 /* LDLoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E3684310FF8CC4009924B0 /* LDLoadingViewController.m */; };
 		49E3684D10FF8CC4009924B0 /* LDLoadingMaster.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E3684610FF8CC4009924B0 /* LDLoadingMaster.m */; };
@@ -64,6 +65,7 @@
 		4975F392112CFB3D0052E9B4 /* LDReadInFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDReadInFile.m; sourceTree = "<group>"; };
 		4975F3C3112D00F70052E9B4 /* LDTaskData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDTaskData.h; sourceTree = "<group>"; };
 		4975F3C4112D00F70052E9B4 /* LDTaskData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDTaskData.m; sourceTree = "<group>"; };
+		498B725B112EFDC2005DF72D /* lachisis_512_debrief.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = lachisis_512_debrief.icns; sourceTree = "<group>"; };
 		49E3684010FF8CC4009924B0 /* LachesisDebrieferAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LachesisDebrieferAppDelegate.h; sourceTree = "<group>"; };
 		49E3684110FF8CC4009924B0 /* LachesisDebrieferAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LachesisDebrieferAppDelegate.m; sourceTree = "<group>"; };
 		49E3684210FF8CC4009924B0 /* LDLoadingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDLoadingViewController.h; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				498B725B112EFDC2005DF72D /* lachisis_512_debrief.icns */,
 				4975F2EF112CDAAD0052E9B4 /* tree.xml */,
 				8D1107310486CEB800E47090 /* LachesisDebriefer-Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
@@ -362,6 +365,7 @@
 				49E3690E10FF9C82009924B0 /* LDQuestion.xib in Resources */,
 				49EEA72611229D4A000BF8DF /* LDLoading.xib in Resources */,
 				4975F2F0112CDAAD0052E9B4 /* tree.xml in Resources */,
+				498B725C112EFDC2005DF72D /* lachisis_512_debrief.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

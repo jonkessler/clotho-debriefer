@@ -13,6 +13,19 @@
 #import "LDSubplot.h"
 #import "LDFileIO.h"
 
+#define DEBUG YES
+
+// if in DEBUG mode, prints log message of the format: 
+// -[Class functionName] ["ine" #] message 
+#ifdef DEBUG 
+#   define DLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__); 
+#else 
+#   define DLog(...) 
+#endif 
+
+// ALog always displays output regardless of the DEBUG setting 
+#define ALog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__); 
+
 #define USE_RANDOM_POINTS NO
 
 #define NUM_PLOTS 3
@@ -119,6 +132,28 @@
 				
 				NSRunInformationalAlertPanel(@"Done!", @"Thank you for debriefing today.", 
 											 @"OK", nil, nil);
+				
+				NSString *oldDebriefs = [@"~/Library/Logs/Discipline/Log/OldDebriefs" 
+										 stringByExpandingTildeInPath];
+				
+				NSFileManager *defMan = [NSFileManager defaultManager];
+				if (![defMan fileExistsAtPath:oldDebriefs]) 
+					[defMan createDirectoryAtPath:oldDebriefs
+					  withIntermediateDirectories:NO
+									   attributes:nil
+											error:nil];
+				
+				NSString *moveFrom = [@"~/Library/Logs/Discipline/Log/lachisisDebriefs" 
+									  stringByExpandingTildeInPath];
+				
+				NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+				[formatter setDateFormat:@"MM-dd-yy"];
+				
+				NSString *moveTo = [oldDebriefs stringByAppendingFormat:
+									@"/lachisisDebriefs_%@", [formatter stringFromDate:currentDate]];
+				
+				if(![defMan moveItemAtPath:moveFrom toPath:moveTo error:nil])
+					DLog(@"***ERROR: unable to archive lachisisDebriefs");
 				
 				[[NSNotificationCenter defaultCenter] postNotificationName:@"terminate" 
 																	object:nil];
@@ -341,8 +376,6 @@
 			
 			[self display];
 			
-			NSRunInformationalAlertPanel(@"FAIL.", @"You are wrong.", @"Whimper", nil, nil);
-			
 			[[NSNotificationCenter defaultCenter] postNotificationName:@"wrongAnswer" 
 																object:nil];
 			
@@ -351,7 +384,7 @@
 		else {
 			
 			[self display];
-			NSInteger ret = NSRunInformationalAlertPanel(@"WIN.", @"You are right.", @"Cheers", 
+			NSInteger ret = NSRunInformationalAlertPanel(@"Correct.", nil, @"OK", 
 														 nil, nil);
 			
 			if (ret == 1) 
