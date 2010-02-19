@@ -522,6 +522,34 @@
 // OUTPUT:   
 // FUNCTION: 
  
++ (void)logAnswer:(LDQuestionAnswers *)answer {
+	
+	NSString *path = [@"~/Library/Logs/Discipline/Log/Lachesis" stringByExpandingTildeInPath];
+	
+	if (![[NSFileManager defaultManager] fileExistsAtPath:path])
+		[[NSFileManager defaultManager] createDirectoryAtPath:path 
+								  withIntermediateDirectories:NO
+												   attributes:nil
+														error:nil];
+	
+	path = [path stringByAppendingPathComponent:[NSString stringWithFormat:@"debrief_%@.txt", 
+												 [answer debriefDate]]];
+	
+	NSString *stringToLog = [NSString stringWithFormat:@"%@, %@, %d, %f, %d, %@",
+							 [answer debriefDate], [answer debriefTask],
+							 [answer graphType], [answer secondsAway],
+							 ([answer isCorrect]) ? 1 : 0, [answer explanation]];
+	NSData *theData = [stringToLog dataUsingEncoding:NSUTF8StringEncoding];
+	
+	[[NSFileManager defaultManager] createFileAtPath:path contents:theData attributes:nil];
+	
+}
+
+// ****************************************************************************
+// INPUT:    
+// OUTPUT:   
+// FUNCTION: 
+ 
 - (LDDebriefFile *)readInDebriefFile:(NSString *)debriefPath {
 
 	baseFilePath = [[debriefPath stringByDeletingLastPathComponent] 

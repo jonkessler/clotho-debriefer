@@ -6,6 +6,7 @@
 //  Copyright 2010 University of Illinois Champaign-Urbana. All rights reserved.
 //
 
+#import "LDFileIO.h"
 #import "LDQuestionViewController.h"
 #import "LDQuestionData.h"
 
@@ -122,6 +123,20 @@
 - (IBAction)makeNewGraph:(id)sender {
 	
 	answer = [[LDQuestionAnswers alloc] init];	
+	[answer setDebriefDate:[[graph currentDate] description]];
+	[answer setDebriefTask:[task stringValue]];
+	[answer setGraphType:[graph plotNum]];
+	[answer setIsCorrect:[graph wasCorrect]];
+	if (![graph wasCorrect]) {
+		
+		[answer setExplanation:[wrongText stringValue]];
+		[answer setSecondsAway:[graph secondsAway]];
+		
+	}
+	else
+		[answer setSecondsAway:0.0];
+		
+	[LDFileIO logAnswer:answer];
 	
 	[graph generateNewGraph];
 	

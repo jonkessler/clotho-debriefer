@@ -27,13 +27,16 @@
 	NSRect correctArea;
 	NSInteger plotNum;
 	NSArray *appNames;
+	BOOL wasCorrect;
 	
 }
 
+@property (assign, readonly) NSInteger plotNum;
 @property (assign, readonly) LDColorKey *colorKey;
 @property (assign) LDDebriefFile *debriefFile;
 @property (assign, readonly) NSMutableArray *coordinates;
 @property (assign) NSDate *currentDate;
+@property (assign, readonly) BOOL wasCorrect;
 
 - (id)initWithDebriefFile:(LDDebriefFile *)debrief andFrame:(NSRect)theFrame;
 - (id)initWithDebriefFile:(LDDebriefFile *)debrief;
@@ -48,6 +51,8 @@
 
 - (BOOL)isCorrectForPoint:(NSPoint)myGuess;
 - (BOOL)isValid:(NSPoint)point;
+
+- (CGFloat)secondsAway;
 
 - (void)mouseMovedInMe:(NSEvent *)event;
 

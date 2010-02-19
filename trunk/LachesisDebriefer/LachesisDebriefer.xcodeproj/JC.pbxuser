@@ -18,6 +18,7 @@
 		breakpoints = (
 			49F8F5A911101DC60043F11D /* LDPlot.m:176 */,
 			492475571121F224003C9CC9 /* objc_exception_throw */,
+			498B720B112E9962005DF72D /* LDQuestionViewController.m:130 */,
 		);
 		codeSenseManager = 49E1A02E10FE81F200480FBB /* Code sense */;
 		executables = (
@@ -339,6 +340,47 @@
 			498B71BF112E9123005DF72D /* PBXTextBookmark */ = 498B71BF112E9123005DF72D /* PBXTextBookmark */;
 			498B71C0112E9123005DF72D /* PBXTextBookmark */ = 498B71C0112E9123005DF72D /* PBXTextBookmark */;
 			498B71C3112E912B005DF72D /* PBXTextBookmark */ = 498B71C3112E912B005DF72D /* PBXTextBookmark */;
+			498B71D3112E9671005DF72D /* PBXTextBookmark */ = 498B71D3112E9671005DF72D /* PBXTextBookmark */;
+			498B71D4112E9671005DF72D /* PBXTextBookmark */ = 498B71D4112E9671005DF72D /* PBXTextBookmark */;
+			498B71D5112E9671005DF72D /* PBXTextBookmark */ = 498B71D5112E9671005DF72D /* PBXTextBookmark */;
+			498B71D8112E9671005DF72D /* PBXTextBookmark */ = 498B71D8112E9671005DF72D /* PBXTextBookmark */;
+			498B71D9112E9671005DF72D /* PBXTextBookmark */ = 498B71D9112E9671005DF72D /* PBXTextBookmark */;
+			498B71DA112E9671005DF72D /* PBXTextBookmark */ = 498B71DA112E9671005DF72D /* PBXTextBookmark */;
+			498B71DD112E9671005DF72D /* PBXTextBookmark */ = 498B71DD112E9671005DF72D /* PBXTextBookmark */;
+			498B71DE112E9671005DF72D /* PBXTextBookmark */ = 498B71DE112E9671005DF72D /* PBXTextBookmark */;
+			498B71DF112E9671005DF72D /* PBXTextBookmark */ = 498B71DF112E9671005DF72D /* PBXTextBookmark */;
+			498B71E3112E9678005DF72D /* PBXTextBookmark */ = 498B71E3112E9678005DF72D /* PBXTextBookmark */;
+			498B71E4112E9678005DF72D /* PBXTextBookmark */ = 498B71E4112E9678005DF72D /* PBXTextBookmark */;
+			498B71E5112E9678005DF72D /* PBXTextBookmark */ = 498B71E5112E9678005DF72D /* PBXTextBookmark */;
+			498B71E9112E96BB005DF72D /* PBXTextBookmark */ = 498B71E9112E96BB005DF72D /* PBXTextBookmark */;
+			498B71EA112E96BB005DF72D /* PBXTextBookmark */ = 498B71EA112E96BB005DF72D /* PBXTextBookmark */;
+			498B71EB112E96BB005DF72D /* PBXTextBookmark */ = 498B71EB112E96BB005DF72D /* PBXTextBookmark */;
+			498B71ED112E96E0005DF72D /* PBXTextBookmark */ = 498B71ED112E96E0005DF72D /* PBXTextBookmark */;
+			498B71EE112E96E0005DF72D /* PBXTextBookmark */ = 498B71EE112E96E0005DF72D /* PBXTextBookmark */;
+			498B71EF112E96E3005DF72D /* PBXTextBookmark */ = 498B71EF112E96E3005DF72D /* PBXTextBookmark */;
+			498B71F0112E96E3005DF72D /* PBXTextBookmark */ = 498B71F0112E96E3005DF72D /* PBXTextBookmark */;
+			498B71F1112E9840005DF72D /* PBXTextBookmark */ = 498B71F1112E9840005DF72D /* PBXTextBookmark */;
+			498B71F2112E9840005DF72D /* PBXTextBookmark */ = 498B71F2112E9840005DF72D /* PBXTextBookmark */;
+			498B71FB112E98C7005DF72D /* PBXTextBookmark */ = 498B71FB112E98C7005DF72D /* PBXTextBookmark */;
+			498B71FC112E98C7005DF72D /* PBXTextBookmark */ = 498B71FC112E98C7005DF72D /* PBXTextBookmark */;
+			498B71FD112E98C7005DF72D /* PBXTextBookmark */ = 498B71FD112E98C7005DF72D /* PBXTextBookmark */;
+			498B71FE112E98C7005DF72D /* PBXTextBookmark */ = 498B71FE112E98C7005DF72D /* PBXTextBookmark */;
+			498B71FF112E98C7005DF72D /* PBXTextBookmark */ = 498B71FF112E98C7005DF72D /* PBXTextBookmark */;
+			498B7200112E98C7005DF72D /* PBXTextBookmark */ = 498B7200112E98C7005DF72D /* PBXTextBookmark */;
+			498B7201112E98C7005DF72D /* PBXTextBookmark */ = 498B7201112E98C7005DF72D /* PBXTextBookmark */;
+			498B7207112E9903005DF72D /* PBXTextBookmark */ = 498B7207112E9903005DF72D /* PBXTextBookmark */;
+			498B7208112E9903005DF72D /* PBXTextBookmark */ = 498B7208112E9903005DF72D /* PBXTextBookmark */;
+			498B7209112E9903005DF72D /* PBXTextBookmark */ = 498B7209112E9903005DF72D /* PBXTextBookmark */;
+			498B720F112E9965005DF72D /* PBXTextBookmark */ = 498B720F112E9965005DF72D /* PBXTextBookmark */;
+			498B7210112E9965005DF72D /* PBXTextBookmark */ = 498B7210112E9965005DF72D /* PBXTextBookmark */;
+			498B7211112E9965005DF72D /* PBXTextBookmark */ = 498B7211112E9965005DF72D /* PBXTextBookmark */;
+			498B7214112E9965005DF72D /* PBXBookmark */ = 498B7214112E9965005DF72D /* PBXBookmark */;
+			498B7215112E9965005DF72D /* PBXTextBookmark */ = 498B7215112E9965005DF72D /* PBXTextBookmark */;
+			498B7216112E9965005DF72D /* PBXTextBookmark */ = 498B7216112E9965005DF72D /* PBXTextBookmark */;
+			498B7217112E9965005DF72D /* PBXTextBookmark */ = 498B7217112E9965005DF72D /* PBXTextBookmark */;
+			498B721A112E99E2005DF72D /* PBXTextBookmark */ = 498B721A112E99E2005DF72D /* PBXTextBookmark */;
+			498B721B112E99E2005DF72D /* PBXTextBookmark */ = 498B721B112E99E2005DF72D /* PBXTextBookmark */;
+			498B721C112E99E2005DF72D /* PBXTextBookmark */ = 498B721C112E99E2005DF72D /* PBXTextBookmark */;
 		};
 		sourceControlManager = 49E1A02D10FE81F200480FBB /* Source Control */;
 		userBuildSettings = {
@@ -615,14 +657,14 @@
 		isa = PBXTextBookmark;
 		fRef = 49E3686210FF9251009924B0 /* LDGraph.m */;
 		rLen = 16;
-		rLoc = 960;
+		rLoc = 1012;
 		rType = 0;
 	};
 	4918BB0A112E5B37008F9837 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
 		rLen = 13;
-		rLoc = 1451;
+		rLoc = 1472;
 		rType = 0;
 	};
 	4918BB0B112E5B38008F9837 /* PBXTextBookmark */ = {
@@ -640,7 +682,7 @@
 		fRef = 49E3686210FF9251009924B0 /* LDGraph.m */;
 		name = "LDGraph.m: 42";
 		rLen = 16;
-		rLoc = 960;
+		rLoc = 1012;
 		rType = 0;
 		vrLen = 409;
 		vrLoc = 715;
@@ -650,7 +692,7 @@
 		fRef = 49E3686210FF9251009924B0 /* LDGraph.m */;
 		name = "LDGraph.m: 43";
 		rLen = 16;
-		rLoc = 960;
+		rLoc = 1012;
 		rType = 0;
 		vrLen = 381;
 		vrLoc = 746;
@@ -660,7 +702,7 @@
 		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
 		name = "LDGraphView.m: 67";
 		rLen = 13;
-		rLoc = 1451;
+		rLoc = 1472;
 		rType = 0;
 		vrLen = 353;
 		vrLoc = 985;
@@ -680,7 +722,7 @@
 		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
 		name = "LDGraphView.m: 71";
 		rLen = 0;
-		rLoc = 1620;
+		rLoc = 1641;
 		rType = 0;
 		vrLen = 1053;
 		vrLoc = 776;
@@ -690,7 +732,7 @@
 		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
 		name = "LDGraphView.m: 71";
 		rLen = 0;
-		rLoc = 1595;
+		rLoc = 1616;
 		rType = 0;
 		vrLen = 1089;
 		vrLoc = 784;
@@ -727,7 +769,7 @@
 		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
 		name = "LDGraphView.m: 66";
 		rLen = 0;
-		rLoc = 1436;
+		rLoc = 1457;
 		rType = 0;
 		vrLen = 1033;
 		vrLoc = 776;
@@ -736,7 +778,7 @@
 		isa = PBXTextBookmark;
 		fRef = 49E3687810FF9272009924B0 /* LDGraphView.h */;
 		rLen = 0;
-		rLoc = 1195;
+		rLoc = 1332;
 		rType = 0;
 	};
 	4918BB20112E5D5A008F9837 /* PBXTextBookmark */ = {
@@ -754,7 +796,7 @@
 		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
 		name = "LDGraphView.m: 67";
 		rLen = 13;
-		rLoc = 1451;
+		rLoc = 1472;
 		rType = 0;
 		vrLen = 457;
 		vrLoc = 1015;
@@ -764,7 +806,7 @@
 		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
 		name = "LDGraphView.m: 71";
 		rLen = 0;
-		rLoc = 1595;
+		rLoc = 1616;
 		rType = 0;
 		vrLen = 1089;
 		vrLoc = 784;
@@ -794,7 +836,7 @@
 		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
 		name = "LDGraphView.m: 67";
 		rLen = 13;
-		rLoc = 1451;
+		rLoc = 1472;
 		rType = 0;
 		vrLen = 457;
 		vrLoc = 1015;
@@ -804,7 +846,7 @@
 		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
 		name = "LDGraphView.m: 67";
 		rLen = 13;
-		rLoc = 1451;
+		rLoc = 1472;
 		rType = 0;
 		vrLen = 457;
 		vrLoc = 1015;
@@ -814,7 +856,7 @@
 		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
 		name = "LDGraphView.m: 69";
 		rLen = 0;
-		rLoc = 1526;
+		rLoc = 1547;
 		rType = 0;
 		vrLen = 1099;
 		vrLoc = 751;
@@ -844,7 +886,7 @@
 		comments = "No '-initWithAppNames:' method found";
 		fRef = 49E3686210FF9251009924B0 /* LDGraph.m */;
 		rLen = 1;
-		rLoc = 43;
+		rLoc = 44;
 		rType = 1;
 	};
 	4918BB3C112E6304008F9837 /* PBXTextBookmark */ = {
@@ -852,7 +894,7 @@
 		fRef = 49E3686210FF9251009924B0 /* LDGraph.m */;
 		name = "LDGraph.m: 43";
 		rLen = 0;
-		rLoc = 1005;
+		rLoc = 1057;
 		rType = 0;
 		vrLen = 1198;
 		vrLoc = 74;
@@ -872,7 +914,7 @@
 		fRef = 49E3692710FFA783009924B0 /* LDQuestionViewController.m */;
 		name = "LDQuestionViewController.m: 83";
 		rLen = 0;
-		rLoc = 2573;
+		rLoc = 2594;
 		rType = 0;
 		vrLen = 1126;
 		vrLoc = 938;
@@ -882,7 +924,7 @@
 		fRef = 49E3692710FFA783009924B0 /* LDQuestionViewController.m */;
 		name = "LDQuestionViewController.m: 85";
 		rLen = 0;
-		rLoc = 2573;
+		rLoc = 2594;
 		rType = 0;
 		vrLen = 1308;
 		vrLoc = 938;
@@ -892,7 +934,7 @@
 		comments = "No '-initWithAppNames:' method found";
 		fRef = 49E3686210FF9251009924B0 /* LDGraph.m */;
 		rLen = 1;
-		rLoc = 43;
+		rLoc = 44;
 		rType = 1;
 	};
 	4918BB45112E631C008F9837 /* PBXTextBookmark */ = {
@@ -900,7 +942,7 @@
 		fRef = 49E3686210FF9251009924B0 /* LDGraph.m */;
 		name = "LDGraph.m: 43";
 		rLen = 0;
-		rLoc = 925;
+		rLoc = 977;
 		rType = 0;
 		vrLen = 273;
 		vrLoc = 812;
@@ -910,7 +952,7 @@
 		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
 		name = "LDGraphView.m: 67";
 		rLen = 13;
-		rLoc = 1451;
+		rLoc = 1472;
 		rType = 0;
 		vrLen = 457;
 		vrLoc = 1015;
@@ -920,7 +962,7 @@
 		fRef = 49E3686210FF9251009924B0 /* LDGraph.m */;
 		name = "LDGraph.m: 43";
 		rLen = 0;
-		rLoc = 1005;
+		rLoc = 1057;
 		rType = 0;
 		vrLen = 1198;
 		vrLoc = 74;
@@ -930,7 +972,7 @@
 		fRef = 49E3692710FFA783009924B0 /* LDQuestionViewController.m */;
 		name = "LDQuestionViewController.m: 89";
 		rLen = 0;
-		rLoc = 2573;
+		rLoc = 2594;
 		rType = 0;
 		vrLen = 1326;
 		vrLoc = 938;
@@ -940,7 +982,7 @@
 		fRef = 49E3686210FF9251009924B0 /* LDGraph.m */;
 		name = "LDGraph.m: 43";
 		rLen = 0;
-		rLoc = 925;
+		rLoc = 977;
 		rType = 0;
 		vrLen = 209;
 		vrLoc = 812;
@@ -950,7 +992,7 @@
 		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
 		name = "LDGraphView.m: 67";
 		rLen = 13;
-		rLoc = 1451;
+		rLoc = 1472;
 		rType = 0;
 		vrLen = 370;
 		vrLoc = 1015;
@@ -960,7 +1002,7 @@
 		fRef = 49E3686210FF9251009924B0 /* LDGraph.m */;
 		name = "LDGraph.m: 43";
 		rLen = 0;
-		rLoc = 1005;
+		rLoc = 1057;
 		rType = 0;
 		vrLen = 1198;
 		vrLoc = 74;
@@ -970,7 +1012,7 @@
 		fRef = 49E3692710FFA783009924B0 /* LDQuestionViewController.m */;
 		name = "LDQuestionViewController.m: 89";
 		rLen = 0;
-		rLoc = 2573;
+		rLoc = 2594;
 		rType = 0;
 		vrLen = 1326;
 		vrLoc = 938;
@@ -980,7 +1022,7 @@
 		fRef = 49E3686210FF9251009924B0 /* LDGraph.m */;
 		name = "LDGraph.m: 43";
 		rLen = 0;
-		rLoc = 925;
+		rLoc = 977;
 		rType = 0;
 		vrLen = 273;
 		vrLoc = 812;
@@ -990,7 +1032,7 @@
 		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
 		name = "LDGraphView.m: 67";
 		rLen = 13;
-		rLoc = 1451;
+		rLoc = 1472;
 		rType = 0;
 		vrLen = 457;
 		vrLoc = 1015;
@@ -1000,7 +1042,7 @@
 		fRef = 49E3686210FF9251009924B0 /* LDGraph.m */;
 		name = "LDGraph.m: 39";
 		rLen = 0;
-		rLoc = 837;
+		rLoc = 889;
 		rType = 0;
 		vrLen = 1264;
 		vrLoc = 74;
@@ -1010,7 +1052,7 @@
 		fRef = 49E3692710FFA783009924B0 /* LDQuestionViewController.m */;
 		name = "LDQuestionViewController.m: 89";
 		rLen = 0;
-		rLoc = 2573;
+		rLoc = 2594;
 		rType = 0;
 		vrLen = 1329;
 		vrLoc = 938;
@@ -1020,7 +1062,7 @@
 		fRef = 49E3686210FF9251009924B0 /* LDGraph.m */;
 		name = "LDGraph.m: 45";
 		rLen = 0;
-		rLoc = 1018;
+		rLoc = 1070;
 		rType = 0;
 		vrLen = 1320;
 		vrLoc = 74;
@@ -1030,7 +1072,7 @@
 		fRef = 49E3686210FF9251009924B0 /* LDGraph.m */;
 		name = "LDGraph.m: 45";
 		rLen = 0;
-		rLoc = 1018;
+		rLoc = 1070;
 		rType = 0;
 		vrLen = 1258;
 		vrLoc = 74;
@@ -1040,7 +1082,7 @@
 		fRef = 49E3692710FFA783009924B0 /* LDQuestionViewController.m */;
 		name = "LDQuestionViewController.m: 89";
 		rLen = 0;
-		rLoc = 2573;
+		rLoc = 2594;
 		rType = 0;
 		vrLen = 1326;
 		vrLoc = 938;
@@ -1050,7 +1092,7 @@
 		fRef = 49E3686210FF9251009924B0 /* LDGraph.m */;
 		name = "LDGraph.m: 43";
 		rLen = 0;
-		rLoc = 925;
+		rLoc = 977;
 		rType = 0;
 		vrLen = 234;
 		vrLoc = 812;
@@ -1060,7 +1102,7 @@
 		fRef = 49E3684910FF8CC4009924B0 /* LDFileIO.m */;
 		name = "LDFileIO.m: 531";
 		rLen = 12;
-		rLoc = 16121;
+		rLoc = 17154;
 		rType = 0;
 		vrLen = 389;
 		vrLoc = 15831;
@@ -1069,7 +1111,7 @@
 		isa = PBXTextBookmark;
 		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
 		rLen = 12;
-		rLoc = 1466;
+		rLoc = 1487;
 		rType = 0;
 	};
 	4918BB5F112E6499008F9837 /* PBXTextBookmark */ = {
@@ -1077,7 +1119,7 @@
 		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
 		name = "LDGraphView.m: 69";
 		rLen = 0;
-		rLoc = 1524;
+		rLoc = 1545;
 		rType = 0;
 		vrLen = 295;
 		vrLoc = 1688;
@@ -1087,7 +1129,7 @@
 		fRef = 49E3692710FFA783009924B0 /* LDQuestionViewController.m */;
 		name = "LDQuestionViewController.m: 24";
 		rLen = 0;
-		rLoc = 579;
+		rLoc = 600;
 		rType = 0;
 		vrLen = 1019;
 		vrLoc = 0;
@@ -1107,7 +1149,7 @@
 		fRef = 49E3686210FF9251009924B0 /* LDGraph.m */;
 		name = "LDGraph.m: 43";
 		rLen = 0;
-		rLoc = 925;
+		rLoc = 977;
 		rType = 0;
 		vrLen = 234;
 		vrLoc = 812;
@@ -1117,7 +1159,7 @@
 		fRef = 49E3686210FF9251009924B0 /* LDGraph.m */;
 		name = "LDGraph.m: 43";
 		rLen = 16;
-		rLoc = 960;
+		rLoc = 1012;
 		rType = 0;
 		vrLen = 381;
 		vrLoc = 728;
@@ -1127,7 +1169,7 @@
 		fRef = 49E3686210FF9251009924B0 /* LDGraph.m */;
 		name = "LDGraph.m: 43";
 		rLen = 0;
-		rLoc = 925;
+		rLoc = 977;
 		rType = 0;
 		vrLen = 234;
 		vrLoc = 812;
@@ -1137,7 +1179,7 @@
 		fRef = 49E3686210FF9251009924B0 /* LDGraph.m */;
 		name = "LDGraph.m: 43";
 		rLen = 16;
-		rLoc = 960;
+		rLoc = 1012;
 		rType = 0;
 		vrLen = 356;
 		vrLoc = 497;
@@ -1147,7 +1189,7 @@
 		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
 		name = "LDGraphView.m: 93";
 		rLen = 0;
-		rLoc = 2111;
+		rLoc = 2132;
 		rType = 0;
 		vrLen = 309;
 		vrLoc = 1541;
@@ -1187,7 +1229,7 @@
 		fRef = 49E3686210FF9251009924B0 /* LDGraph.m */;
 		name = "LDGraph.m: 41";
 		rLen = 0;
-		rLoc = 921;
+		rLoc = 973;
 		rType = 0;
 		vrLen = 1354;
 		vrLoc = 327;
@@ -1197,7 +1239,7 @@
 		fRef = 49E3686210FF9251009924B0 /* LDGraph.m */;
 		name = "LDGraph.m: 43";
 		rLen = 0;
-		rLoc = 925;
+		rLoc = 977;
 		rType = 0;
 		vrLen = 194;
 		vrLoc = 812;
@@ -1207,7 +1249,7 @@
 		fRef = 49E3686210FF9251009924B0 /* LDGraph.m */;
 		name = "LDGraph.m: 43";
 		rLen = 16;
-		rLoc = 960;
+		rLoc = 1012;
 		rType = 0;
 		vrLen = 335;
 		vrLoc = 564;
@@ -1217,7 +1259,7 @@
 		fRef = 49E3686210FF9251009924B0 /* LDGraph.m */;
 		name = "LDGraph.m: 43";
 		rLen = 0;
-		rLoc = 925;
+		rLoc = 977;
 		rType = 0;
 		vrLen = 194;
 		vrLoc = 812;
@@ -1227,7 +1269,7 @@
 		fRef = 49E3686210FF9251009924B0 /* LDGraph.m */;
 		name = "LDGraph.m: 43";
 		rLen = 16;
-		rLoc = 960;
+		rLoc = 1012;
 		rType = 0;
 		vrLen = 335;
 		vrLoc = 564;
@@ -1257,7 +1299,7 @@
 		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
 		name = "LDGraphView.m: 28";
 		rLen = 0;
-		rLoc = 533;
+		rLoc = 554;
 		rType = 0;
 		vrLen = 263;
 		vrLoc = 0;
@@ -1267,7 +1309,7 @@
 		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
 		name = "LDGraphView.m: 90";
 		rLen = 0;
-		rLoc = 2032;
+		rLoc = 2053;
 		rType = 0;
 		vrLen = 310;
 		vrLoc = 1594;
@@ -1277,7 +1319,7 @@
 		fRef = 49E3686210FF9251009924B0 /* LDGraph.m */;
 		name = "LDGraph.m: 43";
 		rLen = 0;
-		rLoc = 925;
+		rLoc = 977;
 		rType = 0;
 		vrLen = 194;
 		vrLoc = 812;
@@ -1287,7 +1329,7 @@
 		fRef = 49E3686210FF9251009924B0 /* LDGraph.m */;
 		name = "LDGraph.m: 43";
 		rLen = 16;
-		rLoc = 960;
+		rLoc = 1012;
 		rType = 0;
 		vrLen = 363;
 		vrLoc = 746;
@@ -1296,7 +1338,7 @@
 		isa = PBXTextBookmark;
 		fRef = 49E3692710FFA783009924B0 /* LDQuestionViewController.m */;
 		rLen = 8;
-		rLoc = 1443;
+		rLoc = 1464;
 		rType = 0;
 	};
 	4918BB81112E66DE008F9837 /* PBXTextBookmark */ = {
@@ -1304,7 +1346,7 @@
 		fRef = 49E3686210FF9251009924B0 /* LDGraph.m */;
 		name = "LDGraph.m: 43";
 		rLen = 0;
-		rLoc = 925;
+		rLoc = 977;
 		rType = 0;
 		vrLen = 194;
 		vrLoc = 812;
@@ -1314,7 +1356,7 @@
 		fRef = 49E3686210FF9251009924B0 /* LDGraph.m */;
 		name = "LDGraph.m: 43";
 		rLen = 16;
-		rLoc = 960;
+		rLoc = 1012;
 		rType = 0;
 		vrLen = 363;
 		vrLoc = 746;
@@ -1324,7 +1366,7 @@
 		fRef = 49E3692710FFA783009924B0 /* LDQuestionViewController.m */;
 		name = "LDQuestionViewController.m: 71";
 		rLen = 8;
-		rLoc = 1443;
+		rLoc = 1464;
 		rType = 0;
 		vrLen = 320;
 		vrLoc = 1355;
@@ -1344,7 +1386,7 @@
 		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
 		name = "LDGraphView.m: 32";
 		rLen = 0;
-		rLoc = 650;
+		rLoc = 671;
 		rType = 0;
 		vrLen = 826;
 		vrLoc = 0;
@@ -1354,7 +1396,7 @@
 		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
 		name = "LDGraphView.m: 139";
 		rLen = 0;
-		rLoc = 3487;
+		rLoc = 3508;
 		rType = 0;
 		vrLen = 1496;
 		vrLoc = 2701;
@@ -1374,7 +1416,7 @@
 		fRef = 49E3686210FF9251009924B0 /* LDGraph.m */;
 		name = "LDGraph.m: 41";
 		rLen = 0;
-		rLoc = 921;
+		rLoc = 973;
 		rType = 0;
 		vrLen = 1354;
 		vrLoc = 327;
@@ -1384,7 +1426,7 @@
 		fRef = 49E3686210FF9251009924B0 /* LDGraph.m */;
 		name = "LDGraph.m: 43";
 		rLen = 0;
-		rLoc = 925;
+		rLoc = 977;
 		rType = 0;
 		vrLen = 234;
 		vrLoc = 812;
@@ -1393,7 +1435,7 @@
 		isa = PBXTextBookmark;
 		fRef = 49E3692710FFA783009924B0 /* LDQuestionViewController.m */;
 		rLen = 14;
-		rLoc = 1406;
+		rLoc = 1427;
 		rType = 0;
 	};
 	4918BB90112E67E3008F9837 /* PBXTextBookmark */ = {
@@ -1401,7 +1443,7 @@
 		fRef = 49E3692710FFA783009924B0 /* LDQuestionViewController.m */;
 		name = "LDQuestionViewController.m: 72";
 		rLen = 0;
-		rLoc = 2001;
+		rLoc = 2022;
 		rType = 0;
 		vrLen = 356;
 		vrLoc = 1355;
@@ -1411,7 +1453,7 @@
 		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
 		name = "LDGraphView.m: 139";
 		rLen = 0;
-		rLoc = 3487;
+		rLoc = 3508;
 		rType = 0;
 		vrLen = 1112;
 		vrLoc = 404;
@@ -1431,7 +1473,7 @@
 		fRef = 49E3686210FF9251009924B0 /* LDGraph.m */;
 		name = "LDGraph.m: 41";
 		rLen = 0;
-		rLoc = 921;
+		rLoc = 973;
 		rType = 0;
 		vrLen = 1422;
 		vrLoc = 327;
@@ -1441,7 +1483,7 @@
 		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
 		name = "LDGraphView.m: 55";
 		rLen = 0;
-		rLoc = 1024;
+		rLoc = 1045;
 		rType = 0;
 		vrLen = 1004;
 		vrLoc = 381;
@@ -1461,7 +1503,7 @@
 		fRef = 49E3686210FF9251009924B0 /* LDGraph.m */;
 		name = "LDGraph.m: 41";
 		rLen = 0;
-		rLoc = 921;
+		rLoc = 973;
 		rType = 0;
 		vrLen = 1354;
 		vrLoc = 327;
@@ -1481,7 +1523,7 @@
 		fRef = 49E3686210FF9251009924B0 /* LDGraph.m */;
 		name = "LDGraph.m: 41";
 		rLen = 0;
-		rLoc = 921;
+		rLoc = 973;
 		rType = 0;
 		vrLen = 1422;
 		vrLoc = 327;
@@ -1491,7 +1533,7 @@
 		fRef = 49E3686210FF9251009924B0 /* LDGraph.m */;
 		name = "LDGraph.m: 41";
 		rLen = 0;
-		rLoc = 921;
+		rLoc = 973;
 		rType = 0;
 		vrLen = 1096;
 		vrLoc = 2063;
@@ -1511,7 +1553,7 @@
 		fRef = 49E3686210FF9251009924B0 /* LDGraph.m */;
 		name = "LDGraph.m: 41";
 		rLen = 0;
-		rLoc = 921;
+		rLoc = 973;
 		rType = 0;
 		vrLen = 1096;
 		vrLoc = 2063;
@@ -1531,7 +1573,7 @@
 		fRef = 49E3686210FF9251009924B0 /* LDGraph.m */;
 		name = "LDGraph.m: 43";
 		rLen = 0;
-		rLoc = 925;
+		rLoc = 977;
 		rType = 0;
 		vrLen = 234;
 		vrLoc = 812;
@@ -1551,7 +1593,7 @@
 		fRef = 49E3692710FFA783009924B0 /* LDQuestionViewController.m */;
 		name = "LDQuestionViewController.m: 72";
 		rLen = 0;
-		rLoc = 2001;
+		rLoc = 2022;
 		rType = 0;
 		vrLen = 511;
 		vrLoc = 1571;
@@ -1561,7 +1603,7 @@
 		fRef = 49E3692710FFA783009924B0 /* LDQuestionViewController.m */;
 		name = "LDQuestionViewController.m: 72";
 		rLen = 0;
-		rLoc = 2001;
+		rLoc = 2022;
 		rType = 0;
 		vrLen = 528;
 		vrLoc = 1517;
@@ -1571,7 +1613,7 @@
 		fRef = 49E3686210FF9251009924B0 /* LDGraph.m */;
 		name = "LDGraph.m: 43";
 		rLen = 0;
-		rLoc = 925;
+		rLoc = 977;
 		rType = 0;
 		vrLen = 234;
 		vrLoc = 812;
@@ -1581,7 +1623,7 @@
 		fRef = 49E3692710FFA783009924B0 /* LDQuestionViewController.m */;
 		name = "LDQuestionViewController.m: 72";
 		rLen = 0;
-		rLoc = 2001;
+		rLoc = 2022;
 		rType = 0;
 		vrLen = 528;
 		vrLoc = 1517;
@@ -1591,7 +1633,7 @@
 		fRef = 49E3686210FF9251009924B0 /* LDGraph.m */;
 		name = "LDGraph.m: 41";
 		rLen = 0;
-		rLoc = 921;
+		rLoc = 973;
 		rType = 0;
 		vrLen = 1177;
 		vrLoc = 2063;
@@ -1611,7 +1653,7 @@
 		fRef = 49E3686210FF9251009924B0 /* LDGraph.m */;
 		name = "LDGraph.m: 41";
 		rLen = 0;
-		rLoc = 921;
+		rLoc = 973;
 		rType = 0;
 		vrLen = 1096;
 		vrLoc = 2063;
@@ -1631,7 +1673,7 @@
 		fRef = 49E3692710FFA783009924B0 /* LDQuestionViewController.m */;
 		name = "LDQuestionViewController.m: 83";
 		rLen = 0;
-		rLoc = 2567;
+		rLoc = 2588;
 		rType = 0;
 		vrLen = 1293;
 		vrLoc = 1125;
@@ -1641,7 +1683,7 @@
 		fRef = 49E3692710FFA783009924B0 /* LDQuestionViewController.m */;
 		name = "LDQuestionViewController.m: 83";
 		rLen = 0;
-		rLoc = 2567;
+		rLoc = 2588;
 		rType = 0;
 		vrLen = 1253;
 		vrLoc = 1125;
@@ -1661,7 +1703,7 @@
 		fRef = 49E3686210FF9251009924B0 /* LDGraph.m */;
 		name = "LDGraph.m: 41";
 		rLen = 0;
-		rLoc = 921;
+		rLoc = 973;
 		rType = 0;
 		vrLen = 1096;
 		vrLoc = 2063;
@@ -1671,7 +1713,7 @@
 		fRef = 49E3692710FFA783009924B0 /* LDQuestionViewController.m */;
 		name = "LDQuestionViewController.m: 83";
 		rLen = 0;
-		rLoc = 2567;
+		rLoc = 2588;
 		rType = 0;
 		vrLen = 1253;
 		vrLoc = 1125;
@@ -1691,7 +1733,7 @@
 		fRef = 49E3686210FF9251009924B0 /* LDGraph.m */;
 		name = "LDGraph.m: 41";
 		rLen = 0;
-		rLoc = 921;
+		rLoc = 973;
 		rType = 0;
 		vrLen = 1096;
 		vrLoc = 2063;
@@ -1719,7 +1761,7 @@
 		fRef = 49E3692710FFA783009924B0 /* LDQuestionViewController.m */;
 		name = "LDQuestionViewController.m: 73";
 		rLen = 0;
-		rLoc = 2093;
+		rLoc = 2114;
 		rType = 0;
 		vrLen = 1262;
 		vrLoc = 1186;
@@ -1729,7 +1771,7 @@
 		fRef = 49E3692710FFA783009924B0 /* LDQuestionViewController.m */;
 		name = "LDQuestionViewController.m: 73";
 		rLen = 0;
-		rLoc = 2093;
+		rLoc = 2114;
 		rType = 0;
 		vrLen = 1262;
 		vrLoc = 1186;
@@ -1776,7 +1818,7 @@
 		fRef = 49E3692710FFA783009924B0 /* LDQuestionViewController.m */;
 		name = "LDQuestionViewController.m: 78";
 		rLen = 0;
-		rLoc = 2295;
+		rLoc = 2316;
 		rType = 0;
 		vrLen = 1262;
 		vrLoc = 1186;
@@ -1844,7 +1886,7 @@
 		hitCount = 0;
 		ignoreCount = 0;
 		location = libobjc.A.dylib;
-		modificationTime = 288264441.48346;
+		modificationTime = 288266595.368603;
 		originalNumberOfMultipleMatches = 1;
 		state = 1;
 		symbolName = objc_exception_throw;
@@ -1938,7 +1980,7 @@
 		fRef = 49E3692710FFA783009924B0 /* LDQuestionViewController.m */;
 		name = "LDQuestionViewController.m: 77";
 		rLen = 0;
-		rLoc = 1719;
+		rLoc = 1740;
 		rType = 0;
 		vrLen = 1486;
 		vrLoc = 1125;
@@ -1968,7 +2010,7 @@
 		fRef = 49E3692710FFA783009924B0 /* LDQuestionViewController.m */;
 		name = "LDQuestionViewController.m: 83";
 		rLen = 0;
-		rLoc = 2259;
+		rLoc = 2280;
 		rType = 0;
 		vrLen = 1498;
 		vrLoc = 1125;
@@ -1998,7 +2040,7 @@
 		fRef = 49E3692710FFA783009924B0 /* LDQuestionViewController.m */;
 		name = "LDQuestionViewController.m: 83";
 		rLen = 0;
-		rLoc = 2259;
+		rLoc = 2280;
 		rType = 0;
 		vrLen = 1498;
 		vrLoc = 1125;
@@ -2028,7 +2070,7 @@
 		fRef = 49E3692710FFA783009924B0 /* LDQuestionViewController.m */;
 		name = "LDQuestionViewController.m: 83";
 		rLen = 0;
-		rLoc = 1975;
+		rLoc = 1996;
 		rType = 0;
 		vrLen = 1524;
 		vrLoc = 1353;
@@ -2038,7 +2080,7 @@
 		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
 		name = "LDGraphView.m: 26";
 		rLen = 0;
-		rLoc = 493;
+		rLoc = 514;
 		rType = 0;
 		vrLen = 979;
 		vrLoc = 0;
@@ -2047,7 +2089,7 @@
 		isa = PBXTextBookmark;
 		fRef = 49E3687810FF9272009924B0 /* LDGraphView.h */;
 		rLen = 0;
-		rLoc = 9223372036854775805;
+		rLoc = 1332;
 		rType = 0;
 	};
 	498B70BE112E73A9005DF72D /* PBXTextBookmark */ = {
@@ -2074,7 +2116,7 @@
 		isa = PBXTextBookmark;
 		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
 		rLen = 10;
-		rLoc = 1880;
+		rLoc = 1901;
 		rType = 0;
 	};
 	498B70C6112E757C005DF72D /* PBXTextBookmark */ = {
@@ -2082,7 +2124,7 @@
 		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
 		name = "LDGraphView.m: 93";
 		rLen = 10;
-		rLoc = 1880;
+		rLoc = 1901;
 		rType = 0;
 		vrLen = 254;
 		vrLoc = 1717;
@@ -2102,7 +2144,7 @@
 		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
 		name = "LDGraphView.m: 229";
 		rLen = 0;
-		rLoc = 6087;
+		rLoc = 6108;
 		rType = 0;
 		vrLen = 1507;
 		vrLoc = 4626;
@@ -2112,7 +2154,7 @@
 		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
 		name = "LDGraphView.m: 230";
 		rLen = 0;
-		rLoc = 6087;
+		rLoc = 6108;
 		rType = 0;
 		vrLen = 1427;
 		vrLoc = 4626;
@@ -2149,7 +2191,7 @@
 		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
 		name = "LDGraphView.m: 223";
 		rLen = 0;
-		rLoc = 5566;
+		rLoc = 5587;
 		rType = 0;
 		vrLen = 1486;
 		vrLoc = 4525;
@@ -2158,7 +2200,7 @@
 		isa = PBXTextBookmark;
 		fRef = 49E3687810FF9272009924B0 /* LDGraphView.h */;
 		rLen = 0;
-		rLoc = 9223372036854775805;
+		rLoc = 1332;
 		rType = 0;
 	};
 	498B70DD112E8507005DF72D /* PBXTextBookmark */ = {
@@ -2166,7 +2208,7 @@
 		fRef = 49E3687810FF9272009924B0 /* LDGraphView.h */;
 		name = "LDGraphView.h: 45";
 		rLen = 21;
-		rLoc = 994;
+		rLoc = 1106;
 		rType = 0;
 		vrLen = 1194;
 		vrLoc = 3;
@@ -2203,7 +2245,7 @@
 		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
 		name = "LDGraphView.m: 230";
 		rLen = 0;
-		rLoc = 6087;
+		rLoc = 6108;
 		rType = 0;
 		vrLen = 1427;
 		vrLoc = 4626;
@@ -2223,7 +2265,7 @@
 		fRef = 49E3687810FF9272009924B0 /* LDGraphView.h */;
 		name = "LDGraphView.h: 45";
 		rLen = 21;
-		rLoc = 994;
+		rLoc = 1106;
 		rType = 0;
 		vrLen = 1194;
 		vrLoc = 3;
@@ -2243,7 +2285,7 @@
 		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
 		name = "LDGraphView.m: 231";
 		rLen = 0;
-		rLoc = 5906;
+		rLoc = 5927;
 		rType = 0;
 		vrLen = 1492;
 		vrLoc = 4626;
@@ -2263,7 +2305,7 @@
 		fRef = 49E3687810FF9272009924B0 /* LDGraphView.h */;
 		name = "LDGraphView.h: 45";
 		rLen = 21;
-		rLoc = 994;
+		rLoc = 1106;
 		rType = 0;
 		vrLen = 1194;
 		vrLoc = 3;
@@ -2283,7 +2325,7 @@
 		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
 		name = "LDGraphView.m: 229";
 		rLen = 0;
-		rLoc = 5854;
+		rLoc = 5875;
 		rType = 0;
 		vrLen = 1500;
 		vrLoc = 4626;
@@ -2303,7 +2345,7 @@
 		fRef = 49E3687810FF9272009924B0 /* LDGraphView.h */;
 		name = "LDGraphView.h: 45";
 		rLen = 21;
-		rLoc = 994;
+		rLoc = 1106;
 		rType = 0;
 		vrLen = 1194;
 		vrLoc = 3;
@@ -2323,7 +2365,7 @@
 		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
 		name = "LDGraphView.m: 229";
 		rLen = 0;
-		rLoc = 5817;
+		rLoc = 5838;
 		rType = 0;
 		vrLen = 1482;
 		vrLoc = 4626;
@@ -2343,7 +2385,7 @@
 		fRef = 49E3687810FF9272009924B0 /* LDGraphView.h */;
 		name = "LDGraphView.h: 45";
 		rLen = 21;
-		rLoc = 994;
+		rLoc = 1106;
 		rType = 0;
 		vrLen = 1194;
 		vrLoc = 3;
@@ -2363,7 +2405,7 @@
 		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
 		name = "LDGraphView.m: 232";
 		rLen = 0;
-		rLoc = 6087;
+		rLoc = 6108;
 		rType = 0;
 		vrLen = 1515;
 		vrLoc = 4626;
@@ -2383,7 +2425,7 @@
 		fRef = 49E3687810FF9272009924B0 /* LDGraphView.h */;
 		name = "LDGraphView.h: 45";
 		rLen = 21;
-		rLoc = 994;
+		rLoc = 1106;
 		rType = 0;
 		vrLen = 1194;
 		vrLoc = 3;
@@ -2403,7 +2445,7 @@
 		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
 		name = "LDGraphView.m: 93";
 		rLen = 10;
-		rLoc = 1880;
+		rLoc = 1901;
 		rType = 0;
 		vrLen = 225;
 		vrLoc = 1717;
@@ -2413,7 +2455,7 @@
 		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
 		name = "LDGraphView.m: 229";
 		rLen = 0;
-		rLoc = 5853;
+		rLoc = 5874;
 		rType = 0;
 		vrLen = 1551;
 		vrLoc = 4626;
@@ -2433,7 +2475,7 @@
 		fRef = 49E3687810FF9272009924B0 /* LDGraphView.h */;
 		name = "LDGraphView.h: 45";
 		rLen = 21;
-		rLoc = 994;
+		rLoc = 1106;
 		rType = 0;
 		vrLen = 1194;
 		vrLoc = 3;
@@ -2460,7 +2502,7 @@
 		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
 		name = "LDGraphView.m: 93";
 		rLen = 10;
-		rLoc = 1880;
+		rLoc = 1901;
 		rType = 0;
 		vrLen = 225;
 		vrLoc = 1717;
@@ -2501,7 +2543,7 @@
 		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 1;
-		rLoc = 289;
+		rLoc = 291;
 		rType = 1;
 	};
 	498B7119112E88C8005DF72D /* XCBuildMessageTextBookmark */ = {
@@ -2510,7 +2552,7 @@
 		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 1;
-		rLoc = 289;
+		rLoc = 291;
 		rType = 1;
 	};
 	498B711A112E88C8005DF72D /* PBXTextBookmark */ = {
@@ -2518,7 +2560,7 @@
 		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
 		name = "LDGraphView.m: 274";
 		rLen = 0;
-		rLoc = 7106;
+		rLoc = 7161;
 		rType = 0;
 		vrLen = 136;
 		vrLoc = 6623;
@@ -2528,7 +2570,7 @@
 		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
 		name = "LDGraphView.m: 93";
 		rLen = 10;
-		rLoc = 1880;
+		rLoc = 1901;
 		rType = 0;
 		vrLen = 375;
 		vrLoc = 1700;
@@ -2548,7 +2590,7 @@
 		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
 		name = "LDGraphView.m: 275";
 		rLen = 0;
-		rLoc = 7103;
+		rLoc = 7158;
 		rType = 0;
 		vrLen = 1182;
 		vrLoc = 6008;
@@ -2558,7 +2600,7 @@
 		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
 		name = "LDGraphView.m: 119";
 		rLen = 0;
-		rLoc = 2641;
+		rLoc = 2662;
 		rType = 0;
 		vrLen = 1195;
 		vrLoc = 2020;
@@ -2567,7 +2609,7 @@
 		isa = PBXTextBookmark;
 		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
 		rLen = 0;
-		rLoc = 8814;
+		rLoc = 8869;
 		rType = 0;
 	};
 	498B7128112E89AD005DF72D /* PBXTextBookmark */ = {
@@ -2585,7 +2627,7 @@
 		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
 		name = "LDGraphView.m: 94";
 		rLen = 0;
-		rLoc = 1919;
+		rLoc = 1940;
 		rType = 0;
 		vrLen = 1166;
 		vrLoc = 907;
@@ -2595,7 +2637,7 @@
 		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
 		name = "LDGraphView.m: 94";
 		rLen = 0;
-		rLoc = 1919;
+		rLoc = 1940;
 		rType = 0;
 		vrLen = 1116;
 		vrLoc = 957;
@@ -2605,7 +2647,7 @@
 		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
 		name = "LDGraphView.m: 122";
 		rLen = 0;
-		rLoc = 2626;
+		rLoc = 2647;
 		rType = 0;
 		vrLen = 1189;
 		vrLoc = 1884;
@@ -2615,7 +2657,7 @@
 		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
 		name = "LDGraphView.m: 288";
 		rLen = 0;
-		rLoc = 7106;
+		rLoc = 7161;
 		rType = 0;
 		vrLen = 151;
 		vrLoc = 6372;
@@ -2625,7 +2667,7 @@
 		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
 		name = "LDGraphView.m: 356";
 		rLen = 0;
-		rLoc = 8814;
+		rLoc = 8869;
 		rType = 0;
 		vrLen = 321;
 		vrLoc = 8220;
@@ -2649,7 +2691,7 @@
 		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
 		name = "LDGraphView.m: 122";
 		rLen = 0;
-		rLoc = 2514;
+		rLoc = 2535;
 		rType = 0;
 		vrLen = 1198;
 		vrLoc = 2194;
@@ -2689,7 +2731,7 @@
 		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
 		name = "LDGraphView.m: 124";
 		rLen = 0;
-		rLoc = 2614;
+		rLoc = 2635;
 		rType = 0;
 		vrLen = 1207;
 		vrLoc = 2268;
@@ -2699,7 +2741,7 @@
 		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
 		name = "LDGraphView.m: 290";
 		rLen = 0;
-		rLoc = 7106;
+		rLoc = 7161;
 		rType = 0;
 		vrLen = 172;
 		vrLoc = 6677;
@@ -2709,7 +2751,7 @@
 		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
 		name = "LDGraphView.m: 358";
 		rLen = 0;
-		rLoc = 8814;
+		rLoc = 8869;
 		rType = 0;
 		vrLen = 369;
 		vrLoc = 8231;
@@ -2729,7 +2771,7 @@
 		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
 		name = "LDGraphView.m: 124";
 		rLen = 0;
-		rLoc = 2614;
+		rLoc = 2635;
 		rType = 0;
 		vrLen = 1286;
 		vrLoc = 2273;
@@ -2749,7 +2791,7 @@
 		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
 		name = "LDGraphView.m: 124";
 		rLen = 0;
-		rLoc = 2614;
+		rLoc = 2635;
 		rType = 0;
 		vrLen = 1329;
 		vrLoc = 2281;
@@ -2759,7 +2801,7 @@
 		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
 		name = "LDGraphView.m: 290";
 		rLen = 0;
-		rLoc = 7106;
+		rLoc = 7161;
 		rType = 0;
 		vrLen = 186;
 		vrLoc = 6677;
@@ -2769,7 +2811,7 @@
 		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
 		name = "LDGraphView.m: 358";
 		rLen = 0;
-		rLoc = 8814;
+		rLoc = 8869;
 		rType = 0;
 		vrLen = 399;
 		vrLoc = 8231;
@@ -2779,7 +2821,7 @@
 		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
 		name = "LDGraphView.m: 124";
 		rLen = 0;
-		rLoc = 2614;
+		rLoc = 2635;
 		rType = 0;
 		vrLen = 1292;
 		vrLoc = 7980;
@@ -2789,7 +2831,7 @@
 		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
 		name = "LDGraphView.m: 124";
 		rLen = 0;
-		rLoc = 2614;
+		rLoc = 2635;
 		rType = 0;
 		vrLen = 1227;
 		vrLoc = 8045;
@@ -2799,7 +2841,7 @@
 		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
 		name = "LDGraphView.m: 124";
 		rLen = 17;
-		rLoc = 2597;
+		rLoc = 2618;
 		rType = 0;
 		vrLen = 1493;
 		vrLoc = 5276;
@@ -2809,7 +2851,7 @@
 		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
 		name = "LDGraphView.m: 124";
 		rLen = 17;
-		rLoc = 2597;
+		rLoc = 2618;
 		rType = 0;
 		vrLen = 1490;
 		vrLoc = 5279;
@@ -2819,7 +2861,7 @@
 		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
 		name = "LDGraphView.m: 250";
 		rLen = 0;
-		rLoc = 6043;
+		rLoc = 6064;
 		rType = 0;
 		vrLen = 1569;
 		vrLoc = 5284;
@@ -2829,7 +2871,7 @@
 		fRef = 49E3686210FF9251009924B0 /* LDGraph.m */;
 		name = "LDGraph.m: 182";
 		rLen = 0;
-		rLoc = 3345;
+		rLoc = 3397;
 		rType = 0;
 		vrLen = 1306;
 		vrLoc = 287;
@@ -2839,7 +2881,7 @@
 		fRef = 49E3686210FF9251009924B0 /* LDGraph.m */;
 		name = "LDGraph.m: 164";
 		rLen = 0;
-		rLoc = 3345;
+		rLoc = 3397;
 		rType = 0;
 		vrLen = 1296;
 		vrLoc = 2410;
@@ -2849,7 +2891,7 @@
 		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
 		name = "LDGraphView.m: 250";
 		rLen = 0;
-		rLoc = 6043;
+		rLoc = 6064;
 		rType = 0;
 		vrLen = 1571;
 		vrLoc = 5310;
@@ -2859,7 +2901,7 @@
 		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
 		name = "LDGraphView.m: 250";
 		rLen = 0;
-		rLoc = 6043;
+		rLoc = 6064;
 		rType = 0;
 		vrLen = 1093;
 		vrLoc = 1191;
@@ -2869,7 +2911,7 @@
 		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
 		name = "LDGraphView.m: 358";
 		rLen = 0;
-		rLoc = 8814;
+		rLoc = 8869;
 		rType = 0;
 		vrLen = 1257;
 		vrLoc = 7851;
@@ -2879,7 +2921,7 @@
 		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
 		name = "LDGraphView.m: 361";
 		rLen = 0;
-		rLoc = 8838;
+		rLoc = 8893;
 		rType = 0;
 		vrLen = 1257;
 		vrLoc = 7851;
@@ -2889,7 +2931,7 @@
 		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
 		name = "LDGraphView.m: 93";
 		rLen = 0;
-		rLoc = 1897;
+		rLoc = 1918;
 		rType = 0;
 		vrLen = 1093;
 		vrLoc = 1191;
@@ -2899,7 +2941,7 @@
 		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
 		name = "LDGraphView.m: 249";
 		rLen = 0;
-		rLoc = 5993;
+		rLoc = 6014;
 		rType = 0;
 		vrLen = 1534;
 		vrLoc = 5234;
@@ -2919,7 +2961,7 @@
 		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
 		name = "LDGraphView.m: 249";
 		rLen = 0;
-		rLoc = 5993;
+		rLoc = 6014;
 		rType = 0;
 		vrLen = 1538;
 		vrLoc = 5234;
@@ -2929,7 +2971,7 @@
 		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
 		name = "LDGraphView.m: 92";
 		rLen = 0;
-		rLoc = 1870;
+		rLoc = 1891;
 		rType = 0;
 		vrLen = 1176;
 		vrLoc = 1030;
@@ -2939,7 +2981,7 @@
 		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
 		name = "LDGraphView.m: 325";
 		rLen = 0;
-		rLoc = 7889;
+		rLoc = 7944;
 		rType = 0;
 		vrLen = 1311;
 		vrLoc = 7504;
@@ -2949,7 +2991,7 @@
 		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
 		name = "LDGraphView.m: 325";
 		rLen = 0;
-		rLoc = 7889;
+		rLoc = 7944;
 		rType = 0;
 		vrLen = 1135;
 		vrLoc = 6659;
@@ -2959,7 +3001,7 @@
 		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
 		name = "LDGraphView.m: 325";
 		rLen = 0;
-		rLoc = 7889;
+		rLoc = 7944;
 		rType = 0;
 		vrLen = 1133;
 		vrLoc = 6661;
@@ -2969,7 +3011,7 @@
 		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
 		name = "LDGraphView.m: 290";
 		rLen = 0;
-		rLoc = 7106;
+		rLoc = 7161;
 		rType = 0;
 		vrLen = 82;
 		vrLoc = 7027;
@@ -2979,7 +3021,7 @@
 		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
 		name = "LDGraphView.m: 359";
 		rLen = 0;
-		rLoc = 8814;
+		rLoc = 8869;
 		rType = 0;
 		vrLen = 353;
 		vrLoc = 8167;
@@ -2989,7 +3031,7 @@
 		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
 		name = "LDGraphView.m: 335";
 		rLen = 0;
-		rLoc = 8221;
+		rLoc = 8276;
 		rType = 0;
 		vrLen = 1216;
 		vrLoc = 7431;
@@ -2999,7 +3041,7 @@
 		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
 		name = "LDGraphView.m: 290";
 		rLen = 0;
-		rLoc = 7106;
+		rLoc = 7161;
 		rType = 0;
 		vrLen = 82;
 		vrLoc = 7027;
@@ -3009,7 +3051,7 @@
 		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
 		name = "LDGraphView.m: 359";
 		rLen = 0;
-		rLoc = 8814;
+		rLoc = 8869;
 		rType = 0;
 		vrLen = 370;
 		vrLoc = 8160;
@@ -3019,7 +3061,7 @@
 		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
 		name = "LDGraphView.m: 290";
 		rLen = 0;
-		rLoc = 7106;
+		rLoc = 7161;
 		rType = 0;
 		vrLen = 81;
 		vrLoc = 7027;
@@ -3029,7 +3071,7 @@
 		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
 		name = "LDGraphView.m: 359";
 		rLen = 0;
-		rLoc = 8814;
+		rLoc = 8869;
 		rType = 0;
 		vrLen = 370;
 		vrLoc = 8160;
@@ -3039,10 +3081,432 @@
 		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
 		name = "LDGraphView.m: 285";
 		rLen = 0;
-		rLoc = 7045;
+		rLoc = 7066;
 		rType = 0;
 		vrLen = 1232;
 		vrLoc = 6314;
+	};
+	498B71D3112E9671005DF72D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 49E3692610FFA783009924B0 /* LDQuestionViewController.h */;
+		name = "LDQuestionViewController.h: 34";
+		rLen = 0;
+		rLoc = 753;
+		rType = 0;
+		vrLen = 1212;
+		vrLoc = 0;
+	};
+	498B71D4112E9671005DF72D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 49E3692710FFA783009924B0 /* LDQuestionViewController.m */;
+		name = "LDQuestionViewController.m: 117";
+		rLen = 0;
+		rLoc = 2949;
+		rType = 0;
+		vrLen = 1393;
+		vrLoc = 2002;
+	};
+	498B71D5112E9671005DF72D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 49E3692710FFA783009924B0 /* LDQuestionViewController.m */;
+		name = "LDQuestionViewController.m: 117";
+		rLen = 0;
+		rLoc = 2949;
+		rType = 0;
+		vrLen = 1393;
+		vrLoc = 2002;
+	};
+	498B71D8112E9671005DF72D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 49EEA97B1122B1D4000BF8DF /* LDQuestionAnswers.h */;
+		name = "LDQuestionAnswers.h: 36";
+		rLen = 0;
+		rLoc = 694;
+		rType = 0;
+		vrLen = 791;
+		vrLoc = 0;
+	};
+	498B71D9112E9671005DF72D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 49EEA97C1122B1D4000BF8DF /* LDQuestionAnswers.m */;
+		name = "LDQuestionAnswers.m: 15";
+		rLen = 11;
+		rLoc = 324;
+		rType = 0;
+		vrLen = 644;
+		vrLoc = 0;
+	};
+	498B71DA112E9671005DF72D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 49EEA97C1122B1D4000BF8DF /* LDQuestionAnswers.m */;
+		name = "LDQuestionAnswers.m: 26";
+		rLen = 0;
+		rLoc = 568;
+		rType = 0;
+		vrLen = 646;
+		vrLoc = 0;
+	};
+	498B71DD112E9671005DF72D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
+		name = "LDGraphView.m: 410";
+		rLen = 0;
+		rLoc = 9965;
+		rType = 0;
+		vrLen = 1207;
+		vrLoc = 9177;
+	};
+	498B71DE112E9671005DF72D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 49E3687810FF9272009924B0 /* LDGraphView.h */;
+		name = "LDGraphView.h: 55";
+		rLen = 0;
+		rLoc = 1270;
+		rType = 0;
+		vrLen = 1263;
+		vrLoc = 63;
+	};
+	498B71DF112E9671005DF72D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 49E3687810FF9272009924B0 /* LDGraphView.h */;
+		name = "LDGraphView.h: 55";
+		rLen = 0;
+		rLoc = 1270;
+		rType = 0;
+		vrLen = 1179;
+		vrLoc = 147;
+	};
+	498B71E3112E9678005DF72D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 49E3692710FFA783009924B0 /* LDQuestionViewController.m */;
+		name = "LDQuestionViewController.m: 102";
+		rLen = 0;
+		rLoc = 2687;
+		rType = 0;
+		vrLen = 1393;
+		vrLoc = 2002;
+	};
+	498B71E4112E9678005DF72D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 49EEA97C1122B1D4000BF8DF /* LDQuestionAnswers.m */;
+		name = "LDQuestionAnswers.m: 26";
+		rLen = 0;
+		rLoc = 568;
+		rType = 0;
+		vrLen = 646;
+		vrLoc = 0;
+	};
+	498B71E5112E9678005DF72D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 49E3687810FF9272009924B0 /* LDGraphView.h */;
+		name = "LDGraphView.h: 55";
+		rLen = 0;
+		rLoc = 1270;
+		rType = 0;
+		vrLen = 1160;
+		vrLoc = 172;
+	};
+	498B71E9112E96BB005DF72D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 49E3692710FFA783009924B0 /* LDQuestionViewController.m */;
+		name = "LDQuestionViewController.m: 139";
+		rLen = 0;
+		rLoc = 3487;
+		rType = 0;
+		vrLen = 1104;
+		vrLoc = 2718;
+	};
+	498B71EA112E96BB005DF72D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 49EEA97C1122B1D4000BF8DF /* LDQuestionAnswers.m */;
+		name = "LDQuestionAnswers.m: 26";
+		rLen = 0;
+		rLoc = 568;
+		rType = 0;
+		vrLen = 646;
+		vrLoc = 0;
+	};
+	498B71EB112E96BB005DF72D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 49E3687810FF9272009924B0 /* LDGraphView.h */;
+		name = "LDGraphView.h: 55";
+		rLen = 0;
+		rLoc = 1270;
+		rType = 0;
+		vrLen = 1159;
+		vrLoc = 173;
+	};
+	498B71ED112E96E0005DF72D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
+		name = "LDGraphView.m: 292";
+		rLen = 0;
+		rLoc = 7161;
+		rType = 0;
+		vrLen = 156;
+		vrLoc = 7003;
+	};
+	498B71EE112E96E0005DF72D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
+		name = "LDGraphView.m: 361";
+		rLen = 0;
+		rLoc = 8869;
+		rType = 0;
+		vrLen = 399;
+		vrLoc = 8183;
+	};
+	498B71EF112E96E3005DF72D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
+		name = "LDGraphView.m: 292";
+		rLen = 0;
+		rLoc = 7161;
+		rType = 0;
+		vrLen = 156;
+		vrLoc = 7003;
+	};
+	498B71F0112E96E3005DF72D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
+		name = "LDGraphView.m: 361";
+		rLen = 0;
+		rLoc = 8869;
+		rType = 0;
+		vrLen = 399;
+		vrLoc = 8183;
+	};
+	498B71F1112E9840005DF72D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
+		name = "LDGraphView.m: 292";
+		rLen = 0;
+		rLoc = 7161;
+		rType = 0;
+		vrLen = 156;
+		vrLoc = 7003;
+	};
+	498B71F2112E9840005DF72D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
+		name = "LDGraphView.m: 361";
+		rLen = 0;
+		rLoc = 8869;
+		rType = 0;
+		vrLen = 399;
+		vrLoc = 8183;
+	};
+	498B71FB112E98C7005DF72D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 49E3684810FF8CC4009924B0 /* LDFileIO.h */;
+		name = "LDFileIO.h: 13";
+		rLen = 0;
+		rLoc = 275;
+		rType = 0;
+		vrLen = 1209;
+		vrLoc = 0;
+	};
+	498B71FC112E98C7005DF72D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 49E3684910FF8CC4009924B0 /* LDFileIO.m */;
+		name = "LDFileIO.m: 527";
+		rLen = 0;
+		rLoc = 16734;
+		rType = 0;
+		vrLen = 1542;
+		vrLoc = 15192;
+	};
+	498B71FD112E98C7005DF72D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 49E3684910FF8CC4009924B0 /* LDFileIO.m */;
+		name = "LDFileIO.m: 536";
+		rLen = 0;
+		rLoc = 16303;
+		rType = 0;
+		vrLen = 1802;
+		vrLoc = 15192;
+	};
+	498B71FE112E98C7005DF72D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 49EEA97C1122B1D4000BF8DF /* LDQuestionAnswers.m */;
+		name = "LDQuestionAnswers.m: 26";
+		rLen = 0;
+		rLoc = 568;
+		rType = 0;
+		vrLen = 646;
+		vrLoc = 0;
+	};
+	498B71FF112E98C7005DF72D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 49EEA97B1122B1D4000BF8DF /* LDQuestionAnswers.h */;
+		name = "LDQuestionAnswers.h: 36";
+		rLen = 0;
+		rLoc = 694;
+		rType = 0;
+		vrLen = 791;
+		vrLoc = 0;
+	};
+	498B7200112E98C7005DF72D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 49E3692710FFA783009924B0 /* LDQuestionViewController.m */;
+		name = "LDQuestionViewController.m: 139";
+		rLen = 0;
+		rLoc = 3487;
+		rType = 0;
+		vrLen = 1568;
+		vrLoc = 1435;
+	};
+	498B7201112E98C7005DF72D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 49E3687810FF9272009924B0 /* LDGraphView.h */;
+		name = "LDGraphView.h: 55";
+		rLen = 0;
+		rLoc = 1270;
+		rType = 0;
+		vrLen = 1159;
+		vrLoc = 173;
+	};
+	498B7207112E9903005DF72D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 49E3692710FFA783009924B0 /* LDQuestionViewController.m */;
+		name = "LDQuestionViewController.m: 9";
+		rLen = 0;
+		rLoc = 205;
+		rType = 0;
+		vrLen = 1015;
+		vrLoc = 0;
+	};
+	498B7208112E9903005DF72D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 49EEA97B1122B1D4000BF8DF /* LDQuestionAnswers.h */;
+		name = "LDQuestionAnswers.h: 36";
+		rLen = 0;
+		rLoc = 694;
+		rType = 0;
+		vrLen = 791;
+		vrLoc = 0;
+	};
+	498B7209112E9903005DF72D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 49E3687810FF9272009924B0 /* LDGraphView.h */;
+		name = "LDGraphView.h: 55";
+		rLen = 0;
+		rLoc = 1270;
+		rType = 0;
+		vrLen = 1159;
+		vrLoc = 173;
+	};
+	498B720B112E9962005DF72D /* LDQuestionViewController.m:130 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 49E3692710FFA783009924B0 /* LDQuestionViewController.m */;
+		functionName = "-makeNewGraph:";
+		hitCount = 1;
+		ignoreCount = 0;
+		lineNumber = 130;
+		location = LachesisDebriefer;
+		modificationTime = 288266605.7794;
+		originalNumberOfMultipleMatches = 1;
+		state = 1;
+	};
+	498B720F112E9965005DF72D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 49E3692610FFA783009924B0 /* LDQuestionViewController.h */;
+		name = "LDQuestionViewController.h: 30";
+		rLen = 0;
+		rLoc = 690;
+		rType = 0;
+		vrLen = 1212;
+		vrLoc = 0;
+	};
+	498B7210112E9965005DF72D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 49E3692710FFA783009924B0 /* LDQuestionViewController.m */;
+		name = "LDQuestionViewController.m: 129";
+		rLen = 0;
+		rLoc = 3219;
+		rType = 0;
+		vrLen = 1108;
+		vrLoc = 2651;
+	};
+	498B7211112E9965005DF72D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 49E3692710FFA783009924B0 /* LDQuestionViewController.m */;
+		name = "LDQuestionViewController.m: 129";
+		rLen = 0;
+		rLoc = 3219;
+		rType = 0;
+		vrLen = 1105;
+		vrLoc = 2651;
+	};
+	498B7214112E9965005DF72D /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 49E3684910FF8CC4009924B0 /* LDFileIO.m */;
+	};
+	498B7215112E9965005DF72D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 49E3684910FF8CC4009924B0 /* LDFileIO.m */;
+		name = "LDFileIO.m: 525";
+		rLen = 0;
+		rLoc = 15832;
+		rType = 0;
+		vrLen = 1802;
+		vrLoc = 15192;
+	};
+	498B7216112E9965005DF72D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 49E3687810FF9272009924B0 /* LDGraphView.h */;
+		name = "LDGraphView.h: 55";
+		rLen = 0;
+		rLoc = 1270;
+		rType = 0;
+		vrLen = 1159;
+		vrLoc = 173;
+	};
+	498B7217112E9965005DF72D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 49EEA97B1122B1D4000BF8DF /* LDQuestionAnswers.h */;
+		name = "LDQuestionAnswers.h: 36";
+		rLen = 0;
+		rLoc = 694;
+		rType = 0;
+		vrLen = 791;
+		vrLoc = 0;
+	};
+	498B721A112E99E2005DF72D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
+		name = "LDGraphView.m: 292";
+		rLen = 0;
+		rLoc = 7161;
+		rType = 0;
+		vrLen = 156;
+		vrLoc = 7003;
+	};
+	498B721B112E99E2005DF72D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
+		name = "LDGraphView.m: 361";
+		rLen = 0;
+		rLoc = 8869;
+		rType = 0;
+		vrLen = 395;
+		vrLoc = 8183;
+	};
+	498B721C112E99E2005DF72D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 49E3687910FF9272009924B0 /* LDGraphView.m */;
+		name = "LDGraphView.m: 361";
+		rLen = 0;
+		rLoc = 8869;
+		rType = 0;
+		vrLen = 399;
+		vrLoc = 8183;
 	};
 	49E1A02310FE81EC00480FBB /* LachesisDebriefer */ = {
 		isa = PBXExecutable;
@@ -3140,34 +3604,34 @@
 	};
 	49E3684810FF8CC4009924B0 /* LDFileIO.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {578, 761}}";
-			sepNavSelRange = "{618, 43}";
-			sepNavVisRange = "{0, 1136}";
-			sepNavWindowFrame = "{{583, 4}, {637, 874}}";
+			sepNavIntBoundsRect = "{{0, 0}, {578, 798}}";
+			sepNavSelRange = "{1099, 0}";
+			sepNavVisRange = "{18, 1196}";
+			sepNavWindowFrame = "{{179, 4}, {637, 874}}";
 		};
 	};
 	49E3684910FF8CC4009924B0 /* LDFileIO.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {578, 8568}}";
-			sepNavSelRange = "{2026, 8}";
-			sepNavVisRange = "{7056, 1181}";
+			sepNavIntBoundsRect = "{{0, 0}, {578, 8512}}";
+			sepNavSelRange = "{15832, 0}";
+			sepNavVisRange = "{15192, 1845}";
 			sepNavWindowFrame = "{{644, 4}, {637, 874}}";
 		};
 	};
 	49E3686110FF9251009924B0 /* LDGraph.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {571, 738}}";
-			sepNavSelRange = "{322, 0}";
+			sepNavIntBoundsRect = "{{0, 0}, {571, 761}}";
+			sepNavSelRange = "{285, 0}";
 			sepNavVisRange = "{0, 740}";
 			sepNavWindowFrame = "{{0, 4}, {630, 874}}";
 		};
 	};
 	49E3686210FF9251009924B0 /* LDGraph.m */ = {
 		uiCtxt = {
-			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{2996, 187}\";\n            s = 0;\n        },\n                {\n            r = \"{3360, 165}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 3706}\";\n    s = 0;\n}";
-			sepNavIntBoundsRect = "{{0, 0}, {571, 2324}}";
-			sepNavSelRange = "{771, 0}";
-			sepNavVisRange = "{225, 1242}";
+			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{3048, 187}\";\n            s = 0;\n        },\n                {\n            r = \"{3412, 165}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 3758}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {571, 2198}}";
+			sepNavSelRange = "{808, 0}";
+			sepNavVisRange = "{307, 1451}";
 			sepNavWindowFrame = "{{0, 4}, {630, 874}}";
 		};
 	};
@@ -3245,18 +3709,18 @@
 	};
 	49E3687810FF9272009924B0 /* LDGraphView.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {576, 770}}";
-			sepNavSelRange = "{474, 12}";
-			sepNavVisRange = "{20, 1175}";
-			sepNavWindowFrame = "{{206, 9}, {635, 869}}";
+			sepNavIntBoundsRect = "{{0, 0}, {576, 840}}";
+			sepNavSelRange = "{1270, 0}";
+			sepNavVisRange = "{148, 1184}";
+			sepNavWindowFrame = "{{795, 9}, {635, 869}}";
 		};
 	};
 	49E3687910FF9272009924B0 /* LDGraphView.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {576, 5334}}";
-			sepNavSelRange = "{7045, 0}";
-			sepNavVisRange = "{6314, 1232}";
-			sepNavWindowFrame = "{{206, 9}, {635, 869}}";
+			sepNavIntBoundsRect = "{{0, 0}, {439, 6118}}";
+			sepNavSelRange = "{7161, 0}";
+			sepNavVisRange = "{7003, 156}";
+			sepNavWindowFrame = "{{1, 9}, {635, 869}}";
 		};
 	};
 	49E3692310FFA774009924B0 /* LDQuestionView.h */ = {
@@ -3277,17 +3741,17 @@
 	};
 	49E3692610FFA783009924B0 /* LDQuestionViewController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {576, 784}}";
-			sepNavSelRange = "{724, 0}";
-			sepNavVisRange = "{0, 1187}";
+			sepNavIntBoundsRect = "{{0, 0}, {576, 798}}";
+			sepNavSelRange = "{690, 0}";
+			sepNavVisRange = "{0, 1212}";
 			sepNavWindowFrame = "{{149, 9}, {635, 869}}";
 		};
 	};
 	49E3692710FFA783009924B0 /* LDQuestionViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1379, 2016}}";
-			sepNavSelRange = "{2929, 0}";
-			sepNavVisRange = "{2718, 363}";
+			sepNavIntBoundsRect = "{{0, 0}, {576, 2296}}";
+			sepNavSelRange = "{3219, 0}";
+			sepNavVisRange = "{2651, 1107}";
 			sepNavWindowFrame = "{{14, 9}, {635, 869}}";
 		};
 	};
@@ -3371,16 +3835,16 @@
 	49EEA97B1122B1D4000BF8DF /* LDQuestionAnswers.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {578, 761}}";
-			sepNavSelRange = "{738, 0}";
-			sepNavVisRange = "{0, 839}";
-			sepNavWindowFrame = "{{651, 4}, {637, 874}}";
+			sepNavSelRange = "{694, 0}";
+			sepNavVisRange = "{0, 791}";
+			sepNavWindowFrame = "{{855, 4}, {637, 874}}";
 		};
 	};
 	49EEA97C1122B1D4000BF8DF /* LDQuestionAnswers.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {578, 761}}";
-			sepNavSelRange = "{210, 34}";
-			sepNavVisRange = "{0, 701}";
+			sepNavSelRange = "{568, 0}";
+			sepNavVisRange = "{0, 646}";
 			sepNavWindowFrame = "{{651, 4}, {637, 874}}";
 		};
 	};
@@ -3413,7 +3877,7 @@
 		ignoreCount = 0;
 		lineNumber = 176;
 		location = LachesisDebriefer;
-		modificationTime = 288264441.407112;
+		modificationTime = 288266595.279669;
 		originalNumberOfMultipleMatches = 1;
 		state = 1;
 	};

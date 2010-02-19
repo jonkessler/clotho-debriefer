@@ -10,6 +10,7 @@
 
 #import "LDDebriefFile.h"
 #import "LDDebriefLine.h"
+#import "LDQuestionAnswers.h"
 #import "LDTaskData.h"
 
 @interface LDFileIO : NSObject {
@@ -47,6 +48,8 @@
 					 andTime:(NSString *)dTime;
 
 - (void)createReadInFileWithDebrief:(LDDebriefFile *)debriefFile;
+
++ (void)logAnswer:(LDQuestionAnswers *)answer;
 
 - (LDDebriefFile *)readInDebriefFile:(NSString *)debriefPath;
 
