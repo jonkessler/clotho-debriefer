@@ -18,8 +18,7 @@
 	NSArray *graphCoords;
 	NSDictionary *graphAppsColors;
 	
-	NSPoint selected;
-	NSPoint correct;
+	CGFloat secondsAway;
 	
 	BOOL isCorrect;
 	NSString *explanation;
@@ -34,8 +33,7 @@
 @property (assign) NSArray *graphCoords;
 @property (assign) NSDictionary *graphAppsColors;
 
-@property (assign) NSPoint selected;
-@property (assign) NSPoint correct;
+@property (assign) CGFloat secondsAway;
 
 @property (assign) BOOL isCorrect;
 @property (assign) NSString *explanation;

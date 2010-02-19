@@ -23,7 +23,7 @@
 
 @implementation LDGraphView
 
-@synthesize colorKey, debriefFile, coordinates, currentDate;
+@synthesize colorKey, debriefFile, coordinates, currentDate, plotNum, wasCorrect;
 
 - (id)initWithDebriefFile:(LDDebriefFile *)debrief andFrame:(NSRect)theFrame {
 	
@@ -283,9 +283,11 @@
 - (BOOL)isCorrectForPoint:(NSPoint)myGuess {
 	
 	if (NSPointInRect(myGuess, correctArea))
-		return YES;
+		wasCorrect = YES;
 	else
-		return NO;
+		wasCorrect = NO;
+	
+	return wasCorrect;
 	
 }
 
@@ -367,6 +369,45 @@
 									 @"Please click somewhere within one of the plots!", 
 									 @"OK", nil, nil);
 	
+}
+
+// ****************************************************************************
+// INPUT:    
+// OUTPUT:   
+// FUNCTION: 
+ 
+- (CGFloat)secondsAway {
+	
+	NSArray *sortedDates = [[debriefFile dLineDatesForFile] objectForKey:currentDate];
+	NSTimeInterval totalSecs = abs([[sortedDates lastObject] timeIntervalSinceDate:
+									[sortedDates objectAtIndex:0]]);
+	
+	CGFloat minRight = NSMinX(correctArea);
+	CGFloat maxRight = NSMaxX(correctArea);
+	
+	NSRect graphArea = [theGraph graphSpace];
+	CGFloat width = NSWidth(graphArea);
+	
+	NSPoint clicked = [dot currentPoint];
+	
+	CGFloat secondsAway = 0.0;
+	if (abs(clicked.x-maxRight) > abs(clicked.x-minRight)) {
+		
+		secondsAway = abs( (((clicked.x/width) * totalSecs)
+							- (((minRight/width) * totalSecs))) );
+		
+	}
+	
+	else {
+		
+		secondsAway = abs( (((clicked.x/width) * totalSecs)
+							- (((maxRight/width) * totalSecs))) );
+
+		
+	}
+
+	return secondsAway;
+						
 }
 
 // ****************************************************************************

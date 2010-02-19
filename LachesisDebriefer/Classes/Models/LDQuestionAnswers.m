@@ -12,7 +12,7 @@
 @implementation LDQuestionAnswers
 
 @synthesize debriefDate, debriefTask, graphType, graphCoords, graphAppsColors,
-selected, correct, isCorrect, explanation;
+secondsAway, isCorrect, explanation;
 
 - (id)init {
 	
@@ -23,8 +23,7 @@ selected, correct, isCorrect, explanation;
 		graphType = -1;
 		graphCoords = [NSArray array];
 		graphAppsColors = [NSDictionary dictionary];
-		selected = NSMakePoint(0.0, 0.0);
-		correct = NSMakePoint(0.0, 0.0);
+		secondsAway = -1.0;
 		isCorrect = YES;
 		explanation = @"NONE";
 		
