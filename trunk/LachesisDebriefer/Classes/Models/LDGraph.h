@@ -24,7 +24,8 @@
 - (id)initWithData:(NSArray *)points 
 		   andRect:(NSRect)graphSpace 
 		plotNumber:(NSInteger)plotNum
-		  appNames:(NSArray *)appNames;
+		  appNames:(NSArray *)appNames
+			 dates:(NSMutableArray *)dates;
 
 - (LDPlot *)plotContainingPoint:(NSPoint)p;
 - (NSInteger)plotNumberContainingPoint:(NSPoint)p;

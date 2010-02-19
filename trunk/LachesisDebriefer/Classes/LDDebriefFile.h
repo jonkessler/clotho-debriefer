@@ -27,4 +27,6 @@
 
 - (NSDate *)dateOfDebriefFile;
 
+- (NSMutableArray *)debriefDates;
+
 @end

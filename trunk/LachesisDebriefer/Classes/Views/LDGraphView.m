@@ -67,7 +67,8 @@
 	theGraph = [[LDGraph alloc] initWithData:coordinates 
 									 andRect:dirtyRect
 								  plotNumber:plotNum
-									appNames:appNames];
+									appNames:appNames
+									   dates:[debriefFile debriefDates]];
 	
 	paths = [theGraph plots];
 	

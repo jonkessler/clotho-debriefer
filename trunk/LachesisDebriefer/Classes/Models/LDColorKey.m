@@ -6,6 +6,7 @@
 //  Copyright 2010 University of Illinois Champaign-Urbana. All rights reserved.
 //
 
+#import "LDColorDB.h"
 #import "LDColorKey.h"
 #import "LDButtonCell.h"
 
@@ -60,12 +61,14 @@
 
 - (void)reloadKeys {
 	
+	LDColorDB *colorDB = [[LDColorDB alloc] init];
 	NSArray *allKeys = [namesAndColors allKeys];
+	allKeys = [allKeys sortedArrayUsingSelector:@selector(caseInsensitiveCompare:)];
 	NSInteger numKeys = [allKeys count];
 	NSSize colorSize = NSMakeSize(10.0, 10.0);
 	
 	// Determining number of rows and cols
-	NSInteger numRows = numKeys/6 + (numKeys % 6 > 0) ? 1 : 0;
+	NSInteger numRows = numKeys % 6;
 	
 	NSInteger numCols;
 	if (numKeys < 6) 
@@ -98,7 +101,7 @@
 											   bytesPerRow:0 
 											  bitsPerPixel:0];
 		
-		NSColor *currColor = [namesAndColors objectForKey:aKey];
+		NSColor *currColor = [colorDB colorForApp:aKey];
 		NSInteger i, j;
 		for (i=0; i<colorSize.width; i++)
 			for (j=0; j<colorSize.height; j++)
@@ -109,7 +112,7 @@
 		
 		[cell setImage:colorImg];
 		
-		if ( (keyCount % 6 == 0) && (keyCount != 0) ) {
+		if ( (keyCount % 5 == 0) && (col != 0) ) {
 			row ++;
 			col = 0;
 		}
@@ -119,6 +122,15 @@
 		keyCount++;
 		
 	}
+	
+	while (col < numCols) {
+		
+		[[self cellAtRow:row column:col] setTransparent:YES];
+		col++;
+		
+	}
+	
+	[self sizeToCells];
 	
 }
 

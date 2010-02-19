@@ -27,7 +27,7 @@
 	
 }
 
-- (id)initWithAppNames:(NSArray *)appNames {
+- (id)initWithAppNames:(NSArray *)appNames andTimeStamps:(NSMutableArray *)times {
 	
 	if (self = [super init]) {
 		
@@ -39,7 +39,7 @@
 			
 		}
 		
-		timeStamps = [NSMutableArray array];
+		timeStamps = times;
 		
 	}
 	

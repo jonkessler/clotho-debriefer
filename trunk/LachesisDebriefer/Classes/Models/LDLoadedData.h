@@ -20,7 +20,7 @@
 @property (assign) NSMutableDictionary *appColors;
 @property (assign) NSMutableArray *timeStamps;
 
-- (id)initWithAppNames:(NSArray *)appNames;
+- (id)initWithAppNames:(NSArray *)appNames andTimeStamps:(NSMutableArray *)times;
 
 - (NSColor *)colorForApp:(NSString *)app;
 

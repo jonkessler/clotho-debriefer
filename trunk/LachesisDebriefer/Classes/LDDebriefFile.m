@@ -98,4 +98,15 @@
 	
 }
 
+// ****************************************************************************
+// INPUT:    
+// OUTPUT:   
+// FUNCTION: 
+ 
+- (NSMutableArray *)debriefDates {
+	
+	return [NSMutableArray arrayWithArray:[debriefLines sortedArrayUsingSelector:@selector(compare:)]];
+	
+}
+
 @end

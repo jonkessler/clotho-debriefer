@@ -19,9 +19,14 @@
 	NSSet *workTools;
 	NSSet *web;
 
-	NSDictionary *appColors;
+	NSMutableDictionary *appColors;
+
+	NSMutableSet *usedColors;
 	
 }
+
+- (NSColor *)adjustForUsedColor:(NSColor *)maybeUsed
+					  forAppSet:(NSSet *)appSet;
 
 - (NSColor *)colorForApp:(NSString *)app;
 

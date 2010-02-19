@@ -41,7 +41,7 @@
 			   , @"Google Reader", @"Mozy Status", @"Google Notifier", @"Netscape", @"Chrome", @"DING!", 
 			   @"WebnoteHappy", nil];		
 		
-		appColors = [NSDictionary dictionaryWithObjectsAndKeys:
+		appColors = [NSMutableDictionary dictionaryWithObjectsAndKeys:
 					 [NSColor colorWithCalibratedHue:273.0/360.0
 										  saturation:87.0/100.0
 										  brightness:84.0/100.0 
@@ -69,7 +69,9 @@
 					 [NSColor colorWithCalibratedHue:38.0/360.0 
 										  saturation:87.0/100.0 
 										  brightness:80.0/100.0 
-											   alpha:1.0], web, nil];					 
+											   alpha:1.0], web, nil];	
+		
+		usedColors = [NSMutableSet set];
 		
 	}
 	
@@ -82,22 +84,78 @@
 // OUTPUT:   
 // FUNCTION: 
  
+- (NSColor *)adjustForUsedColor:(NSColor *)maybeUsed
+					  forAppSet:(NSSet *)appSet {
+	
+	if (![usedColors containsObject:maybeUsed]) {
+		
+		[usedColors addObject:maybeUsed];
+		return maybeUsed;
+		
+	}
+	
+	else {
+	
+		CGFloat hue, saturation, brightness, alpha;
+		[maybeUsed getHue:&hue saturation:&saturation brightness:&brightness alpha:&alpha];
+		
+		if (hue > 0.2)
+			return [NSColor colorWithCalibratedHue:hue-0.1
+										saturation:saturation
+										brightness:brightness
+											 alpha:alpha];
+		else if (brightness > 0.3)
+			return [NSColor colorWithCalibratedHue:hue
+										saturation:saturation
+										brightness:brightness-0.2
+											 alpha:alpha];
+		else
+			return [NSColor colorWithCalibratedHue:hue
+										saturation:saturation
+										brightness:brightness
+											 alpha:alpha-0.2];
+		
+	}
+
+		
+	
+}
+ 
+// ****************************************************************************
+// INPUT:    
+// OUTPUT:   
+// FUNCTION: 
+ 
 - (NSColor *)colorForApp:(NSString *)app {
 	
 	if ([fieldSpecificTools containsObject:app])
-		return [appColors objectForKey:fieldSpecificTools];
+		return [self adjustForUsedColor:[appColors objectForKey:fieldSpecificTools] 
+							  forAppSet:fieldSpecificTools];
+	
 	else if ([imageTools containsObject:app])
-		return [appColors objectForKey:imageTools];
+		return [self adjustForUsedColor:[appColors objectForKey:imageTools] 
+							  forAppSet:imageTools];
+	
 	else if ([media containsObject:app])
-		return [appColors objectForKey:media];
+		return [self adjustForUsedColor:[appColors objectForKey:media] 
+							  forAppSet:media];
+	
 	else if ([pim containsObject:app])
-		return [appColors objectForKey:pim];
+		return [self adjustForUsedColor:[appColors objectForKey:pim] 
+							  forAppSet:pim];
+	
 	else if ([system containsObject:app])
-		return [appColors objectForKey:system];
+		return [self adjustForUsedColor:[appColors objectForKey:system] 
+							  forAppSet:system];
+	
 	else if ([workTools containsObject:app])
-		return [appColors objectForKey:workTools];
+		return [self adjustForUsedColor:[appColors objectForKey:workTools] 
+							  forAppSet:workTools];
+	
 	else if ([web containsObject:app])
-		return [appColors objectForKey:web];
+		return [self adjustForUsedColor:[appColors objectForKey:web] 
+							  forAppSet:web];
+	
 	else
 		return [NSColor blackColor];
 	
