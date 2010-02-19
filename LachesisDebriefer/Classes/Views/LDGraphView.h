@@ -24,7 +24,7 @@
 	NSMutableArray *paths;
 	NSBezierPath *dot;
 	NSBezierPath *correctDot;
-	NSPoint correctPoint;
+	NSRect correctArea;
 	NSInteger plotNum;
 	NSArray *appNames;
 	

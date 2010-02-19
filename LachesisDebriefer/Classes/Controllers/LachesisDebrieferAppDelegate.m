@@ -20,6 +20,11 @@
 					  name:@"finishedLoading"
 					object:nil];
 	
+	[notifCent addObserver:self
+				  selector:@selector(terminateApplication) 
+					  name:@"terminate"
+					object:nil];
+	
 	[window setCurrentController:dateController];
 	
 }
@@ -48,5 +53,11 @@
 	[window setContentView:[questionController view]];
 	
 }
-	 
+
+- (void)terminateApplication {
+	
+	[NSApp terminate:self];
+	
+}
+
 @end

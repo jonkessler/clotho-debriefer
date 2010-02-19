@@ -86,11 +86,12 @@
 	
 	[colorKey display];
 	
-	[[NSColor blackColor] set];
+	[[NSColor redColor] set];
 	[dot fill];
 	
-	[[NSColor cyanColor] set];
+	[[NSColor colorWithDeviceRed:0.0 green:0.0 blue:0.0 alpha:0.5] set];
 	[correctDot fill];
+	[correctDot stroke];
 	
 }
 
@@ -113,8 +114,20 @@
 	
 	else {
 		
-		while ([coordinates count] == 0)
+		while ([coordinates count] == 0) {
+			if ([availableDates count] == 0) {
+				
+				NSRunInformationalAlertPanel(@"Done!", @"Thank you for debriefing today.", 
+											 @"OK", nil, nil);
+				
+				[[NSNotificationCenter defaultCenter] postNotificationName:@"terminate" 
+																	object:nil];
+				
+			}
+				
 			coordinates = [NSMutableArray arrayWithArray:[self chooseRandomDataPoints]];
+		}
+			
 	}
 
 	
@@ -122,7 +135,9 @@
 	
 	NSPoint p = NSMakePoint(0.0, 0.0);
 	NSRect centeredRect = NSMakeRect(p.x, p.y, 0.0, 0.0);
-	centeredRect = NSOffsetRect(centeredRect, -NSWidth(centeredRect)/2, -NSHeight(centeredRect)/2);
+	centeredRect = NSOffsetRect(centeredRect, 
+								-NSWidth(centeredRect)/2, 
+								-NSHeight(centeredRect)/2);
 	dot = [NSBezierPath bezierPathWithOvalInRect:centeredRect];
 	
 	plotNum = random() % 3;
@@ -222,8 +237,17 @@
  
 - (void)determineCorrectPoint {
 	
-	correctPoint = NSMakePoint(100.0, 100.0);
-	// TODO: figure out how to calculate the answer
+	NSArray *dDates = [[debriefFile dLineDatesForFile] objectForKey:currentDate];
+	dDates = [dDates sortedArrayUsingSelector:@selector(compare:)];
+	
+	NSDate *cstDate = [NSDate dateWithNaturalLanguageString:[[[currentDate description] substringToIndex:19] stringByAppendingString:@" -0500"]];
+	
+	NSInteger index = [dDates indexOfObject:cstDate];
+	
+	NSRect graphArea = [theGraph graphSpace];
+	
+	correctArea = NSMakeRect(index/16.0 * NSWidth(graphArea), 0.0, 
+							 (index+1)/16.0 * NSWidth(graphArea), NSHeight(graphArea));
 	
 }
 
@@ -258,16 +282,10 @@
  
 - (BOOL)isCorrectForPoint:(NSPoint)myGuess {
 	
-	NSPoint lowerBound = NSMakePoint(correctPoint.x - X_TOLERANCE, 
-									 correctPoint.y - Y_TOLERANCE);
-	NSPoint upperBound = NSMakePoint(correctPoint.x + X_TOLERANCE, 
-									 correctPoint.y + Y_TOLERANCE);
-	
-	if (myGuess.x > lowerBound.x && myGuess.x < upperBound.x
-		&& myGuess.y > lowerBound.y && myGuess.y < upperBound.y)
-		return TRUE;
+	if (NSPointInRect(myGuess, correctArea))
+		return YES;
 	else
-		return FALSE;
+		return NO;
 	
 }
 
@@ -304,13 +322,18 @@
 	NSPoint p = [event locationInWindow];
 	p = [self convertPoint:p fromView:nil];
 	
-	NSRect centeredRect = NSMakeRect(p.x, p.y, 5.0, 5.0);
+	NSRect centeredRect = NSMakeRect(p.x, p.y, 10.0, 10.0);
 	centeredRect = NSOffsetRect(centeredRect, 
 								-NSWidth(centeredRect)/2, -NSHeight(centeredRect)/2);
 	
 	if ([self isValid:p]) {
 		
 		dot = [NSBezierPath bezierPathWithOvalInRect:centeredRect];
+		
+		// determine the correct point
+		[self determineCorrectPoint];
+		correctDot = [NSBezierPath bezierPathWithRect:correctArea];
+		
 		// determine if click is correct
 		if (![self isCorrectForPoint:p]) {
 			
@@ -334,14 +357,6 @@
 																	object:nil];
 			
 		}
-		
-		// determine the correct point
-		p = correctPoint;
-		centeredRect = NSMakeRect(p.x, p.y, 5.0, 5.0);
-		centeredRect = NSOffsetRect(centeredRect, 
-									-NSWidth(centeredRect)/2, 
-									-NSHeight(centeredRect)/2);
-		correctDot = [NSBezierPath bezierPathWithOvalInRect:centeredRect];
 		
 		[self setNeedsDisplay:YES];
 		

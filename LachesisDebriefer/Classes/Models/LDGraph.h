@@ -16,6 +16,8 @@
 	NSMutableArray *plots;
 	LDLoadedData *metadata;	
 	
+	NSRect graphArea;
+	
 }
 
 @property (assign, readonly) NSMutableArray *plots;
@@ -29,5 +31,7 @@
 
 - (LDPlot *)plotContainingPoint:(NSPoint)p;
 - (NSInteger)plotNumberContainingPoint:(NSPoint)p;
+
+- (NSRect)graphSpace;
 
 @end
