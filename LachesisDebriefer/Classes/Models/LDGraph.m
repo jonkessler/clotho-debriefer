@@ -29,7 +29,8 @@
 - (id)initWithData:(NSArray *)points 
 		   andRect:(NSRect)graphSpace 
 		plotNumber:(NSInteger)plotNum
-		  appNames:(NSArray *)appNames {
+		  appNames:(NSArray *)appNames
+			 dates:(NSMutableArray *)dates {
 	
 	if (self = [super init]) {
 		
@@ -40,6 +41,8 @@
 		[NSBezierPath setDefaultMiterLimit:1.0];
 		
 		metadata = [[LDLoadedData alloc] initWithAppNames:appNames];		
+		
+		[metadata setTimeStamps:dates];
 		
 		plots = [NSMutableArray arrayWithCapacity:[points count]];
 		
