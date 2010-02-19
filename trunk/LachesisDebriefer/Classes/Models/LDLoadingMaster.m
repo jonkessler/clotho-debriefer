@@ -68,7 +68,7 @@
 	[self createFakeDebriefs];
 
 	// TODO: uncomment to use jar file
-//	[self applyJoshCodeToFakeDebriefs];
+	[self applyJoshCodeToFakeDebriefs];
 
 	[self applyTreeToFakeDebriefs];
 	
@@ -84,7 +84,7 @@
 - (void)createFakeDebriefs {
 	
 	// TODO: delete to use actual date selected
-	debriefDate = @"07-14-09";
+//	debriefDate = @"07-14-09";
 	NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
 	[formatter setDateFormat:@"MM-dd-yy"];
 	NSDate *theDate = [NSDate dateWithNaturalLanguageString:debriefDate];
@@ -112,14 +112,14 @@
  
 - (void)applyJoshCodeToFakeDebriefs {
 	
-	// TODO: works only for the given day
-	
 	NSTask *task = [[NSTask alloc] init];
 	[task setLaunchPath:@"/usr/bin/java"];
-	[task setCurrentDirectoryPath:@"/Users/JC/Desktop"];
+	//TODO: uncomment for /Applications/Lachesis
+	[task setCurrentDirectoryPath:@"/Applications/Lachesis/Resources"];
+//	[task setCurrentDirectoryPath:@"/Users/JC/Desktop"];
 	
 	NSArray *arguments = [NSArray arrayWithObjects:
-						  @"-jar", @"LachesisData.jar", 
+						  @"-jar", @"ClothesisData.jar", 
 						  [@"~/Library/Logs/Discipline" stringByExpandingTildeInPath], nil];
 	[task setArguments:arguments];
 	
@@ -189,14 +189,14 @@
 		
 		// TODO: uncomment to log actual tasks
 		// TODO: double check calculations
-//		LDTaskData *task = [LDFileIO taskForDate:fileDate];
+		LDTaskData *task = [LDFileIO taskForDate:fileDate];
 		
-//		LDQuestionData *question = 
-//		[[LDQuestionData alloc] initWithTask:[[task data] objectForKey:@"Task"] 
-//									 andDate:fileDate];
 		LDQuestionData *question = 
-		[[LDQuestionData alloc] initWithTask:@"Pooping"
-									 andDate:fileDate];		
+		[[LDQuestionData alloc] initWithTask:[[task data] objectForKey:@"Task"] 
+									 andDate:fileDate];
+//		LDQuestionData *question = 
+//		[[LDQuestionData alloc] initWithTask:@"Pooping"
+//									 andDate:fileDate];		
 		
 		NSMutableArray *dlineDates = [NSMutableArray array];
 		for (NSString *debriefLine in [readIn lines]) {

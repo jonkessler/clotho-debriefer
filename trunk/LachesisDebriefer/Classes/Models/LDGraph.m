@@ -36,7 +36,7 @@
 		
 		graphArea = graphSpace;
 		//TODO: delete this to randomize graphs generated
-		plotNum = 1;
+//		plotNum = 1;
 		
 		[NSBezierPath setDefaultLineJoinStyle:NSRoundLineJoinStyle];
 		[NSBezierPath setDefaultFlatness:0.3];
