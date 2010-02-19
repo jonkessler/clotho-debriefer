@@ -29,4 +29,6 @@
 
 - (void)loadQuestions:(NSNotification *)notif;
 
+- (void)terminateApplication;
+
 @end

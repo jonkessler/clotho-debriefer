@@ -34,6 +34,7 @@
 	
 	if (self = [super init]) {
 		
+		graphArea = graphSpace;
 		plotNum = 1;
 		
 		[NSBezierPath setDefaultLineJoinStyle:NSRoundLineJoinStyle];
@@ -168,6 +169,17 @@
 		return [plots indexOfObject:plotContainingPoint];
 	else
 		return -1;
+	
+}
+
+// ****************************************************************************
+// INPUT:    
+// OUTPUT:   
+// FUNCTION: 
+ 
+- (NSRect)graphSpace {
+	
+	return graphArea;
 	
 }
 

@@ -197,7 +197,49 @@
 	<key>Notifications</key>
 	<array/>
 	<key>OpenEditors</key>
-	<array/>
+	<array>
+		<dict>
+			<key>Content</key>
+			<dict>
+				<key>PBXProjectModuleGUID</key>
+				<string>498B70D9112E8507005DF72D</string>
+				<key>PBXProjectModuleLabel</key>
+				<string>LDGraphView.m</string>
+				<key>PBXSplitModuleInNavigatorKey</key>
+				<dict>
+					<key>Split0</key>
+					<dict>
+						<key>PBXProjectModuleGUID</key>
+						<string>498B70DA112E8507005DF72D</string>
+						<key>PBXProjectModuleLabel</key>
+						<string>LDGraphView.m</string>
+						<key>_historyCapacity</key>
+						<integer>0</integer>
+						<key>bookmark</key>
+						<string>498B71C3112E912B005DF72D</string>
+						<key>history</key>
+						<array>
+							<string>498B71A8112E8FFC005DF72D</string>
+							<string>498B71B4112E90C1005DF72D</string>
+						</array>
+					</dict>
+					<key>SplitCount</key>
+					<string>1</string>
+				</dict>
+				<key>StatusBarVisibility</key>
+				<true/>
+			</dict>
+			<key>Geometry</key>
+			<dict>
+				<key>Frame</key>
+				<string>{{0, 20}, {635, 772}}</string>
+				<key>PBXModuleWindowStatusBarHidden2</key>
+				<false/>
+				<key>RubberWindowFrame</key>
+				<string>1 65 635 813 0 0 1440 878 </string>
+			</dict>
+		</dict>
+	</array>
 	<key>PerspectiveWidths</key>
 	<array>
 		<integer>-1</integer>
@@ -272,6 +314,7 @@
 										<string>49E3686E10FF9262009924B0</string>
 										<string>49E369AE10FFB2B3009924B0</string>
 										<string>49E3684A10FF8CC4009924B0</string>
+										<string>49E3684710FF8CC4009924B0</string>
 										<string>29B97315FDCFA39411CA2CEA</string>
 										<string>29B97317FDCFA39411CA2CEA</string>
 										<string>089C165CFE840E0CC02AAC07</string>
@@ -280,14 +323,15 @@
 									<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 									<array>
 										<array>
-											<integer>51</integer>
-											<integer>48</integer>
+											<integer>15</integer>
+											<integer>13</integer>
+											<integer>12</integer>
 											<integer>1</integer>
 											<integer>0</integer>
 										</array>
 									</array>
 									<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-									<string>{{0, 733}, {360, 353}}</string>
+									<string>{{0, 0}, {360, 353}}</string>
 								</dict>
 								<key>PBXTopSmartGroupGIDs</key>
 								<array/>
@@ -489,12 +533,14 @@
 	<integer>0</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>1C530D57069F1CE1000CFCEE</string>
 		<string>498B70A9112E70E2005DF72D</string>
 		<string>498B70AA112E70E2005DF72D</string>
 		<string>1C530D5B069F1CE1000CFCEE</string>
 		<string>1C530D54069F1CE1000CFCEE</string>
 		<string>1C530D52069F1CE1000CFCEE</string>
 		<string>/Users/JC/Documents/xCode Projects/LachesisDebriefer/LachesisDebriefer.xcodeproj</string>
+		<string>498B70D9112E8507005DF72D</string>
 	</array>
 	<key>WindowString</key>
 	<string>1063 439 377 439 0 0 1440 878 </string>
@@ -655,7 +701,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string></string>
+								<string>LDGraphView.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -672,6 +718,8 @@
 							<string>118pt</string>
 						</dict>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -871,7 +919,7 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CDD528C0622207200134675</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>LDQuestionViewController.m</string>
+										<string>LDGraphView.m</string>
 										<key>StatusBarVisibility</key>
 										<true/>
 									</dict>
@@ -929,8 +977,8 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C530D57069F1CE1000CFCEE</string>
-				<string>4918BB07112E5AB6008F9837</string>
-				<string>4918BB08112E5AB6008F9837</string>
+				<string>498B70C7112E757C005DF72D</string>
+				<string>498B70C8112E757C005DF72D</string>
 				<string>1CDD528C0622207200134675</string>
 				<string>1CD0528E0623707200166675</string>
 			</array>
@@ -939,7 +987,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C530D57069F1CE1000CFCEE</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>Identifier</key>
@@ -958,6 +1006,8 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
