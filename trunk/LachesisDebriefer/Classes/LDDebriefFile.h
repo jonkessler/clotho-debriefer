@@ -17,12 +17,13 @@
 	// fileDate -> LDQuestionData
 	// LDQuestionData.appData[dLineDate] -> appsAndPoints[app] -> LDAppData
 	NSMutableDictionary *calculatedDataPoints; 
+	NSMutableDictionary *dLineDatesForFile;
 	
 }
 
 @property(assign) NSMutableArray *debriefLines;
 @property(assign) NSMutableDictionary *calculatedDataPoints;
-
+@property(assign) NSMutableDictionary *dLineDatesForFile;
 - (id)initWithData:(NSData *)fileData;
 
 - (NSDate *)dateOfDebriefFile;

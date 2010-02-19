@@ -158,7 +158,8 @@
     }
 	
     treeXML = [[NSXMLDocument alloc] initWithContentsOfURL:furl
-												  options:(NSXMLNodePreserveWhitespace|NSXMLNodePreserveCDATA)
+												  options:(NSXMLNodePreserveWhitespace|
+														   NSXMLNodePreserveCDATA)
 													error:&err];
 	
 	if (treeXML == nil)
@@ -197,12 +198,15 @@
 		[[LDQuestionData alloc] initWithTask:@"Pooping"
 									 andDate:fileDate];		
 		
+		NSMutableArray *dlineDates = [NSMutableArray array];
 		for (NSString *debriefLine in [readIn lines]) {
 			
 			if ([debriefLine isEqualToString:@""])
 				continue;
 			
 			NSDate *dLineDate = [readIn dateForLine:debriefLine];
+			
+			[dlineDates addObject:dLineDate];
 			
 			NSArray *titles = [LDFileIO titleDataForDate:dLineDate];
 			NSArray *pids = [LDFileIO pidDataForDate:dLineDate];
@@ -221,7 +225,8 @@
 				
 				LDAppData *appData = [[LDAppData alloc] initWithName:app 
 														  andRawData:[data objectAtIndex:i] 
-															 withPID:[[pids objectAtIndex:i] integerValue]];
+															 withPID:[[pids objectAtIndex:i] 
+																	  integerValue]];
 				
 				[appData associateTitleWithRawData:titles];
 				
@@ -297,6 +302,8 @@
 			[[question appData] setObject:appAndPoints forKey:dLineDate];			
 			
 		}		
+		
+		[[debriefFile dLineDatesForFile] setObject:dlineDates forKey:fileDate];
 		
 		[question setUniqueAppNames:[NSArray arrayWithArray:allAppNames]];
 		

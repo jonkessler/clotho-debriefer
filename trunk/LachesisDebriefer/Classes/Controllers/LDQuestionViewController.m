@@ -23,8 +23,6 @@
 		
 		answer = [[LDQuestionAnswers alloc] init];
 		
-//		graph = [[LDGraphView alloc] initWithDebriefFile:debriefFile];
-		
 	}
 	
 	return self;
@@ -45,8 +43,6 @@
 		currentSession = 0;
 		
 		answer = [[LDQuestionAnswers alloc] init];
-		
-//		graph = [[LDGraphView alloc] initWithDebriefFile:debriefFile];
 		
 	}
 	
@@ -74,6 +70,40 @@
 	[graph setDebriefFile:debriefFile];
 	[graph generateNewGraph];
 	
+	// Set question date
+	NSDateFormatter *taskDate = [[NSDateFormatter alloc] init];
+	[taskDate setDateStyle:NSDateFormatterFullStyle];
+	[taskDate setTimeStyle:NSDateFormatterNoStyle];
+	[date setTitleWithMnemonic:[NSString stringWithFormat:@"&%@", 
+								[taskDate stringFromDate:[graph currentDate]]]];
+	
+	// Set question task
+	LDQuestionData *qData = [[debriefFile calculatedDataPoints] objectForKey:
+							 [graph currentDate]];
+	[task setTitleWithMnemonic:[NSString stringWithFormat:@"&%@", [qData task]]];
+	
+	// Set question labels
+	NSArray *sortedDates = [[debriefFile dLineDatesForFile] objectForKey:[graph currentDate]];
+	
+	NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+	[formatter setDateStyle:NSDateFormatterNoStyle];
+	[formatter setTimeStyle:NSDateFormatterLongStyle];
+	
+	if ([sortedDates count] == 17) {
+		
+		[dateL setTitleWithMnemonic:[formatter stringFromDate:[sortedDates objectAtIndex:0]]];
+		[dateM setTitleWithMnemonic:[formatter stringFromDate:[sortedDates objectAtIndex:9]]];
+		[dateR setTitleWithMnemonic:[formatter stringFromDate:[sortedDates objectAtIndex:16]]];	
+		
+	}	
+	else {
+		
+		[dateL setTitleWithMnemonic:@"&Earlier"];
+		[dateM setTitleWithMnemonic:@"&"];
+		[dateR setTitleWithMnemonic:@"&Later"];
+		
+	}
+
 }
 
 - (IBAction)endSheet:(id)sender {
@@ -90,8 +120,6 @@
 }
 
 - (IBAction)makeNewGraph:(id)sender {
-	
-//	[answer setDebriefDate:
 	
 	answer = [[LDQuestionAnswers alloc] init];	
 	
