@@ -12,7 +12,7 @@
 
 @implementation LDDebriefFile
 
-@synthesize debriefLines, calculatedDataPoints;
+@synthesize debriefLines, calculatedDataPoints, dLineDatesForFile;
 
 // ****************************************************************************
 // INPUT:    NSData - contents of a debrief file
@@ -22,6 +22,8 @@
 - (id)initWithData:(NSData *)fileData {
 
 	if (self = [super init]) {
+		
+		dLineDatesForFile = [NSMutableDictionary dictionary];
 		
 		NSMutableArray *dividedByLineAndSpace = [NSMutableArray array];
 		

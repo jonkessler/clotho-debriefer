@@ -16,8 +16,10 @@
 	IBOutlet LDColorKey *colorKey;
 	
 	LDDebriefFile *debriefFile;
+	NSMutableArray *availableDates;
 	
 	LDGraph *theGraph;	
+	NSDate *currentDate;
 	NSMutableArray *coordinates;
 	NSMutableArray *paths;
 	NSBezierPath *dot;
@@ -31,6 +33,7 @@
 @property (assign, readonly) LDColorKey *colorKey;
 @property (assign) LDDebriefFile *debriefFile;
 @property (assign, readonly) NSMutableArray *coordinates;
+@property (assign) NSDate *currentDate;
 
 - (id)initWithDebriefFile:(LDDebriefFile *)debrief andFrame:(NSRect)theFrame;
 - (id)initWithDebriefFile:(LDDebriefFile *)debrief;

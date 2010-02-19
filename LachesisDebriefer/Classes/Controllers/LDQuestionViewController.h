@@ -26,6 +26,11 @@
 	
 	IBOutlet LDQuestionView *questionView;
 	
+	IBOutlet NSTextField *dateL;
+	IBOutlet NSTextField *dateM;
+	IBOutlet NSTextField *dateR;
+
+	
 	LDDebriefFile *debriefFile;
 	NSModalSession currentSession;
 	LDQuestionAnswers *answer;

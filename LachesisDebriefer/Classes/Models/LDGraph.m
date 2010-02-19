@@ -40,10 +40,8 @@
 		[NSBezierPath setDefaultFlatness:0.3];
 		[NSBezierPath setDefaultMiterLimit:1.0];
 		
-		metadata = [[LDLoadedData alloc] initWithAppNames:appNames];		
-		
-		[metadata setTimeStamps:dates];
-		
+		metadata = [[LDLoadedData alloc] initWithAppNames:appNames andTimeStamps:dates];
+			
 		plots = [NSMutableArray arrayWithCapacity:[points count]];
 		
 		NSInteger i = 0;

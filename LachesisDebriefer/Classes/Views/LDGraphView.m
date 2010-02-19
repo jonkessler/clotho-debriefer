@@ -23,13 +23,14 @@
 
 @implementation LDGraphView
 
-@synthesize colorKey, debriefFile, coordinates;
+@synthesize colorKey, debriefFile, coordinates, currentDate;
 
 - (id)initWithDebriefFile:(LDDebriefFile *)debrief andFrame:(NSRect)theFrame {
 	
 	if (self = [super initWithFrame:theFrame]) {
 		
 		debriefFile = debrief;
+		availableDates = [debriefFile debriefDates];
 		
 	}
 	
@@ -41,10 +42,17 @@
 	if (self = [super init]) {
 		
 		debriefFile = debrief;
-		
+		availableDates = [debriefFile debriefDates];
 	}
 	
 	return self;
+	
+}
+
+- (void)setDebriefFile:(LDDebriefFile *)dFile {
+	
+	debriefFile = dFile;
+	availableDates = [debriefFile debriefDates];
 	
 }
 
@@ -52,6 +60,7 @@
 	
 	paths = [NSMutableArray array];
 	dot = [NSBezierPath bezierPath];
+	availableDates = [NSMutableArray array];
 	plotNum = random() % 3;
 	
 	[colorKey setNamesAndColors:[[theGraph metadata] appColors]];
@@ -129,12 +138,14 @@
 
 - (NSMutableArray *)chooseRandomDataPoints {
 	
-	NSInteger randomLine = rand() % [[debriefFile debriefLines] count];
+	NSInteger randomLine = rand() % [availableDates count];
 	
-	NSDate *dDate = [[debriefFile debriefLines] objectAtIndex:randomLine];
+	NSDate *dDate = [availableDates objectAtIndex:randomLine];
 	
-	NSInteger index = [[debriefFile debriefLines] indexOfObject:dDate];
-	[[debriefFile debriefLines] removeObjectAtIndex:index];
+	currentDate = dDate;
+	
+	NSInteger index = [availableDates indexOfObject:dDate];
+	[availableDates removeObjectAtIndex:index];
 	
 	LDQuestionData *qData = [[debriefFile calculatedDataPoints] objectForKey:dDate];
 	
