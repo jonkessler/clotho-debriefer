@@ -43,7 +43,7 @@
 	if (self = [super initWithFrame:theFrame]) {
 		
 		debriefFile = debrief;
-		availableDates = [debriefFile debriefDates];
+		availableDates = [debriefFile taskDates];
 		
 	}
 	
@@ -55,7 +55,7 @@
 	if (self = [super init]) {
 		
 		debriefFile = debrief;
-		availableDates = [debriefFile debriefDates];
+		availableDates = [debriefFile taskDates];
 	}
 	
 	return self;
@@ -65,7 +65,7 @@
 - (void)setDebriefFile:(LDTaskFile *)dFile {
 	
 	debriefFile = dFile;
-	availableDates = [debriefFile debriefDates];
+	availableDates = [debriefFile taskDates];
 	
 }
 
@@ -90,7 +90,7 @@
 									 andRect:dirtyRect
 								  plotNumber:plotNum
 									appNames:appNames
-									   dates:[debriefFile debriefDates]];
+									   dates:[debriefFile taskDates]];
 	
 	paths = [theGraph plots];
 	

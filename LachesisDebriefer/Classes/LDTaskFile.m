@@ -25,8 +25,23 @@
 		
 		datesForFile = [NSMutableDictionary dictionary];
 		
+		NSString *errorDesc = nil; 
+		NSPropertyListFormat format; 
+		NSData *plistXML = [[NSFileManager defaultManager] contentsAtPath:taskPath]; 
+		NSMutableArray *taskData = 
+		(NSMutableArray *)[NSPropertyListSerialization 
+						   propertyListFromData:plistXML 
+						   mutabilityOption:NSPropertyListMutableContainersAndLeaves 
+						   format:&format errorDescription:&errorDesc]; 
+
+		NSMutableArray *dates = [NSMutableArray arrayWithCapacity:[taskData count]];
+		for (NSDictionary *task in taskData) {
+			
+			[dates addObject:[task objectForKey:@"date"]];
+			
+		}
 		
-		debriefLines = [NSMutableArray array];
+		debriefLines = [NSMutableArray arrayWithArray:dates];
 		
 	}
 	
@@ -44,12 +59,7 @@
 	if ([debriefLines count] == 0)
 		return nil;
 	
-	LDDebriefLine *dLine = [debriefLines objectAtIndex:0];
-	
-	NSString *dateString = [NSString stringWithFormat:@"%@ %@",
-							[dLine date], [dLine time]];
-	
-	return [NSDate dateWithNaturalLanguageString:dateString];
+	return [debriefLines objectAtIndex:0];
 	
 }
 
@@ -58,7 +68,7 @@
 // OUTPUT:   
 // FUNCTION: 
  
-- (NSMutableArray *)debriefDates {
+- (NSMutableArray *)taskDates {
 	
 	return [NSMutableArray arrayWithArray:[debriefLines sortedArrayUsingSelector:@selector(compare:)]];
 	

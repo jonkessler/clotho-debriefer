@@ -35,6 +35,7 @@
 	[progressBar setIndeterminate:NO];	
 	[progressBar startAnimation:nil];
 	[progressBar setMinValue:0.0];
+	[progressBar setMaxValue:100.0];
 	
 }
 
