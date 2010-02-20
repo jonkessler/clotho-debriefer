@@ -8,7 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 
-#import "LDDebriefFile.h"
+#import "LDTaskFile.h"
 #import "LDDebriefLine.h"
 #import "LDQuestionAnswers.h"
 #import "LDTaskData.h"
@@ -47,10 +47,10 @@
 					withDate:(NSString *)dDate
 					 andTime:(NSString *)dTime;
 
-- (void)createReadInFileWithDebrief:(LDDebriefFile *)debriefFile;
+- (void)createReadInFileWithTask:(LDTaskFile *)debriefFile;
 
 + (void)logAnswer:(LDQuestionAnswers *)answer;
 
-- (LDDebriefFile *)readInDebriefFile:(NSString *)debriefPath;
+- (LDTaskFile *)readInTaskFile:(NSString *)taskPath;
 
 @end

@@ -55,7 +55,7 @@
 // OUTPUT:   
 // FUNCTION: 
  
-- (void)beginQuestions:(LDDebriefFile *)dFile {
+- (void)beginQuestions:(LDTaskFile *)dFile {
 
 	NSDictionary *info = [NSDictionary dictionaryWithObject:dFile forKey:@"DebriefFile"];
 	[[NSNotificationCenter defaultCenter] postNotificationName:@"finishedLoading" 

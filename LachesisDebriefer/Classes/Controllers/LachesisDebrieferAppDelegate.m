@@ -32,7 +32,7 @@
 - (void)loadQuestions:(NSNotification *)notif {
 	
 	NSDictionary *info = [notif userInfo];
-	LDDebriefFile *debriefFile = [info objectForKey:@"DebriefFile"];
+	LDTaskFile *debriefFile = [info objectForKey:@"DebriefFile"];
 	
 	questionController = [[LDQuestionViewController alloc] initWIthDebrief:debriefFile];
 	

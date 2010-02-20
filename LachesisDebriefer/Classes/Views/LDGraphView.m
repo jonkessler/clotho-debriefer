@@ -38,7 +38,7 @@
 
 @synthesize colorKey, debriefFile, coordinates, currentDate, plotNum, wasCorrect;
 
-- (id)initWithDebriefFile:(LDDebriefFile *)debrief andFrame:(NSRect)theFrame {
+- (id)initWithDebriefFile:(LDTaskFile *)debrief andFrame:(NSRect)theFrame {
 	
 	if (self = [super initWithFrame:theFrame]) {
 		
@@ -50,7 +50,7 @@
 	return self;
 	
 }
-- (id)initWithDebriefFile:(LDDebriefFile *)debrief  {
+- (id)initWithDebriefFile:(LDTaskFile *)debrief  {
 	
 	if (self = [super init]) {
 		
@@ -62,7 +62,7 @@
 	
 }
 
-- (void)setDebriefFile:(LDDebriefFile *)dFile {
+- (void)setDebriefFile:(LDTaskFile *)dFile {
 	
 	debriefFile = dFile;
 	availableDates = [debriefFile debriefDates];
@@ -272,7 +272,7 @@
  
 - (void)determineCorrectPoint {
 	
-	NSArray *dDates = [[debriefFile dLineDatesForFile] objectForKey:currentDate];
+	NSArray *dDates = [[debriefFile datesForFile] objectForKey:currentDate];
 	dDates = [dDates sortedArrayUsingSelector:@selector(compare:)];
 	
 	NSDate *cstDate = [NSDate dateWithNaturalLanguageString:[[[currentDate description] substringToIndex:19] stringByAppendingString:@" -0500"]];
@@ -411,7 +411,7 @@
  
 - (CGFloat)secondsAway {
 	
-	NSArray *sortedDates = [[debriefFile dLineDatesForFile] objectForKey:currentDate];
+	NSArray *sortedDates = [[debriefFile datesForFile] objectForKey:currentDate];
 	NSTimeInterval totalSecs = abs([[sortedDates lastObject] timeIntervalSinceDate:
 									[sortedDates objectAtIndex:0]]);
 	

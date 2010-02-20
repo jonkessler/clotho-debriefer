@@ -18,7 +18,7 @@
 	
 	if (self = [super initWithNibName:@"LDQuestion" bundle:[NSBundle mainBundle]])  {
 		
-		debriefFile = [[LDDebriefFile alloc] init];
+		debriefFile = [[LDTaskFile alloc] init];
 		
 		currentSession = 0;
 		
@@ -35,7 +35,7 @@
 // OUTPUT:   
 // FUNCTION: 
  
-- (id)initWIthDebrief:(LDDebriefFile *)debrief {
+- (id)initWIthDebrief:(LDTaskFile *)debrief {
 	
 	if (self = [super initWithNibName:@"LDQuestion" bundle:[NSBundle mainBundle]])  {
 		
@@ -84,7 +84,7 @@
 	[task setTitleWithMnemonic:[NSString stringWithFormat:@"&%@", [qData task]]];
 	
 	// Set question labels
-	NSArray *sortedDates = [[debriefFile dLineDatesForFile] objectForKey:[graph currentDate]];
+	NSArray *sortedDates = [[debriefFile datesForFile] objectForKey:[graph currentDate]];
 	
 	NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
 	[formatter setDateStyle:NSDateFormatterNoStyle];

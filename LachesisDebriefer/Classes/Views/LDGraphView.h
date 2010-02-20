@@ -8,14 +8,14 @@
 #import <Cocoa/Cocoa.h>
 
 #import "LDColorKey.h"
-#import "LDDebriefFile.h"
+#import "LDTaskFile.h"
 #import "LDGraph.h"
 
 @interface LDGraphView : NSView {
 
 	IBOutlet LDColorKey *colorKey;
 	
-	LDDebriefFile *debriefFile;
+	LDTaskFile *debriefFile;
 	NSMutableArray *availableDates;
 	
 	LDGraph *theGraph;	
@@ -33,13 +33,13 @@
 
 @property (assign, readonly) NSInteger plotNum;
 @property (assign, readonly) LDColorKey *colorKey;
-@property (assign) LDDebriefFile *debriefFile;
+@property (assign) LDTaskFile *debriefFile;
 @property (assign, readonly) NSMutableArray *coordinates;
 @property (assign) NSDate *currentDate;
 @property (assign, readonly) BOOL wasCorrect;
 
-- (id)initWithDebriefFile:(LDDebriefFile *)debrief andFrame:(NSRect)theFrame;
-- (id)initWithDebriefFile:(LDDebriefFile *)debrief;
+- (id)initWithDebriefFile:(LDTaskFile *)debrief andFrame:(NSRect)theFrame;
+- (id)initWithDebriefFile:(LDTaskFile *)debrief;
 
 - (void)generateNewGraph;
 

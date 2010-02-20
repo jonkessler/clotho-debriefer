@@ -7,7 +7,7 @@
 
 #import <Cocoa/Cocoa.h>
 
-#import "LDDebriefFile.h"
+#import "LDTaskFile.h"
 
 @interface LDLoadingViewController : NSViewController {
 
@@ -26,6 +26,6 @@
 @property (assign) NSArray *fakeDebriefs;
 
 - (void)beginLoading;
-- (void)beginQuestions:(LDDebriefFile *)dFile;
+- (void)beginQuestions:(LDTaskFile *)dFile;
 
 @end
