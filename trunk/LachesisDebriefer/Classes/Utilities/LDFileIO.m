@@ -318,14 +318,14 @@
 	
 	// 0. get array of dates of each snapshot file
 	//
-	NSString *snapFolder = [baseFilePath stringByAppendingString:@"/System_Snapshots/"];
+	NSString *snapFolder = [baseFilePath stringByAppendingString:@"/Log/System_Snapshots/"];
 	NSDate *debriefDate = [debriefFile dateOfTaskFile];
 	
 	NSDateFormatter *sysSnapFormatter = [[NSDateFormatter alloc] init];
 	[sysSnapFormatter setDateFormat:@"yyyy-MM-dd"];
 	
 	NSString *debriefSnapshotFolder = [NSString stringWithFormat:
-									   @"System_Snapshots_%@",
+									   @"/System_Snapshots_%@",
 									   [sysSnapFormatter stringFromDate:debriefDate]];
 	
 	NSString *sysSnapsFolder = [snapFolder stringByAppendingPathComponent:
@@ -350,17 +350,12 @@
 		
 	}
 	
-	for (LDDebriefLine *aLine in [debriefFile debriefLines]) {
+	for (NSDate *aLine in [debriefFile debriefLines]) {
 		
 		// 1. generate real debrief date
 		//
-		NSString *dateString = [NSString stringWithFormat:@"%@ %@",
-								[aLine date], [aLine time]];
-		
-		if ([dateString rangeOfString:@"null"].length > 0)
-			continue;
 			
-		NSDate *date = [NSDate dateWithNaturalLanguageString:dateString];
+		NSDate *date = aLine;
 		
 		// 2. pick a number between 1-12
 		//
@@ -428,8 +423,11 @@
 		
 		// 5. add the real deal (by deal i mean date)
 		//
-		[aLine setDate:[dateFormatter stringFromDate:date]];
-		[readInFile addObject:aLine];
+		NSString *realDate = [dateFormatter stringFromDate:date];
+		NSString *realTime = [[date description] substringWithRange:NSMakeRange(11, 8)];
+		LDDebriefLine *realDeal = [[LDDebriefLine alloc] init];
+		[self assignFakeDataToLine:realDeal withDate:realDate andTime:realTime];
+		[readInFile addObject:realDeal];
 		
 		// 6. add intervals for all rand < gtRand < 12
 		//
@@ -501,11 +499,7 @@
 															error:nil];
 		
 		destinPath = [destinPath stringByAppendingPathComponent:
-					  [NSString stringWithFormat:@"readIn %@ %@.txt", 
-					   [[aLine date] stringByReplacingOccurrencesOfString:@"/" 
-															   withString:@"-"], 
-					   [[aLine time] stringByReplacingOccurrencesOfString:@":" 
-															   withString:@"-"]]];
+					  [NSString stringWithFormat:@"readIn_%@.txt",[date description]]];
 		
 		NSData *dataRep = [self dataRepOfDLines:readInFile];
 		

@@ -29,6 +29,6 @@
 
 - (NSDate *)dateOfTaskFile;
 
-- (NSMutableArray *)debriefDates;
+- (NSMutableArray *)taskDates;
 
 @end

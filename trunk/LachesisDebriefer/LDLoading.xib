@@ -100,13 +100,13 @@
 					<object class="NSTextField" id="652129754">
 						<reference key="NSNextResponder" ref="486110954"/>
 						<int key="NSvFlags">268</int>
-						<string key="NSFrame">{{311, 44}, {177, 17}}</string>
+						<string key="NSFrame">{{17, 44}, {766, 17}}</string>
 						<reference key="NSSuperview" ref="486110954"/>
 						<bool key="NSEnabled">YES</bool>
 						<object class="NSTextFieldCell" key="NSCell" id="281160240">
 							<int key="NSCellFlags">68288064</int>
 							<int key="NSCellFlags2">138413056</int>
-							<string key="NSContents">Cool awesome saying thing</string>
+							<string key="NSContents">Initializing...</string>
 							<reference key="NSSupport" ref="219589068"/>
 							<reference key="NSControlView" ref="652129754"/>
 							<reference key="NSBackgroundColor" ref="520938109"/>
@@ -186,10 +186,10 @@
 						<reference key="object" ref="486110954"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="652129754"/>
 							<reference ref="723333440"/>
 							<reference ref="417537672"/>
 							<reference ref="65692551"/>
+							<reference ref="652129754"/>
 						</object>
 						<reference key="parent" ref="0"/>
 					</object>

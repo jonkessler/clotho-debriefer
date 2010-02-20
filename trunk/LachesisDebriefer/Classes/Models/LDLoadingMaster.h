@@ -17,6 +17,8 @@
 	NSTimer *progressTimer;
 	NSString *debriefDate;
 	NSMutableDictionary *questionsByDate;
+	NSArray *loadingText;
+	NSInteger loadingCounter;
 	
 }
 
@@ -25,6 +27,8 @@
 - (void)beginLoading;
 
 - (void)fireProgress;
+
+- (void)finishProgress;
 
 - (void)createFakeDebriefs;
 

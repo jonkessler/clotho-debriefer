@@ -40,7 +40,30 @@
 		
 		questionsByDate = [NSMutableDictionary dictionary];
 		
-		progressTimer = [NSTimer scheduledTimerWithTimeInterval:100.0
+		loadingCounter = 0;
+		
+		loadingText = [NSArray arrayWithObjects:
+					   @"Loading files...",
+					   @"Reading tasks...",
+					   @"Doing calculations...",
+					   @"Applying model...",
+					   @"Reading your mind...", // 5
+					   @"Determining your ancestral history...",
+					   @"Pulling your information from a different dimension...",
+					   @"Doing quantum calculations...",
+					   @"Asking an alien for help...",
+					   @"Realizing it was useless and doing it on my own...", // 10
+					   @"Giving up and playing with a puppy...",
+					   @"Getting back to work...",
+					   @"Googling what to do...",
+					   @"Having a breakthrough moment and furiously working to meet the deadline...",
+					   @"Taking a nap...", // 15
+					   @"Waking up and doing more calculations...",
+					   @"Teaching a kitty how to use my calculator...",
+					   @"Hiring an infinite number of monkeys to do the work...",
+					   @"Letting you know that this is where the progress bar stalls and you have to wait longer without any feedback...", nil]; // 19
+		
+		progressTimer = [NSTimer scheduledTimerWithTimeInterval:30.0
 														 target:self
 													   selector:@selector(fireProgress) 
 													   userInfo:nil 
@@ -72,7 +95,7 @@
 
 	[self applyTreeToFakeDebriefs];
 	
-	[self fireProgress];
+	[self finishProgress];
 	
 }
 
@@ -321,16 +344,37 @@
  
 - (void)fireProgress {
 	
-	[[modeController progressBar] incrementBy:100.0];
+	[[modeController progressBar] incrementBy:5.0];
 	
-	if ([[modeController progressBar] doubleValue] >= 100.0) {
+	[[modeController loadingMessage] setTitleWithMnemonic:
+	 [loadingText objectAtIndex:loadingCounter]];
+	
+	loadingCounter++;
+	
+	if ([[modeController progressBar] doubleValue] == 95.0) {
 		
 		[progressTimer invalidate];
-		[debriefFile setCalculatedDataPoints:questionsByDate];
-		[modeController beginQuestions:debriefFile];
+		[[modeController loadingMessage] setTitleWithMnemonic:[loadingText lastObject]];
 		
 	}
 		
+		
+}
+
+// ****************************************************************************
+// INPUT:    
+// OUTPUT:   
+// FUNCTION: 
+ 
+- (void)finishProgress {
+	
+	if ([progressTimer isValid])
+		[progressTimer invalidate];
+	
+	[[modeController progressBar] incrementBy:5.0];
+	
+	[debriefFile setCalculatedDataPoints:questionsByDate];
+	[modeController beginQuestions:debriefFile];
 	
 }
 
