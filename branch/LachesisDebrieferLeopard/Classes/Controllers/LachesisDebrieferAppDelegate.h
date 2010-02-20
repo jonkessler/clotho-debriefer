@@ -13,7 +13,7 @@
 #import "LDQuestionViewController.h"
 #import "LDWindow.h"
 
-@interface LachesisDebrieferAppDelegate : NSObject <NSApplicationDelegate> {
+@interface LachesisDebrieferAppDelegate : NSObject {
 	
     LDWindow *window;
 	LDLoadingViewController *loadingController;

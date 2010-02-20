@@ -366,7 +366,8 @@
 		
 		// 3. add intervals for all rand < 0
 		//
-		NSDate *fakeMinus2 = [NSDate dateWithTimeInterval:-(rand+2)*seconds sinceDate:date];
+		NSDate *fakeMinus2 = [[NSDate alloc] initWithTimeInterval:-(rand+2)*seconds 
+														sinceDate:date];
 		NSDate *fakeSnap = [self searchForDate:fakeMinus2 inArray:snapDates];
 		NSTimeInterval interval = [fakeMinus2 timeIntervalSinceDate:fakeSnap];
 		if ( (interval > 228.0) || (interval < 0) )
@@ -377,7 +378,8 @@
 		LDDebriefLine *fakeM2 = [[LDDebriefLine alloc] init];
 		[self assignFakeDataToLine:fakeM2 withDate:date2 andTime:time2];
 		
-		NSDate *fakeMinus1 = [NSDate dateWithTimeInterval:-(rand+1)*seconds sinceDate:date];
+		NSDate *fakeMinus1 = [[NSDate alloc] initWithTimeInterval:-(rand+1)*seconds 
+														sinceDate:date];
 		fakeSnap = [self searchForDate:fakeMinus1 inArray:snapDates];
 		interval = [fakeMinus1 timeIntervalSinceDate:fakeSnap];
 		if ( (interval > 228.0) || (interval < 0) )
@@ -397,7 +399,8 @@
 		BOOL shouldContinue = NO;
 		while (ltRand > 0) {
 			
-			NSDate *fake = [NSDate dateWithTimeInterval:-ltRand*seconds sinceDate:date];
+			NSDate *fake = [[NSDate alloc] initWithTimeInterval:-ltRand*seconds 
+													  sinceDate:date];
 			fakeSnap = [self searchForDate:fake inArray:snapDates];
 			interval = [fake timeIntervalSinceDate:fakeSnap];
 			if ( (interval > 228.0) || (interval < 0) ) {
@@ -435,7 +438,8 @@
 		gtRand = rand;
 		while (gtRand < 12) {
 
-			NSDate *fake = [NSDate dateWithTimeInterval:multipler*seconds sinceDate:date];
+			NSDate *fake = [[NSDate alloc] initWithTimeInterval:multipler*seconds 
+													  sinceDate:date];
 			fakeSnap = [self searchForDate:fake inArray:snapDates];
 			interval = [fake timeIntervalSinceDate:fakeSnap];
 			if ( (interval > 228.0) || (interval < 0) ) {
@@ -462,7 +466,8 @@
 		
 		// 7. add intervals for all rand > 12
 		//
-		NSDate *fakePlus1 = [NSDate dateWithTimeInterval:multipler*seconds sinceDate:date];
+		NSDate *fakePlus1 = [[NSDate alloc] initWithTimeInterval:multipler*seconds 
+													   sinceDate:date];
 		fakeSnap = [self searchForDate:fakePlus1 inArray:snapDates];
 		interval = [fakePlus1 timeIntervalSinceDate:fakeSnap];
 		if ( (interval > 228.0) || (interval < 0) )
@@ -475,7 +480,8 @@
 		
 		multipler++;		
 
-		NSDate *fakePlus2 = [NSDate dateWithTimeInterval:multipler*seconds sinceDate:date];
+		NSDate *fakePlus2 = [[NSDate alloc] initWithTimeInterval:multipler*seconds 
+													   sinceDate:date];
 		fakeSnap = [self searchForDate:fakePlus2 inArray:snapDates];
 		interval = [fakePlus2 timeIntervalSinceDate:fakeSnap];
 		if ( (interval > 228.0) || (interval < 0) )
