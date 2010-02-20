@@ -35,7 +35,7 @@
 	if (self = [super init]) {
 		
 		debriefDate = [controller chosenDate];
-		debriefFile = [[LDDebriefFile alloc] init];
+		debriefFile = [[LDTaskFile alloc] init];
 		modeController = controller;
 		
 		questionsByDate = [NSMutableDictionary dictionary];
@@ -86,21 +86,21 @@
 	// TODO: delete to use actual date selected
 //	debriefDate = @"07-14-09";
 	NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-	[formatter setDateFormat:@"MM-dd-yy"];
+	[formatter setDateFormat:@"yyyy-MM-dd"];
 	NSDate *theDate = [NSDate dateWithNaturalLanguageString:debriefDate];
 	NSString *formattedDate = [formatter stringFromDate:theDate];
 	
 	LDFileIO *fileIO = [[LDFileIO alloc] initWithBasePath:LDLOG_PATH];
 	
 	NSString *fullPath = [[LDLOG_PATH stringByExpandingTildeInPath] 
-						  stringByAppendingFormat:@"/Log/Debriefer/Debriefing_%@.log", 
+						  stringByAppendingFormat:@"/Tasks/Task_%@.plist", 
 						  formattedDate];
 	
 	if (![[NSFileManager defaultManager] fileExistsAtPath:fullPath])
 		DLog(@"***ERROR: Debrief file does not exist at %@", fullPath);
 		
-	debriefFile = [fileIO readInDebriefFile:fullPath];
-	[fileIO createReadInFileWithDebrief:debriefFile];
+	debriefFile = [fileIO readInTaskFile:fullPath];
+	[fileIO createReadInFileWithTask:debriefFile];
 	
 }
 
@@ -303,7 +303,7 @@
 			
 		}		
 		
-		[[debriefFile dLineDatesForFile] setObject:dlineDates forKey:fileDate];
+		[[debriefFile datesForFile] setObject:dlineDates forKey:fileDate];
 		
 		[question setUniqueAppNames:[NSArray arrayWithArray:allAppNames]];
 		

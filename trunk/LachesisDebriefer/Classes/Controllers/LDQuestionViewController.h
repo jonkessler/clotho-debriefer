@@ -9,7 +9,7 @@
 #import <Cocoa/Cocoa.h>
 
 #import "LDColorKey.h"
-#import "LDDebriefFile.h"
+#import "LDTaskFile.h"
 #import "LDGraphView.h"
 #import "LDQuestionAnswers.h"
 #import "LDQuestionView.h"
@@ -31,7 +31,7 @@
 	IBOutlet NSTextField *dateR;
 
 	
-	LDDebriefFile *debriefFile;
+	LDTaskFile *debriefFile;
 	NSModalSession currentSession;
 	LDQuestionAnswers *answer;
 	
@@ -44,12 +44,12 @@
 @property (assign) NSTextField *task;
 @property (assign) NSWindow *wrongSheet;
 
-@property (assign) LDDebriefFile *debriefFile;
+@property (assign) LDTaskFile *debriefFile;
 
 - (IBAction)endSheet:(id)sender;
 - (IBAction)makeNewGraph:(id)sender;
 
-- (id)initWIthDebrief:(LDDebriefFile *)debrief;
+- (id)initWIthDebrief:(LDTaskFile *)debrief;
 
 - (void)showWrongDialog;
 

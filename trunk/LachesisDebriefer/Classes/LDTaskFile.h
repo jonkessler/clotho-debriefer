@@ -9,7 +9,7 @@
 #import <Cocoa/Cocoa.h>
 
 
-@interface LDDebriefFile : NSObject {
+@interface LDTaskFile : NSObject {
 
 	NSMutableArray *debriefLines; // array of LDDebriefLines
 
@@ -17,16 +17,17 @@
 	// fileDate -> LDQuestionData
 	// LDQuestionData.appData[dLineDate] -> appsAndPoints[app] -> LDAppData
 	NSMutableDictionary *calculatedDataPoints; 
-	NSMutableDictionary *dLineDatesForFile;
+	NSMutableDictionary *datesForFile;
 	
 }
 
 @property(assign) NSMutableArray *debriefLines;
 @property(assign) NSMutableDictionary *calculatedDataPoints;
-@property(assign) NSMutableDictionary *dLineDatesForFile;
-- (id)initWithData:(NSData *)fileData;
+@property(assign) NSMutableDictionary *datesForFile;
 
-- (NSDate *)dateOfDebriefFile;
+- (id)initWithTaskPath:(NSString *)taskPath;
+
+- (NSDate *)dateOfTaskFile;
 
 - (NSMutableArray *)debriefDates;
 

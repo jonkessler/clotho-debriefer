@@ -7,13 +7,13 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "LDDebriefFile.h"
+#import "LDTaskFile.h"
 #import "LDLoadingViewController.h"
 
 @interface LDLoadingMaster : NSObject {
 
 	LDLoadingViewController *modeController;
-	LDDebriefFile *debriefFile;
+	LDTaskFile *debriefFile;
 	NSTimer *progressTimer;
 	NSString *debriefDate;
 	NSMutableDictionary *questionsByDate;

@@ -310,7 +310,7 @@
 // OUTPUT:   
 // FUNCTION: creates a read in list for each LDDebriefLine in debriefFile
  
-- (void)createReadInFileWithDebrief:(LDDebriefFile *)debriefFile {
+- (void)createReadInFileWithTask:(LDTaskFile *)debriefFile {
 	
 	NSInteger rand, ltRand, gtRand;
 	NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
@@ -319,7 +319,7 @@
 	// 0. get array of dates of each snapshot file
 	//
 	NSString *snapFolder = [baseFilePath stringByAppendingString:@"/System_Snapshots/"];
-	NSDate *debriefDate = [debriefFile dateOfDebriefFile];
+	NSDate *debriefDate = [debriefFile dateOfTaskFile];
 	
 	NSDateFormatter *sysSnapFormatter = [[NSDateFormatter alloc] init];
 	[sysSnapFormatter setDateFormat:@"yyyy-MM-dd"];
@@ -550,14 +550,13 @@
 // OUTPUT:   
 // FUNCTION: 
  
-- (LDDebriefFile *)readInDebriefFile:(NSString *)debriefPath {
+- (LDTaskFile *)readInTaskFile:(NSString *)taskPath {
 
-	baseFilePath = [[debriefPath stringByDeletingLastPathComponent] 
+	baseFilePath = [[taskPath stringByDeletingLastPathComponent] 
 					stringByDeletingLastPathComponent];
 	
-	NSData *debriefData = [NSData dataWithContentsOfFile:debriefPath];
-	LDDebriefFile *debrief = [[LDDebriefFile alloc] initWithData:debriefData];
-	return debrief;
+	LDTaskFile *task = [[LDTaskFile alloc] initWithTaskPath:taskPath];
+	return task;
 	
 }
 
