@@ -25,4 +25,6 @@
 
 - (id)initWithTask:(NSString *)iTask andDate:(NSDate *)iDate;
 
+- (NSArray *)dataPointsForApp:(NSString *)app;
+
 @end

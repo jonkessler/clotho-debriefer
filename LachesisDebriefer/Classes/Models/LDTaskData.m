@@ -26,4 +26,14 @@
 	
 }
 
+- (NSString *)description {
+	
+	NSMutableString *toPrint = [NSMutableString string];
+	[toPrint appendFormat:@"%@\n",name];
+	[toPrint appendFormat:@"%@\n",data];
+	
+	return [NSString stringWithString:toPrint];
+	
+}
+
 @end

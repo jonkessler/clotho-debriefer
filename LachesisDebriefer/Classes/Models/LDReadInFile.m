@@ -41,10 +41,10 @@
  
 - (NSDate *)dateForFile {
 	
-	NSString *date = [name substringWithRange:NSMakeRange(7, 8)];
-	NSString *time = [name substringWithRange:NSMakeRange(16, 8)];
+	NSString *date = [name substringWithRange:NSMakeRange(7, 10)];
+	NSString *time = [name substringWithRange:NSMakeRange(18, 8)];
 	time = [time stringByReplacingOccurrencesOfString:@"-" withString:@":"];
-	
+	time = [time stringByAppendingString:[name substringWithRange:NSMakeRange(26, 6)]];	
 	
 	NSDate *fileDate = [NSDate dateWithNaturalLanguageString:
 						[NSString stringWithFormat:@"%@ %@", date, time]];

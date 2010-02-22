@@ -91,7 +91,7 @@
 	[self createFakeDebriefs];
 
 	// TODO: uncomment to use jar file
-	[self applyJoshCodeToFakeDebriefs];
+//	[self applyJoshCodeToFakeDebriefs];
 
 	[self applyTreeToFakeDebriefs];
 	
@@ -215,7 +215,7 @@
 		LDTaskData *task = [LDFileIO taskForDate:fileDate];
 		
 		LDQuestionData *question = 
-		[[LDQuestionData alloc] initWithTask:[[task data] objectForKey:@"Task"] 
+		[[LDQuestionData alloc] initWithTask:[[task data] objectForKey:@"name"] 
 									 andDate:fileDate];
 //		LDQuestionData *question = 
 //		[[LDQuestionData alloc] initWithTask:@"Pooping"
@@ -333,8 +333,7 @@
 		[questionsByDate setObject:question forKey:fileDate];
 		
 	}
-	
-	
+		
 }
 
 // ****************************************************************************

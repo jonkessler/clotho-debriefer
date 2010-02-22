@@ -6,6 +6,7 @@
 //  Copyright 2010 University of Illinois Champaign-Urbana. All rights reserved.
 //
 
+#import "LDAppData.h"
 #import "LDQuestionData.h"
 
 
@@ -45,6 +46,44 @@
 	}
 	
 	return self;
+	
+}
+
+// ****************************************************************************
+// INPUT:    
+// OUTPUT:   
+// FUNCTION: 
+ 
+- (NSString *)description {
+
+	NSMutableString *toPrint = [NSMutableString string];
+	[toPrint appendFormat:@"    task: %@\n", task];
+	[toPrint appendFormat:@"    date: %@\n", date];
+	[toPrint appendFormat:@" appData: %@\n", appData];
+	[toPrint appendFormat:@"appNames: %@\n", uniqueAppNames];
+	
+	return [NSString stringWithString:toPrint];
+	
+}
+
+// ****************************************************************************
+// INPUT:    
+// OUTPUT:   
+// FUNCTION: 
+ 
+- (NSArray *)dataPointsForApp:(NSString *)app {
+
+	NSMutableArray *appPoints = [NSMutableArray array];
+	NSArray *allAppPoints = [appData allValues];
+	for (NSDictionary *appPoint in allAppPoints) {
+		
+		LDAppData *appDatum = [appPoint objectForKey:app];
+		[appPoints addObject:[NSNumber numberWithDouble:[appDatum dataPoint]]];
+		
+	}
+	
+	return [NSArray arrayWithArray:appPoints];
+	
 	
 }
 

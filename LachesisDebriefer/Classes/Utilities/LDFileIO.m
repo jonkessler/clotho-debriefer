@@ -213,7 +213,7 @@
 	
 	for (NSDictionary *task in taskData) {
 		
-		NSDate *taskDate = [task objectForKey:@"Date"];
+		NSDate *taskDate = [task objectForKey:@"date"];
 		if ([taskDate isEqualToDate:date]) {
 			
 			[tasks setData:task];
@@ -491,7 +491,7 @@
 		
 		// 8. write fake data to file
 		// 
-		NSString *destinPath = [baseFilePath stringByAppendingPathComponent:@"lachisisDebriefs"];
+		NSString *destinPath = [baseFilePath stringByAppendingPathComponent:@"Log/lachisisDebriefs"];
 		if (![[NSFileManager defaultManager] fileExistsAtPath:destinPath isDirectory:nil])
 			[[NSFileManager defaultManager] createDirectoryAtPath:destinPath 
 									  withIntermediateDirectories:NO
@@ -529,9 +529,10 @@
 	path = [path stringByAppendingPathComponent:[NSString stringWithFormat:@"debrief_%@.txt", 
 												 [answer debriefDate]]];
 	
-	NSString *stringToLog = [NSString stringWithFormat:@"%@, %@, %d, %f, %d, %@",
+	NSString *stringToLog = [NSString stringWithFormat:@"Debrief_Date, Debrief_Task, Graph_Type(0=line|1=stacked|2=flow), Seconds_Away, Pixels_Away, Time_Taken, Correct(1=yes|0=no), Explanation\n  %@, %@, %d, %f, %f, %f, %d, %@",
 							 [answer debriefDate], [answer debriefTask],
 							 [answer graphType], [answer secondsAway],
+							 [answer pixelsAway], [answer timeTaken],
 							 ([answer isCorrect]) ? 1 : 0, [answer explanation]];
 	NSData *theData = [stringToLog dataUsingEncoding:NSUTF8StringEncoding];
 	

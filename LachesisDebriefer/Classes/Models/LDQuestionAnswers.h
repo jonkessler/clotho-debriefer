@@ -19,6 +19,8 @@
 	NSDictionary *graphAppsColors;
 	
 	CGFloat secondsAway;
+	CGFloat pixelsAway;
+	CGFloat timeTaken;
 	
 	BOOL isCorrect;
 	NSString *explanation;
@@ -34,6 +36,8 @@
 @property (assign) NSDictionary *graphAppsColors;
 
 @property (assign) CGFloat secondsAway;
+@property (assign) CGFloat pixelsAway;
+@property (assign) CGFloat timeTaken;
 
 @property (assign) BOOL isCorrect;
 @property (assign) NSString *explanation;

@@ -36,7 +36,7 @@
 
 @implementation LDGraphView
 
-@synthesize colorKey, debriefFile, coordinates, currentDate, plotNum, wasCorrect;
+@synthesize colorKey, debriefFile, coordinates, currentDate, plotNum, wasCorrect, timeTaken;
 
 - (id)initWithDebriefFile:(LDTaskFile *)debrief andFrame:(NSRect)theFrame {
 	
@@ -44,6 +44,7 @@
 		
 		debriefFile = debrief;
 		availableDates = [debriefFile taskDates];
+		timeTaken = 0.0;
 		
 	}
 	
@@ -56,6 +57,8 @@
 		
 		debriefFile = debrief;
 		availableDates = [debriefFile taskDates];
+		timeTaken = 0.0;
+		
 	}
 	
 	return self;
@@ -76,8 +79,8 @@
 	availableDates = [NSMutableArray array];
 	plotNum = random() % 3;
 	
-	[colorKey setNamesAndColors:[[theGraph metadata] appColors]];
-	[colorKey reloadKeys];
+//	[colorKey setNamesAndColors:[[theGraph metadata] appColors]];
+//	[colorKey reloadKeys];
 		
 }
 
@@ -92,12 +95,10 @@
 									appNames:appNames
 									   dates:[debriefFile taskDates]];
 	
-	paths = [theGraph plots];
-	
 	[colorKey setNamesAndColors:[[theGraph metadata] appColors]];
-	[colorKey reloadKeys];
+	[colorKey reloadKeys];		
 	
-	[colorKey display];
+	paths = [theGraph plots];
 	
 	[[NSColor redColor] set];
 	[dot fill];
@@ -105,6 +106,8 @@
 	[[NSColor colorWithDeviceRed:0.0 green:0.0 blue:0.0 alpha:0.5] set];
 	[correctDot fill];
 	[correctDot stroke];
+	
+//	beginTimer = [NSDate date];
 	
 }
 
@@ -176,6 +179,13 @@
 	dot = [NSBezierPath bezierPathWithOvalInRect:centeredRect];
 	
 	plotNum = random() % 3;
+	
+	correctArea = NSMakeRect(0.0, 0.0, 0.0, 0.0);
+	correctDot = [NSBezierPath bezierPathWithRect:correctArea];
+	
+	[[NSColor colorWithDeviceRed:0.0 green:0.0 blue:0.0 alpha:0.0] set];
+	[correctDot fill];
+	[correctDot stroke];
 	
 	[self setNeedsDisplay:YES];
 	
@@ -275,14 +285,25 @@
 	NSArray *dDates = [[debriefFile datesForFile] objectForKey:currentDate];
 	dDates = [dDates sortedArrayUsingSelector:@selector(compare:)];
 	
-	NSDate *cstDate = [NSDate dateWithNaturalLanguageString:[[[currentDate description] substringToIndex:19] stringByAppendingString:@" -0500"]];
+	NSDate *cstDate = [NSDate dateWithNaturalLanguageString:
+					   [[[currentDate description] substringToIndex:19]
+						stringByAppendingString:@" -0500"]];
 	
 	NSInteger index = [dDates indexOfObject:cstDate];
 	
 	NSRect graphArea = [theGraph graphSpace];
 	
-	correctArea = NSMakeRect(index/16.0 * NSWidth(graphArea), 0.0, 
-							 (index+1)/16.0 * NSWidth(graphArea), NSHeight(graphArea));
+	// (114/( (end-start)/(total pixels) ) 
+	NSDate *end = [dDates lastObject];
+	NSDate *start = [dDates objectAtIndex:0];
+	CGFloat totalPixels = NSWidth(graphArea);
+	
+	CGFloat totalPixAway = ( (114.0 * totalPixels) / ([end timeIntervalSinceDate:start]) );
+	CGFloat baseXCord = index/16.0 * totalPixels;
+	baseXCord -= totalPixAway;
+	
+	correctArea = NSMakeRect(baseXCord, 0.0, 
+							 totalPixAway + totalPixAway, NSHeight(graphArea));
 	
 }
 
@@ -355,6 +376,9 @@
 
 - (void)mouseDown:(NSEvent *)event {
 
+	// determine how long it took them to click
+	timeTaken = [beginTimer timeIntervalSinceNow];
+	
 	// determine where clicked
 	NSPoint p = [event locationInWindow];
 	p = [self convertPoint:p fromView:nil];
@@ -409,36 +433,35 @@
 // OUTPUT:   
 // FUNCTION: 
  
+- (CGFloat)pixelsAway {
+	
+	CGFloat zeroX = NSMidX(correctArea);
+	CGFloat clickedX = [dot currentPoint].x;
+	
+	return clickedX - zeroX;
+	
+}
+
+// ****************************************************************************
+// INPUT:    
+// OUTPUT:   
+// FUNCTION: 
+ 
 - (CGFloat)secondsAway {
 	
-	NSArray *sortedDates = [[debriefFile datesForFile] objectForKey:currentDate];
-	NSTimeInterval totalSecs = abs([[sortedDates lastObject] timeIntervalSinceDate:
-									[sortedDates objectAtIndex:0]]);
-	
-	CGFloat minRight = NSMinX(correctArea);
-	CGFloat maxRight = NSMaxX(correctArea);
+	NSArray *dDates = [[debriefFile datesForFile] objectForKey:currentDate];
+	dDates = [dDates sortedArrayUsingSelector:@selector(compare:)];
 	
 	NSRect graphArea = [theGraph graphSpace];
-	CGFloat width = NSWidth(graphArea);
 	
-	NSPoint clicked = [dot currentPoint];
+	// (114/( (end-start)/(total pixels) ) 
+	NSDate *end = [dDates lastObject];
+	NSDate *start = [dDates objectAtIndex:0];
+	CGFloat totalPixels = NSWidth(graphArea);
+	CGFloat pixelsAway = [self pixelsAway];
 	
-	CGFloat secondsAway = 0.0;
-	if (abs(clicked.x-maxRight) > abs(clicked.x-minRight)) {
-		
-		secondsAway = abs( (((clicked.x/width) * totalSecs)
-							- (((minRight/width) * totalSecs))) );
-		
-	}
+	CGFloat secondsAway = ( ([end timeIntervalSinceDate:start]/totalPixels) * pixelsAway);
 	
-	else {
-		
-		secondsAway = abs( (((clicked.x/width) * totalSecs)
-							- (((maxRight/width) * totalSecs))) );
-
-		
-	}
-
 	return secondsAway;
 						
 }

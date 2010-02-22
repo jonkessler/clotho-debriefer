@@ -96,24 +96,23 @@
 	
 	else {
 	
-		CGFloat hue, saturation, brightness, alpha;
+		CGFloat hue, saturation, brightness, alpha, origBrightness;
 		[maybeUsed getHue:&hue saturation:&saturation brightness:&brightness alpha:&alpha];
 		
-		if (hue > 0.2)
-			return [NSColor colorWithCalibratedHue:hue-0.1
-										saturation:saturation
-										brightness:brightness
-											 alpha:alpha];
-		else if (brightness > 0.3)
-			return [NSColor colorWithCalibratedHue:hue
-										saturation:saturation
-										brightness:brightness-0.2
-											 alpha:alpha];
-		else
-			return [NSColor colorWithCalibratedHue:hue
-										saturation:saturation
-										brightness:brightness
-											 alpha:alpha-0.2];
+		origBrightness = brightness;
+		
+		do {
+			
+			brightness = origBrightness;
+			double randomDecimal = (double)rand()/(double)RAND_MAX;
+			brightness -= randomDecimal;
+			
+		} while (brightness < 0);
+		
+		return [NSColor colorWithCalibratedHue:hue
+									saturation:saturation
+									brightness:brightness
+										 alpha:alpha];
 		
 	}
 
