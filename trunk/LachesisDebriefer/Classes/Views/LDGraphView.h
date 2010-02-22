@@ -29,6 +29,9 @@
 	NSArray *appNames;
 	BOOL wasCorrect;
 	
+	NSDate *beginTimer;
+	NSTimeInterval timeTaken;
+	
 }
 
 @property (assign, readonly) NSInteger plotNum;
@@ -37,6 +40,7 @@
 @property (assign, readonly) NSMutableArray *coordinates;
 @property (assign) NSDate *currentDate;
 @property (assign, readonly) BOOL wasCorrect;
+@property (assign, readonly) NSTimeInterval timeTaken;
 
 - (id)initWithDebriefFile:(LDTaskFile *)debrief andFrame:(NSRect)theFrame;
 - (id)initWithDebriefFile:(LDTaskFile *)debrief;
@@ -52,6 +56,7 @@
 - (BOOL)isCorrectForPoint:(NSPoint)myGuess;
 - (BOOL)isValid:(NSPoint)point;
 
+- (CGFloat)pixelsAway;
 - (CGFloat)secondsAway;
 
 - (void)mouseMovedInMe:(NSEvent *)event;

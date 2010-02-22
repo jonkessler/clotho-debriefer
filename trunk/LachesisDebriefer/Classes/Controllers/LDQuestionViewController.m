@@ -12,7 +12,7 @@
 
 @implementation LDQuestionViewController
 
-@synthesize appColors, graph, date, task, wrongSheet, debriefFile;
+@synthesize appColors, graph, date, task, graphType, wrongSheet, debriefFile;
 
 - (id)init {
 	
@@ -77,11 +77,21 @@
 	[taskDate setTimeStyle:NSDateFormatterNoStyle];
 	[date setTitleWithMnemonic:[NSString stringWithFormat:@"&%@", 
 								[taskDate stringFromDate:[graph currentDate]]]];
+	if ([[date stringValue] rangeOfString:@"null"].length > 0)
+		[self loadView];
 	
 	// Set question task
 	LDQuestionData *qData = [[debriefFile calculatedDataPoints] objectForKey:
 							 [graph currentDate]];
 	[task setTitleWithMnemonic:[NSString stringWithFormat:@"&%@", [qData task]]];
+	
+	// Set graph type
+	if ([graph plotNum] == 0)
+		[graphType setTitleWithMnemonic:@"Line Graph"];
+	else if ([graph plotNum] == 1)
+		[graphType setTitleWithMnemonic:@"Stacked Area"];
+	else
+		[graphType setTitleWithMnemonic:@"Stream Graph"];
 	
 	// Set question labels
 	NSArray *sortedDates = [[debriefFile datesForFile] objectForKey:[graph currentDate]];
@@ -127,15 +137,13 @@
 	[answer setDebriefTask:[task stringValue]];
 	[answer setGraphType:[graph plotNum]];
 	[answer setIsCorrect:[graph wasCorrect]];
-	if (![graph wasCorrect]) {
-		
+	if (![graph wasCorrect])	
 		[answer setExplanation:[wrongText stringValue]];
-		[answer setSecondsAway:[graph secondsAway]];
 		
-	}
-	else
-		[answer setSecondsAway:0.0];
-		
+	[answer setSecondsAway:[graph secondsAway]];
+	[answer setPixelsAway:[graph pixelsAway]];
+	[answer setTimeTaken:[graph timeTaken]];	
+	
 	[LDFileIO logAnswer:answer];
 	
 	[graph generateNewGraph];

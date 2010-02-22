@@ -113,7 +113,8 @@
 		[cell setImage:colorImg];
 		
 		if ( (keyCount % 5 == 0) && (col != 0) ) {
-			row ++;
+			[self renewRows:row++ columns:5];
+			[self sizeToCells];
 			col = 0;
 		}
 		else

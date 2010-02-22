@@ -21,6 +21,7 @@
 
 	IBOutlet NSTextField *date;
 	IBOutlet NSTextField *task;
+	IBOutlet NSTextField *graphType;	
 	IBOutlet NSWindow *wrongSheet;	
 	IBOutlet NSTextField *wrongText;
 	
@@ -29,11 +30,12 @@
 	IBOutlet NSTextField *dateL;
 	IBOutlet NSTextField *dateM;
 	IBOutlet NSTextField *dateR;
-
 	
 	LDTaskFile *debriefFile;
 	NSModalSession currentSession;
 	LDQuestionAnswers *answer;
+	
+	NSDate *beginQuestion;
 	
 }
 
@@ -42,6 +44,7 @@
 
 @property (assign) NSTextField *date;
 @property (assign) NSTextField *task;
+@property (assign) NSTextField *graphType;
 @property (assign) NSWindow *wrongSheet;
 
 @property (assign) LDTaskFile *debriefFile;

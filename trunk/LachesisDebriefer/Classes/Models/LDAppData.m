@@ -77,6 +77,25 @@
 }
 
 // ****************************************************************************
+// INPUT:    
+// OUTPUT:   
+// FUNCTION: 
+ 
+- (NSString *)description {
+
+	NSMutableString *toPrint = [NSMutableString string];
+	[toPrint appendFormat:@"name     = %@\n", name];
+	[toPrint appendFormat:@" pid     = %d\n", pid];
+	[toPrint appendFormat:@"color	 = %@\n", [color description]];
+	[toPrint appendFormat:@"dataPoint= %f\n", dataPoint];
+	[toPrint appendFormat:@"rawData  = %@\n", rawData];
+	[toPrint appendFormat:@"titleRawData= %@\n", titleRawData];
+	
+	return [NSString stringWithString:toPrint];
+	
+}
+
+// ****************************************************************************
 // INPUT:    NSArray - array of titles
 // OUTPUT:   
 // FUNCTION: associates each raw datum with each title
