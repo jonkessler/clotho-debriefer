@@ -51,6 +51,12 @@
 	
 }
 
+// ****************************************************************************
+// INPUT:    
+// OUTPUT:   
+// FUNCTION: adds this LDQuestionViewController as an observer of selecting a 
+//			 wrong or right answer
+ 
 - (void)awakeFromNib {
 	
 	[[NSNotificationCenter defaultCenter] addObserver:self 
@@ -65,6 +71,11 @@
 	
 }
 
+// ****************************************************************************
+// INPUT:    
+// OUTPUT:   
+// FUNCTION: Sets up the main question view. 
+ 
 - (void)loadView {
 	
 	[super loadView];
@@ -77,6 +88,7 @@
 	[taskDate setTimeStyle:NSDateFormatterNoStyle];
 	[date setTitleWithMnemonic:[NSString stringWithFormat:@"&%@", 
 								[taskDate stringFromDate:[graph currentDate]]]];
+	
 	if ([[date stringValue] rangeOfString:@"null"].length > 0)
 		[self loadView];
 	
@@ -117,6 +129,12 @@
 
 }
 
+// ****************************************************************************
+// INPUT:    
+// OUTPUT:   
+// FUNCTION: This is called when the user clicks OK in the explanation window. 
+//			 The window is closed and the LDQuestionAnswers object is set accordingly
+ 
 - (IBAction)endSheet:(id)sender {
 	
 	[NSApp endModalSession:currentSession];
@@ -130,6 +148,11 @@
 	
 }
 
+// ****************************************************************************
+// INPUT:    
+// OUTPUT:   
+// FUNCTION: Logs the current question's answers and then generates a new graph
+ 
 - (IBAction)makeNewGraph:(id)sender {
 	
 	answer = [[LDQuestionAnswers alloc] init];	
@@ -150,6 +173,11 @@
 	
 }
 
+// ****************************************************************************
+// INPUT:    
+// OUTPUT:   
+// FUNCTION: 
+ 
 - (void)showWrongDialog {
 	
 	currentSession = [NSApp beginModalSessionForWindow:wrongSheet];

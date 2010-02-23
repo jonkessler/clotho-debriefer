@@ -194,34 +194,42 @@
 // ****************************************************************************
 // INPUT:    
 // OUTPUT:   
-// FUNCTION: 
+// FUNCTION: Randomly chooses a date from available dates. Loads the question 
+//			 data associated with that date.
 
 - (NSMutableArray *)chooseRandomDataPoints {
 	
+	// Randomly choose date
 	NSInteger randomLine = rand() % [availableDates count];
 	
 	NSDate *dDate = [availableDates objectAtIndex:randomLine];
 	
 	currentDate = dDate;
 	
+	// Remove chosen date from list of available dates
 	NSInteger index = [availableDates indexOfObject:dDate];
 	[availableDates removeObjectAtIndex:index];
 	
+	// Load data points generated after applying the XML tree
 	LDQuestionData *qData = [[debriefFile calculatedDataPoints] objectForKey:dDate];
 	
+	// Load the LDAppData data and fake dates associated with dDate
 	NSMutableDictionary *appData = [qData appData];
 	NSArray *readInDDates = [appData allKeys];
 	readInDDates = [readInDDates sortedArrayUsingSelector:@selector(compare:)];
 	
+	// Load unique app names
 	NSArray *allApps = [qData uniqueAppNames];
 	allApps = [allApps sortedArrayUsingSelector:@selector(caseInsensitiveCompare:)];
 	
 	appNames = [NSArray arrayWithArray:allApps];
 	
+	// Create a dictionary of app->NSMutableArray entries
 	NSMutableDictionary *dataPointsDict = [NSMutableDictionary dictionary];
 	for (NSString *app in allApps)
 		[dataPointsDict setObject:[NSMutableArray array] forKey:app];
 	
+	// For each date in the read-in file, load the single data point for each app
 	for (NSDate *aDate in readInDDates) {
 		
 		NSDictionary *dataForDate = [appData objectForKey:aDate];
@@ -431,7 +439,8 @@
 // ****************************************************************************
 // INPUT:    
 // OUTPUT:   
-// FUNCTION: 
+// FUNCTION: Determines the number of pixels away that the x-coordinate of the 
+//			 clicked point is from correct x-coordinate.
  
 - (CGFloat)pixelsAway {
 	
@@ -445,7 +454,8 @@
 // ****************************************************************************
 // INPUT:    
 // OUTPUT:   
-// FUNCTION: 
+// FUNCTION: Determines the number of seconds away the x-coordinate of the 
+//			 clicked point is from the correct x-coordinate
  
 - (CGFloat)secondsAway {
 	
@@ -457,6 +467,7 @@
 	// (114/( (end-start)/(total pixels) ) 
 	NSDate *end = [dDates lastObject];
 	NSDate *start = [dDates objectAtIndex:0];
+	
 	CGFloat totalPixels = NSWidth(graphArea);
 	CGFloat pixelsAway = [self pixelsAway];
 	
