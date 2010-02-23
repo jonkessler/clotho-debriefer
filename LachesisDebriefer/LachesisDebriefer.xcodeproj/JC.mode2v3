@@ -197,48 +197,7 @@
 	<key>Notifications</key>
 	<array/>
 	<key>OpenEditors</key>
-	<array>
-		<dict>
-			<key>Content</key>
-			<dict>
-				<key>PBXProjectModuleGUID</key>
-				<string>49C5F84E113335FB00F86883</string>
-				<key>PBXProjectModuleLabel</key>
-				<string>LDGraphView.m</string>
-				<key>PBXSplitModuleInNavigatorKey</key>
-				<dict>
-					<key>Split0</key>
-					<dict>
-						<key>PBXProjectModuleGUID</key>
-						<string>49C5F84F113335FB00F86883</string>
-						<key>PBXProjectModuleLabel</key>
-						<string>LDGraphView.m</string>
-						<key>_historyCapacity</key>
-						<integer>0</integer>
-						<key>bookmark</key>
-						<string>49C5F8FB11333A9A00F86883</string>
-						<key>history</key>
-						<array>
-							<string>49C5F875113336BD00F86883</string>
-						</array>
-					</dict>
-					<key>SplitCount</key>
-					<string>1</string>
-				</dict>
-				<key>StatusBarVisibility</key>
-				<true/>
-			</dict>
-			<key>Geometry</key>
-			<dict>
-				<key>Frame</key>
-				<string>{{0, 20}, {635, 772}}</string>
-				<key>PBXModuleWindowStatusBarHidden2</key>
-				<false/>
-				<key>RubberWindowFrame</key>
-				<string>599 65 635 813 0 0 1440 878 </string>
-			</dict>
-		</dict>
-	</array>
+	<array/>
 	<key>PerspectiveWidths</key>
 	<array>
 		<integer>-1</integer>
@@ -323,13 +282,14 @@
 									<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 									<array>
 										<array>
-											<integer>73</integer>
-											<integer>65</integer>
+											<integer>15</integer>
+											<integer>7</integer>
+											<integer>1</integer>
 											<integer>0</integer>
 										</array>
 									</array>
 									<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-									<string>{{0, 956}, {360, 353}}</string>
+									<string>{{0, 0}, {360, 353}}</string>
 								</dict>
 								<key>PBXTopSmartGroupGIDs</key>
 								<array/>
@@ -493,8 +453,8 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>49C5F34A1131F67F00F86883</string>
-				<string>49C5F34B1131F67F00F86883</string>
+				<string>49D3B81E11335FE500FFF362</string>
+				<string>49D3B81F11335FE500FFF362</string>
 				<string>1C9437FD063B20B00039CFAC</string>
 				<string>1C9437FE063B20B00039CFAC</string>
 				<string>1C9437FF063B20B00039CFAC</string>
@@ -531,17 +491,8 @@
 	<integer>0</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>49C5F8FC11333A9A00F86883</string>
-		<string>49C5F5B4113273CA00F86883</string>
-		<string>4975F229112BCE4E0052E9B4</string>
-		<string>1C530D57069F1CE1000CFCEE</string>
-		<string>49C5F3611131F6C300F86883</string>
-		<string>49C5F3621131F6C300F86883</string>
-		<string>1C530D5B069F1CE1000CFCEE</string>
-		<string>1C530D54069F1CE1000CFCEE</string>
 		<string>1C530D52069F1CE1000CFCEE</string>
 		<string>/Users/JC/Documents/xCode Projects/LachesisDebriefer/LachesisDebriefer.xcodeproj</string>
-		<string>49C5F84E113335FB00F86883</string>
 	</array>
 	<key>WindowString</key>
 	<string>1052 439 377 439 0 0 1440 878 </string>
@@ -702,7 +653,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>LDGraphView.m</string>
+								<string></string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -719,8 +670,6 @@
 							<string>118pt</string>
 						</dict>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -760,7 +709,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C530D52069F1CE1000CFCEE</string>
-				<string>49C5F34C1131F67F00F86883</string>
+				<string>49D3B82011335FE500FFF362</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
