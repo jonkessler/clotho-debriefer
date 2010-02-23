@@ -26,10 +26,10 @@
 		);
 		breakpoints = (
 			492475571121F224003C9CC9 /* objc_exception_throw */,
-			49C5F2CF1130AA2700F86883 /* LDFileIO.m:406 */,
-			49C5F42F11325BE500F86883 /* LDFileIO.m:338 */,
+			49C5F2CF1130AA2700F86883 /* LDFileIO.m:408 */,
+			49C5F42F11325BE500F86883 /* LDFileIO.m:340 */,
 			49C5F56311326AFF00F86883 /* LDQuestionViewController.m:190 */,
-			49C5F6DD1133215A00F86883 /* LDFileIO.m:202 */,
+			49C5F6DD1133215A00F86883 /* LDFileIO.m:203 */,
 		);
 		codeSenseManager = 49E1A02E10FE81F200480FBB /* Code sense */;
 		executables = (
@@ -207,7 +207,7 @@
 			sepNavWindowFrame = "{{678, 4}, {750, 874}}";
 		};
 	};
-	49C5F2CF1130AA2700F86883 /* LDFileIO.m:406 */ = {
+	49C5F2CF1130AA2700F86883 /* LDFileIO.m:408 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -219,13 +219,13 @@
 		functionName = "-createReadInFileWithTask:";
 		hitCount = 0;
 		ignoreCount = 0;
-		lineNumber = 406;
+		lineNumber = 408;
 		location = LachesisDebriefer;
 		modificationTime = 288570833.992817;
 		originalNumberOfMultipleMatches = 1;
 		state = 1;
 	};
-	49C5F42F11325BE500F86883 /* LDFileIO.m:338 */ = {
+	49C5F42F11325BE500F86883 /* LDFileIO.m:340 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -237,7 +237,7 @@
 		functionName = "-createReadInFileWithTask:";
 		hitCount = 0;
 		ignoreCount = 0;
-		lineNumber = 338;
+		lineNumber = 340;
 		location = LachesisDebriefer;
 		modificationTime = 288570834.01398;
 		originalNumberOfMultipleMatches = 1;
@@ -261,7 +261,7 @@
 		originalNumberOfMultipleMatches = 1;
 		state = 1;
 	};
-	49C5F6DD1133215A00F86883 /* LDFileIO.m:202 */ = {
+	49C5F6DD1133215A00F86883 /* LDFileIO.m:203 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -273,7 +273,7 @@
 		functionName = "+taskForDate:";
 		hitCount = 0;
 		ignoreCount = 0;
-		lineNumber = 202;
+		lineNumber = 203;
 		location = LachesisDebriefer;
 		modificationTime = 288570834.153824;
 		originalNumberOfMultipleMatches = 1;
@@ -383,9 +383,9 @@
 	};
 	49E3684910FF8CC4009924B0 /* LDFileIO.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1379, 8736}}";
-			sepNavSelRange = "{9484, 0}";
-			sepNavVisRange = "{9156, 744}";
+			sepNavIntBoundsRect = "{{0, 0}, {578, 8652}}";
+			sepNavSelRange = "{17249, 0}";
+			sepNavVisRange = "{17500, 1524}";
 			sepNavWindowFrame = "{{644, 4}, {637, 874}}";
 		};
 	};
@@ -488,9 +488,9 @@
 	};
 	49E3687910FF9272009924B0 /* LDGraphView.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {439, 6902}}";
-			sepNavSelRange = "{11503, 0}";
-			sepNavVisRange = "{11845, 127}";
+			sepNavIntBoundsRect = "{{0, 0}, {576, 7000}}";
+			sepNavSelRange = "{6803, 0}";
+			sepNavVisRange = "{6053, 1379}";
 			sepNavWindowFrame = "{{599, 9}, {635, 869}}";
 		};
 	};
