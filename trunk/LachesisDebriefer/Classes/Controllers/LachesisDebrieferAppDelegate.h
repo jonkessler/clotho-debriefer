@@ -13,7 +13,13 @@
 #import "LDQuestionViewController.h"
 #import "LDWindow.h"
 
-@interface LachesisDebrieferAppDelegate : NSObject <NSApplicationDelegate> {
+#if (MAC_OS_X_VERSION_MAX_ALLOWED <= MAC_OS_X_VERSION_10_5)
+@interface LachesisDebrieferAppDelegate : NSObject
+#else
+@interface LachesisDebrieferAppDelegate : NSObject <NSApplicationDelegate>
+#endif
+{
+//@interface LachesisDebrieferAppDelegate : NSObject <NSApplicationDelegate> {
 	
     LDWindow *window;
 	LDLoadingViewController *loadingController;
