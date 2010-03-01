@@ -43,7 +43,7 @@
 	if (self = [super initWithFrame:theFrame]) {
 		
 		debriefFile = debrief;
-		availableDates = [debriefFile taskDates];
+		availableDates = [debriefFile debriefLines];
 		timeTaken = 0.0;
 		
 	}
@@ -56,7 +56,7 @@
 	if (self = [super init]) {
 		
 		debriefFile = debrief;
-		availableDates = [debriefFile taskDates];
+		availableDates = [debriefFile debriefLines];
 		timeTaken = 0.0;
 		
 	}
@@ -68,7 +68,7 @@
 - (void)setDebriefFile:(LDTaskFile *)dFile {
 	
 	debriefFile = dFile;
-	availableDates = [debriefFile taskDates];
+	availableDates = [debriefFile debriefLines];
 	
 }
 
@@ -96,7 +96,7 @@
 									   dates:[debriefFile taskDates]];
 	
 	[colorKey setNamesAndColors:[[theGraph metadata] appColors]];
-	[colorKey reloadKeys];		
+//	[colorKey reloadKeys];		
 	
 	paths = [theGraph plots];
 	

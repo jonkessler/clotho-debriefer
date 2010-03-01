@@ -137,9 +137,7 @@
 	
 	NSTask *task = [[NSTask alloc] init];
 	[task setLaunchPath:@"/usr/bin/java"];
-	//TODO: uncomment for /Applications/Lachesis
 	[task setCurrentDirectoryPath:@"/Applications/Lachesis/Resources"];
-//	[task setCurrentDirectoryPath:@"/Users/JC/Desktop"];
 	
 	NSArray *arguments = [NSArray arrayWithObjects:
 						  @"-jar", @"ClothesisData.jar", 
@@ -210,16 +208,12 @@
 		
 		[[debriefFile debriefLines] addObject:fileDate];
 		
-		// TODO: uncomment to log actual tasks
 		// TODO: double check calculations
 		LDTaskData *task = [LDFileIO taskForDate:fileDate];
 		
 		LDQuestionData *question = 
 		[[LDQuestionData alloc] initWithTask:[[task data] objectForKey:@"name"] 
 									 andDate:fileDate];
-//		LDQuestionData *question = 
-//		[[LDQuestionData alloc] initWithTask:@"Pooping"
-//									 andDate:fileDate];		
 		
 		NSMutableArray *dlineDates = [NSMutableArray array];
 		for (NSString *debriefLine in [readIn lines]) {

@@ -9,14 +9,15 @@
 #import <Cocoa/Cocoa.h>
 
 
-@interface LDColorKey : NSMatrix {
+@interface LDColorKey : NSTableView <NSTableViewDelegate> {
 
 	NSMutableDictionary *namesAndColors;
+	NSInteger keyCount;
 	
 }
 
 @property (assign) NSMutableDictionary *namesAndColors;
 
-- (void)reloadKeys;
+//- (void)reloadKeys;
 
 @end

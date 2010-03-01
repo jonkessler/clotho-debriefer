@@ -184,13 +184,7 @@
 	[NSApp runModalSession:currentSession];
 	
 }																			  
-																			  
-- (void)mouseMoved:(NSEvent *)theEvent {
-	
-	[graph mouseMovedInMe:theEvent];
-	
-}
-
+							
 - (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)theApplication {
     return YES;
 }
