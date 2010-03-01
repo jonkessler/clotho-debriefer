@@ -282,14 +282,15 @@
 									<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 									<array>
 										<array>
-											<integer>61</integer>
-											<integer>59</integer>
+											<integer>29</integer>
+											<integer>17</integer>
+											<integer>16</integer>
 											<integer>1</integer>
 											<integer>0</integer>
 										</array>
 									</array>
 									<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-									<string>{{0, 758}, {360, 353}}</string>
+									<string>{{0, 228}, {360, 353}}</string>
 								</dict>
 								<key>PBXTopSmartGroupGIDs</key>
 								<array/>
@@ -453,8 +454,8 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>49D3B81E11335FE500FFF362</string>
-				<string>49D3B81F11335FE500FFF362</string>
+				<string>49CCD3DB113C718A009DBBE8</string>
+				<string>49CCD3DC113C718A009DBBE8</string>
 				<string>1C9437FD063B20B00039CFAC</string>
 				<string>1C9437FE063B20B00039CFAC</string>
 				<string>1C9437FF063B20B00039CFAC</string>
@@ -491,9 +492,13 @@
 	<integer>0</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>49D3B826113368FC00FFF362</string>
+		<string>49CCD44D113C7798009DBBE8</string>
 		<string>1C530D57069F1CE1000CFCEE</string>
+		<string>49CCD3EB113C71AB009DBBE8</string>
+		<string>49CCD3EC113C71AB009DBBE8</string>
+		<string>1C530D5B069F1CE1000CFCEE</string>
 		<string>1C530D52069F1CE1000CFCEE</string>
+		<string>1C530D54069F1CE1000CFCEE</string>
 		<string>/Users/JC/Documents/xCode Projects/LachesisDebriefer/LachesisDebriefer.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -711,7 +716,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C530D52069F1CE1000CFCEE</string>
-				<string>49D3B82011335FE500FFF362</string>
+				<string>49CCD3D4113C7187009DBBE8</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
@@ -833,13 +838,13 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C530D54069F1CE1000CFCEE</string>
-				<string>49C5F3591131F6C300F86883</string>
+				<string>49CCD3D5113C7187009DBBE8</string>
 				<string>1C162984064C10D400B95A72</string>
-				<string>49C5F35A1131F6C300F86883</string>
-				<string>49C5F35B1131F6C300F86883</string>
-				<string>49C5F35C1131F6C300F86883</string>
-				<string>49C5F35D1131F6C300F86883</string>
-				<string>49C5F35E1131F6C300F86883</string>
+				<string>49CCD3D6113C7187009DBBE8</string>
+				<string>49CCD3D7113C7187009DBBE8</string>
+				<string>49CCD3D8113C7187009DBBE8</string>
+				<string>49CCD3D9113C7187009DBBE8</string>
+				<string>49CCD3DA113C7187009DBBE8</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debugV3</string>
@@ -871,7 +876,7 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CDD528C0622207200134675</string>
 										<key>PBXProjectModuleLabel</key>
-										<string></string>
+										<string>LDGraphView.m</string>
 										<key>StatusBarVisibility</key>
 										<true/>
 									</dict>
@@ -929,8 +934,8 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C530D57069F1CE1000CFCEE</string>
-				<string>49D3B8231133636800FFF362</string>
-				<string>49D3B8241133636800FFF362</string>
+				<string>49CCD3F5113C71E5009DBBE8</string>
+				<string>49CCD3F6113C71E5009DBBE8</string>
 				<string>1CDD528C0622207200134675</string>
 				<string>1CD0528E0623707200166675</string>
 			</array>
@@ -995,7 +1000,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C530D5B069F1CE1000CFCEE</string>
-				<string>49C5F35F1131F6C300F86883</string>
+				<string>49CCD3E9113C71AB009DBBE8</string>
 				<string>1C78EAAC065D492600B07095</string>
 			</array>
 			<key>ToolbarConfiguration</key>

@@ -156,7 +156,7 @@
 							  forAppSet:web];
 	
 	else
-		return [NSColor blackColor];
+		return [NSColor grayColor];
 	
 }
 
