@@ -333,10 +333,6 @@
 									   @"/System_Snapshots_%@",
 									   [sysSnapFormatter stringFromDate:debriefDate]];
 	
-	// TODO: Delete
-	debriefSnapshotFolder = [debriefSnapshotFolder stringByDeletingLastPathComponent];
-	debriefSnapshotFolder = [debriefSnapshotFolder stringByAppendingString:@"System_Snapshots_2010-03-01"];
-	
 	NSString *sysSnapsFolder = [snapFolder stringByAppendingPathComponent:
 								debriefSnapshotFolder];
 	
