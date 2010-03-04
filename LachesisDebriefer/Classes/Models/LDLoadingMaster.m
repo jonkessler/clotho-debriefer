@@ -91,7 +91,7 @@
 	[self createFakeDebriefs];
 
 	// TODO: uncomment to use jar file
-//	[self applyJoshCodeToFakeDebriefs];
+	[self applyJoshCodeToFakeDebriefs];
 
 	[self applyTreeToFakeDebriefs];
 	
